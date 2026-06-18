@@ -1,0 +1,18 @@
+[build]
+  command = "python3 build.py"
+  publish = "../worldcup-site"
+
+[[redirects]]
+  from = "/matches"
+  to = "/matches/"
+  status = 301
+
+[[redirects]]
+  from = "/groups"
+  to = "/groups/"
+  status = 301
+
+[[redirects]]
+  from = "/predictions"
+  to = "/predictions/"
+  status = 301
