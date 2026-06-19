@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T13:37:30.330362",
-    "total_predictions": 108
+    "last_updated": "2026-06-19T17:02:21.948470",
+    "total_predictions": 138
   },
   "models": [
     {
@@ -2262,6 +2262,676 @@
           }
         },
         "timestamp": "2026-06-19T13:37:30.330361"
+      }
+    },
+    "wc2026-grp-k-4": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "```json\\n{\"predicted_score\": \"2-0\", \"confidence\": 0.8, \"reasoning\": \"DR Congo shows superior recent form and squad depth compared to Colombia. Key players like [key player] are expected to make the difference. Tactical analysis suggests DR Congo will control possession and create more scoring opportunities.\", \"key_factors\": [\"DR Congo's superior FIFA ranking and recent tournament performance\", \"Key attacking players from DR Congo in good form\", \"Colombia's defensive vulnerabilities observed in recent matches\", \"Tactical advantage: DR Congo's preferred formation exploits Colombia's weakness\", \"Motivation: DR Congo needs points to advance from the group\"], \"win_probability\": {\"home\": 0.65, \"draw\": 0.2, \"away\": 0.15}}\\n```",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.8,
+          "reasoning": "DR Congo shows superior recent form and squad depth compared to Colombia. Key players like [key player] are expected to make the difference. Tactical analysis suggests DR Congo will control possession and create more scoring opportunities.",
+          "key_factors": [
+            "DR Congo's superior FIFA ranking and recent tournament performance",
+            "Key attacking players from DR Congo in good form",
+            "Colombia's defensive vulnerabilities observed in recent matches",
+            "Tactical advantage: DR Congo's preferred formation exploits Colombia's weakness",
+            "Motivation: DR Congo needs points to advance from the group"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948159Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "```json\\n{\"predicted_score\": \"1-1\", \"confidence\": 0.55, \"reasoning\": \"Recent form indicates a closely matched contest between DR Congo and Colombia. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.\", \"key_factors\": [\"Comparable recent results for both teams\", \"Similar defensive records in recent matches\", \"Midfield battle likely to be decisive\", \"Set-piece proficiency could provide edge\", \"Home advantage (if applicable) may play a role\"], \"win_probability\": {\"home\": 0.4, \"draw\": 0.3, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.55,
+          "reasoning": "Recent form indicates a closely matched contest between DR Congo and Colombia. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.",
+          "key_factors": [
+            "Comparable recent results for both teams",
+            "Similar defensive records in recent matches",
+            "Midfield battle likely to be decisive",
+            "Set-piece proficiency could provide edge",
+            "Home advantage (if applicable) may play a role"
+          ],
+          "win_probability": {
+            "home": 0.4,
+            "draw": 0.3,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948284Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "```json\\n{\"predicted_score\": \"0-1\", \"confidence\": 0.4, \"reasoning\": \"Despite DR Congo being the favorite on paper, Colombia possesses tactical nuances and motivation that could lead to an upset. Recent performances show Colombia has been resilient against stronger opponents, and a specific tactical adjustment could exploit DR Congo's weakness.\", \"key_factors\": [\"Colombia's underrated tactical flexibility\", \"Recent performances showing Colombia can compete with higher-ranked teams\", \"Potential key player absence or form dip for DR Congo\", \"Set-piece threat from Colombia as a route to goal\", \"Psychological factor: Colombia has nothing to lose\"], \"win_probability\": {\"home\": 0.25, \"draw\": 0.25, \"away\": 0.5}}\\n```",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.4,
+          "reasoning": "Despite DR Congo being the favorite on paper, Colombia possesses tactical nuances and motivation that could lead to an upset. Recent performances show Colombia has been resilient against stronger opponents, and a specific tactical adjustment could exploit DR Congo's weakness.",
+          "key_factors": [
+            "Colombia's underrated tactical flexibility",
+            "Recent performances showing Colombia can compete with higher-ranked teams",
+            "Potential key player absence or form dip for DR Congo",
+            "Set-piece threat from Colombia as a route to goal",
+            "Psychological factor: Colombia has nothing to lose"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.25,
+            "away": 0.5
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948296Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "```json\\n{\"predicted_score\": \"3-1\", \"confidence\": 0.7, \"reasoning\": \"Both teams possess potent attacking capabilities, but DR Congo's forward line is particularly formidable. Expect an open game with chances at both ends, but DR Congo's attacking edge should prevail, leading to a high-scoring outcome.\", \"key_factors\": [\"DR Congo's high goals-per-game average in recent matches\", \"Colombia's tendency to concede goals when pushing forward\", \"Key attackers from DR Congo in prime scoring form\", \"Tactical setup favoring attacking transitions for DR Congo\", \"Open game expected due to both teams' attacking philosophies\"], \"win_probability\": {\"home\": 0.6, \"draw\": 0.2, \"away\": 0.2}}\\n```",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.7,
+          "reasoning": "Both teams possess potent attacking capabilities, but DR Congo's forward line is particularly formidable. Expect an open game with chances at both ends, but DR Congo's attacking edge should prevail, leading to a high-scoring outcome.",
+          "key_factors": [
+            "DR Congo's high goals-per-game average in recent matches",
+            "Colombia's tendency to concede goals when pushing forward",
+            "Key attackers from DR Congo in prime scoring form",
+            "Tactical setup favoring attacking transitions for DR Congo",
+            "Open game expected due to both teams' attacking philosophies"
+          ],
+          "win_probability": {
+            "home": 0.6,
+            "draw": 0.2,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948304Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "```json\\n{\"predicted_score\": \"0-0\", \"confidence\": 0.6, \"reasoning\": \"Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.\", \"key_factors\": [\"Strong defensive records for both teams in recent matches\", \"Tactical emphasis on organization and shape over expansive play\", \"Midfield congestion likely to limit clear-cut chances\", \"Set-piece defense organized and effective for both sides\", \"Low stakes or tactical caution leading to a cagey match\"], \"win_probability\": {\"home\": 0.3, \"draw\": 0.4, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "0-0",
+          "confidence": 0.6,
+          "reasoning": "Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.",
+          "key_factors": [
+            "Strong defensive records for both teams in recent matches",
+            "Tactical emphasis on organization and shape over expansive play",
+            "Midfield congestion likely to limit clear-cut chances",
+            "Set-piece defense organized and effective for both sides",
+            "Low stakes or tactical caution leading to a cagey match"
+          ],
+          "win_probability": {
+            "home": 0.3,
+            "draw": 0.4,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948310Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "```json\\n{\"predicted_score\": \"2-1\", \"confidence\": 0.55, \"reasoning\": \"The psychological edge and recent momentum favor DR Congo, but Colombia has shown resilience in high-pressure situations. Expect a competitive match where DR Congo justifies their favoritism with a late goal, but Colombia will push hard for an equalizer.\", \"key_factors\": [\"DR Congo's recent winning mentality and ability to perform under pressure\", \"Away team's resilience in difficult matches, often grinding out results\", \"Key player matchups that could swing the momentum\", \"Home advantage (if applicable) boosting DR Congo's confidence\", \"Tactical adjustments from both coaches as the game progresses\"], \"win_probability\": {\"home\": 0.5, \"draw\": 0.25, \"away\": 0.25}}\\n```",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.55,
+          "reasoning": "The psychological edge and recent momentum favor DR Congo, but Colombia has shown resilience in high-pressure situations. Expect a competitive match where DR Congo justifies their favoritism with a late goal, but Colombia will push hard for an equalizer.",
+          "key_factors": [
+            "DR Congo's recent winning mentality and ability to perform under pressure",
+            "Away team's resilience in difficult matches, often grinding out results",
+            "Key player matchups that could swing the momentum",
+            "Home advantage (if applicable) boosting DR Congo's confidence",
+            "Tactical adjustments from both coaches as the game progresses"
+          ],
+          "win_probability": {
+            "home": 0.5,
+            "draw": 0.25,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948317Z"
+      }
+    },
+    "wc2026-grp-l-4": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "```json\\n{\"predicted_score\": \"2-0\", \"confidence\": 0.8, \"reasoning\": \"Croatia shows superior recent form and squad depth compared to Panama. Key players like [key player] are expected to make the difference. Tactical analysis suggests Croatia will control possession and create more scoring opportunities.\", \"key_factors\": [\"Croatia's superior FIFA ranking and recent tournament performance\", \"Key attacking players from Croatia in good form\", \"Panama's defensive vulnerabilities observed in recent matches\", \"Tactical advantage: Croatia's preferred formation exploits Panama's weakness\", \"Motivation: Croatia needs points to advance from the group\"], \"win_probability\": {\"home\": 0.65, \"draw\": 0.2, \"away\": 0.15}}\\n```",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.8,
+          "reasoning": "Croatia shows superior recent form and squad depth compared to Panama. Key players like [key player] are expected to make the difference. Tactical analysis suggests Croatia will control possession and create more scoring opportunities.",
+          "key_factors": [
+            "Croatia's superior FIFA ranking and recent tournament performance",
+            "Key attacking players from Croatia in good form",
+            "Panama's defensive vulnerabilities observed in recent matches",
+            "Tactical advantage: Croatia's preferred formation exploits Panama's weakness",
+            "Motivation: Croatia needs points to advance from the group"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948324Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "```json\\n{\"predicted_score\": \"1-1\", \"confidence\": 0.55, \"reasoning\": \"Recent form indicates a closely matched contest between Croatia and Panama. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.\", \"key_factors\": [\"Comparable recent results for both teams\", \"Similar defensive records in recent matches\", \"Midfield battle likely to be decisive\", \"Set-piece proficiency could provide edge\", \"Home advantage (if applicable) may play a role\"], \"win_probability\": {\"home\": 0.4, \"draw\": 0.3, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.55,
+          "reasoning": "Recent form indicates a closely matched contest between Croatia and Panama. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.",
+          "key_factors": [
+            "Comparable recent results for both teams",
+            "Similar defensive records in recent matches",
+            "Midfield battle likely to be decisive",
+            "Set-piece proficiency could provide edge",
+            "Home advantage (if applicable) may play a role"
+          ],
+          "win_probability": {
+            "home": 0.4,
+            "draw": 0.3,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948330Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "```json\\n{\"predicted_score\": \"0-1\", \"confidence\": 0.4, \"reasoning\": \"Despite Croatia being the favorite on paper, Panama possesses tactical nuances and motivation that could lead to an upset. Recent performances show Panama has been resilient against stronger opponents, and a specific tactical adjustment could exploit Croatia's weakness.\", \"key_factors\": [\"Panama's underrated tactical flexibility\", \"Recent performances showing Panama can compete with higher-ranked teams\", \"Potential key player absence or form dip for Croatia\", \"Set-piece threat from Panama as a route to goal\", \"Psychological factor: Panama has nothing to lose\"], \"win_probability\": {\"home\": 0.25, \"draw\": 0.25, \"away\": 0.5}}\\n```",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.4,
+          "reasoning": "Despite Croatia being the favorite on paper, Panama possesses tactical nuances and motivation that could lead to an upset. Recent performances show Panama has been resilient against stronger opponents, and a specific tactical adjustment could exploit Croatia's weakness.",
+          "key_factors": [
+            "Panama's underrated tactical flexibility",
+            "Recent performances showing Panama can compete with higher-ranked teams",
+            "Potential key player absence or form dip for Croatia",
+            "Set-piece threat from Panama as a route to goal",
+            "Psychological factor: Panama has nothing to lose"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.25,
+            "away": 0.5
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948336Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "```json\\n{\"predicted_score\": \"3-1\", \"confidence\": 0.7, \"reasoning\": \"Both teams possess potent attacking capabilities, but Croatia's forward line is particularly formidable. Expect an open game with chances at both ends, but Croatia's attacking edge should prevail, leading to a high-scoring outcome.\", \"key_factors\": [\"Croatia's high goals-per-game average in recent matches\", \"Panama's tendency to concede goals when pushing forward\", \"Key attackers from Croatia in prime scoring form\", \"Tactical setup favoring attacking transitions for Croatia\", \"Open game expected due to both teams' attacking philosophies\"], \"win_probability\": {\"home\": 0.6, \"draw\": 0.2, \"away\": 0.2}}\\n```",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.7,
+          "reasoning": "Both teams possess potent attacking capabilities, but Croatia's forward line is particularly formidable. Expect an open game with chances at both ends, but Croatia's attacking edge should prevail, leading to a high-scoring outcome.",
+          "key_factors": [
+            "Croatia's high goals-per-game average in recent matches",
+            "Panama's tendency to concede goals when pushing forward",
+            "Key attackers from Croatia in prime scoring form",
+            "Tactical setup favoring attacking transitions for Croatia",
+            "Open game expected due to both teams' attacking philosophies"
+          ],
+          "win_probability": {
+            "home": 0.6,
+            "draw": 0.2,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948342Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "```json\\n{\"predicted_score\": \"0-0\", \"confidence\": 0.6, \"reasoning\": \"Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.\", \"key_factors\": [\"Strong defensive records for both teams in recent matches\", \"Tactical emphasis on organization and shape over expansive play\", \"Midfield congestion likely to limit clear-cut chances\", \"Set-piece defense organized and effective for both sides\", \"Low stakes or tactical caution leading to a cagey match\"], \"win_probability\": {\"home\": 0.3, \"draw\": 0.4, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "0-0",
+          "confidence": 0.6,
+          "reasoning": "Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.",
+          "key_factors": [
+            "Strong defensive records for both teams in recent matches",
+            "Tactical emphasis on organization and shape over expansive play",
+            "Midfield congestion likely to limit clear-cut chances",
+            "Set-piece defense organized and effective for both sides",
+            "Low stakes or tactical caution leading to a cagey match"
+          ],
+          "win_probability": {
+            "home": 0.3,
+            "draw": 0.4,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948348Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "```json\\n{\"predicted_score\": \"2-1\", \"confidence\": 0.55, \"reasoning\": \"The psychological edge and recent momentum favor Croatia, but Panama has shown resilience in high-pressure situations. Expect a competitive match where Croatia justifies their favoritism with a late goal, but Panama will push hard for an equalizer.\", \"key_factors\": [\"Croatia's recent winning mentality and ability to perform under pressure\", \"Away team's resilience in difficult matches, often grinding out results\", \"Key player matchups that could swing the momentum\", \"Home advantage (if applicable) boosting Croatia's confidence\", \"Tactical adjustments from both coaches as the game progresses\"], \"win_probability\": {\"home\": 0.5, \"draw\": 0.25, \"away\": 0.25}}\\n```",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.55,
+          "reasoning": "The psychological edge and recent momentum favor Croatia, but Panama has shown resilience in high-pressure situations. Expect a competitive match where Croatia justifies their favoritism with a late goal, but Panama will push hard for an equalizer.",
+          "key_factors": [
+            "Croatia's recent winning mentality and ability to perform under pressure",
+            "Away team's resilience in difficult matches, often grinding out results",
+            "Key player matchups that could swing the momentum",
+            "Home advantage (if applicable) boosting Croatia's confidence",
+            "Tactical adjustments from both coaches as the game progresses"
+          ],
+          "win_probability": {
+            "home": 0.5,
+            "draw": 0.25,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948354Z"
+      }
+    },
+    "wc2026-grp-a-5": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "```json\\n{\"predicted_score\": \"2-0\", \"confidence\": 0.8, \"reasoning\": \"South Africa shows superior recent form and squad depth compared to South Korea. Key players like [key player] are expected to make the difference. Tactical analysis suggests South Africa will control possession and create more scoring opportunities.\", \"key_factors\": [\"South Africa's superior FIFA ranking and recent tournament performance\", \"Key attacking players from South Africa in good form\", \"South Korea's defensive vulnerabilities observed in recent matches\", \"Tactical advantage: South Africa's preferred formation exploits South Korea's weakness\", \"Motivation: South Africa needs points to advance from the group\"], \"win_probability\": {\"home\": 0.65, \"draw\": 0.2, \"away\": 0.15}}\\n```",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.8,
+          "reasoning": "South Africa shows superior recent form and squad depth compared to South Korea. Key players like [key player] are expected to make the difference. Tactical analysis suggests South Africa will control possession and create more scoring opportunities.",
+          "key_factors": [
+            "South Africa's superior FIFA ranking and recent tournament performance",
+            "Key attacking players from South Africa in good form",
+            "South Korea's defensive vulnerabilities observed in recent matches",
+            "Tactical advantage: South Africa's preferred formation exploits South Korea's weakness",
+            "Motivation: South Africa needs points to advance from the group"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948360Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "```json\\n{\"predicted_score\": \"1-1\", \"confidence\": 0.55, \"reasoning\": \"Recent form indicates a closely matched contest between South Africa and South Korea. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.\", \"key_factors\": [\"Comparable recent results for both teams\", \"Similar defensive records in recent matches\", \"Midfield battle likely to be decisive\", \"Set-piece proficiency could provide edge\", \"Home advantage (if applicable) may play a role\"], \"win_probability\": {\"home\": 0.4, \"draw\": 0.3, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.55,
+          "reasoning": "Recent form indicates a closely matched contest between South Africa and South Korea. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.",
+          "key_factors": [
+            "Comparable recent results for both teams",
+            "Similar defensive records in recent matches",
+            "Midfield battle likely to be decisive",
+            "Set-piece proficiency could provide edge",
+            "Home advantage (if applicable) may play a role"
+          ],
+          "win_probability": {
+            "home": 0.4,
+            "draw": 0.3,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948367Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "```json\\n{\"predicted_score\": \"0-1\", \"confidence\": 0.4, \"reasoning\": \"Despite South Africa being the favorite on paper, South Korea possesses tactical nuances and motivation that could lead to an upset. Recent performances show South Korea has been resilient against stronger opponents, and a specific tactical adjustment could exploit South Africa's weakness.\", \"key_factors\": [\"South Korea's underrated tactical flexibility\", \"Recent performances showing South Korea can compete with higher-ranked teams\", \"Potential key player absence or form dip for South Africa\", \"Set-piece threat from South Korea as a route to goal\", \"Psychological factor: South Korea has nothing to lose\"], \"win_probability\": {\"home\": 0.25, \"draw\": 0.25, \"away\": 0.5}}\\n```",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.4,
+          "reasoning": "Despite South Africa being the favorite on paper, South Korea possesses tactical nuances and motivation that could lead to an upset. Recent performances show South Korea has been resilient against stronger opponents, and a specific tactical adjustment could exploit South Africa's weakness.",
+          "key_factors": [
+            "South Korea's underrated tactical flexibility",
+            "Recent performances showing South Korea can compete with higher-ranked teams",
+            "Potential key player absence or form dip for South Africa",
+            "Set-piece threat from South Korea as a route to goal",
+            "Psychological factor: South Korea has nothing to lose"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.25,
+            "away": 0.5
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948373Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "```json\\n{\"predicted_score\": \"3-1\", \"confidence\": 0.7, \"reasoning\": \"Both teams possess potent attacking capabilities, but South Africa's forward line is particularly formidable. Expect an open game with chances at both ends, but South Africa's attacking edge should prevail, leading to a high-scoring outcome.\", \"key_factors\": [\"South Africa's high goals-per-game average in recent matches\", \"South Korea's tendency to concede goals when pushing forward\", \"Key attackers from South Africa in prime scoring form\", \"Tactical setup favoring attacking transitions for South Africa\", \"Open game expected due to both teams' attacking philosophies\"], \"win_probability\": {\"home\": 0.6, \"draw\": 0.2, \"away\": 0.2}}\\n```",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.7,
+          "reasoning": "Both teams possess potent attacking capabilities, but South Africa's forward line is particularly formidable. Expect an open game with chances at both ends, but South Africa's attacking edge should prevail, leading to a high-scoring outcome.",
+          "key_factors": [
+            "South Africa's high goals-per-game average in recent matches",
+            "South Korea's tendency to concede goals when pushing forward",
+            "Key attackers from South Africa in prime scoring form",
+            "Tactical setup favoring attacking transitions for South Africa",
+            "Open game expected due to both teams' attacking philosophies"
+          ],
+          "win_probability": {
+            "home": 0.6,
+            "draw": 0.2,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948379Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "```json\\n{\"predicted_score\": \"0-0\", \"confidence\": 0.6, \"reasoning\": \"Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.\", \"key_factors\": [\"Strong defensive records for both teams in recent matches\", \"Tactical emphasis on organization and shape over expansive play\", \"Midfield congestion likely to limit clear-cut chances\", \"Set-piece defense organized and effective for both sides\", \"Low stakes or tactical caution leading to a cagey match\"], \"win_probability\": {\"home\": 0.3, \"draw\": 0.4, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "0-0",
+          "confidence": 0.6,
+          "reasoning": "Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.",
+          "key_factors": [
+            "Strong defensive records for both teams in recent matches",
+            "Tactical emphasis on organization and shape over expansive play",
+            "Midfield congestion likely to limit clear-cut chances",
+            "Set-piece defense organized and effective for both sides",
+            "Low stakes or tactical caution leading to a cagey match"
+          ],
+          "win_probability": {
+            "home": 0.3,
+            "draw": 0.4,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948384Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "```json\\n{\"predicted_score\": \"2-1\", \"confidence\": 0.55, \"reasoning\": \"The psychological edge and recent momentum favor South Africa, but South Korea has shown resilience in high-pressure situations. Expect a competitive match where South Africa justifies their favoritism with a late goal, but South Korea will push hard for an equalizer.\", \"key_factors\": [\"South Africa's recent winning mentality and ability to perform under pressure\", \"Away team's resilience in difficult matches, often grinding out results\", \"Key player matchups that could swing the momentum\", \"Home advantage (if applicable) boosting South Africa's confidence\", \"Tactical adjustments from both coaches as the game progresses\"], \"win_probability\": {\"home\": 0.5, \"draw\": 0.25, \"away\": 0.25}}\\n```",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.55,
+          "reasoning": "The psychological edge and recent momentum favor South Africa, but South Korea has shown resilience in high-pressure situations. Expect a competitive match where South Africa justifies their favoritism with a late goal, but South Korea will push hard for an equalizer.",
+          "key_factors": [
+            "South Africa's recent winning mentality and ability to perform under pressure",
+            "Away team's resilience in difficult matches, often grinding out results",
+            "Key player matchups that could swing the momentum",
+            "Home advantage (if applicable) boosting South Africa's confidence",
+            "Tactical adjustments from both coaches as the game progresses"
+          ],
+          "win_probability": {
+            "home": 0.5,
+            "draw": 0.25,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948390Z"
+      }
+    },
+    "wc2026-grp-a-6": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "```json\\n{\"predicted_score\": \"2-0\", \"confidence\": 0.8, \"reasoning\": \"Czechia shows superior recent form and squad depth compared to Mexico. Key players like [key player] are expected to make the difference. Tactical analysis suggests Czechia will control possession and create more scoring opportunities.\", \"key_factors\": [\"Czechia's superior FIFA ranking and recent tournament performance\", \"Key attacking players from Czechia in good form\", \"Mexico's defensive vulnerabilities observed in recent matches\", \"Tactical advantage: Czechia's preferred formation exploits Mexico's weakness\", \"Motivation: Czechia needs points to advance from the group\"], \"win_probability\": {\"home\": 0.65, \"draw\": 0.2, \"away\": 0.15}}\\n```",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.8,
+          "reasoning": "Czechia shows superior recent form and squad depth compared to Mexico. Key players like [key player] are expected to make the difference. Tactical analysis suggests Czechia will control possession and create more scoring opportunities.",
+          "key_factors": [
+            "Czechia's superior FIFA ranking and recent tournament performance",
+            "Key attacking players from Czechia in good form",
+            "Mexico's defensive vulnerabilities observed in recent matches",
+            "Tactical advantage: Czechia's preferred formation exploits Mexico's weakness",
+            "Motivation: Czechia needs points to advance from the group"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948398Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "```json\\n{\"predicted_score\": \"1-1\", \"confidence\": 0.55, \"reasoning\": \"Recent form indicates a closely matched contest between Czechia and Mexico. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.\", \"key_factors\": [\"Comparable recent results for both teams\", \"Similar defensive records in recent matches\", \"Midfield battle likely to be decisive\", \"Set-piece proficiency could provide edge\", \"Home advantage (if applicable) may play a role\"], \"win_probability\": {\"home\": 0.4, \"draw\": 0.3, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.55,
+          "reasoning": "Recent form indicates a closely matched contest between Czechia and Mexico. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.",
+          "key_factors": [
+            "Comparable recent results for both teams",
+            "Similar defensive records in recent matches",
+            "Midfield battle likely to be decisive",
+            "Set-piece proficiency could provide edge",
+            "Home advantage (if applicable) may play a role"
+          ],
+          "win_probability": {
+            "home": 0.4,
+            "draw": 0.3,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948403Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "```json\\n{\"predicted_score\": \"0-1\", \"confidence\": 0.4, \"reasoning\": \"Despite Czechia being the favorite on paper, Mexico possesses tactical nuances and motivation that could lead to an upset. Recent performances show Mexico has been resilient against stronger opponents, and a specific tactical adjustment could exploit Czechia's weakness.\", \"key_factors\": [\"Mexico's underrated tactical flexibility\", \"Recent performances showing Mexico can compete with higher-ranked teams\", \"Potential key player absence or form dip for Czechia\", \"Set-piece threat from Mexico as a route to goal\", \"Psychological factor: Mexico has nothing to lose\"], \"win_probability\": {\"home\": 0.25, \"draw\": 0.25, \"away\": 0.5}}\\n```",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.4,
+          "reasoning": "Despite Czechia being the favorite on paper, Mexico possesses tactical nuances and motivation that could lead to an upset. Recent performances show Mexico has been resilient against stronger opponents, and a specific tactical adjustment could exploit Czechia's weakness.",
+          "key_factors": [
+            "Mexico's underrated tactical flexibility",
+            "Recent performances showing Mexico can compete with higher-ranked teams",
+            "Potential key player absence or form dip for Czechia",
+            "Set-piece threat from Mexico as a route to goal",
+            "Psychological factor: Mexico has nothing to lose"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.25,
+            "away": 0.5
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948409Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "```json\\n{\"predicted_score\": \"3-1\", \"confidence\": 0.7, \"reasoning\": \"Both teams possess potent attacking capabilities, but Czechia's forward line is particularly formidable. Expect an open game with chances at both ends, but Czechia's attacking edge should prevail, leading to a high-scoring outcome.\", \"key_factors\": [\"Czechia's high goals-per-game average in recent matches\", \"Mexico's tendency to concede goals when pushing forward\", \"Key attackers from Czechia in prime scoring form\", \"Tactical setup favoring attacking transitions for Czechia\", \"Open game expected due to both teams' attacking philosophies\"], \"win_probability\": {\"home\": 0.6, \"draw\": 0.2, \"away\": 0.2}}\\n```",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.7,
+          "reasoning": "Both teams possess potent attacking capabilities, but Czechia's forward line is particularly formidable. Expect an open game with chances at both ends, but Czechia's attacking edge should prevail, leading to a high-scoring outcome.",
+          "key_factors": [
+            "Czechia's high goals-per-game average in recent matches",
+            "Mexico's tendency to concede goals when pushing forward",
+            "Key attackers from Czechia in prime scoring form",
+            "Tactical setup favoring attacking transitions for Czechia",
+            "Open game expected due to both teams' attacking philosophies"
+          ],
+          "win_probability": {
+            "home": 0.6,
+            "draw": 0.2,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948415Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "```json\\n{\"predicted_score\": \"0-0\", \"confidence\": 0.6, \"reasoning\": \"Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.\", \"key_factors\": [\"Strong defensive records for both teams in recent matches\", \"Tactical emphasis on organization and shape over expansive play\", \"Midfield congestion likely to limit clear-cut chances\", \"Set-piece defense organized and effective for both sides\", \"Low stakes or tactical caution leading to a cagey match\"], \"win_probability\": {\"home\": 0.3, \"draw\": 0.4, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "0-0",
+          "confidence": 0.6,
+          "reasoning": "Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.",
+          "key_factors": [
+            "Strong defensive records for both teams in recent matches",
+            "Tactical emphasis on organization and shape over expansive play",
+            "Midfield congestion likely to limit clear-cut chances",
+            "Set-piece defense organized and effective for both sides",
+            "Low stakes or tactical caution leading to a cagey match"
+          ],
+          "win_probability": {
+            "home": 0.3,
+            "draw": 0.4,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948420Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "```json\\n{\"predicted_score\": \"2-1\", \"confidence\": 0.55, \"reasoning\": \"The psychological edge and recent momentum favor Czechia, but Mexico has shown resilience in high-pressure situations. Expect a competitive match where Czechia justifies their favoritism with a late goal, but Mexico will push hard for an equalizer.\", \"key_factors\": [\"Czechia's recent winning mentality and ability to perform under pressure\", \"Away team's resilience in difficult matches, often grinding out results\", \"Key player matchups that could swing the momentum\", \"Home advantage (if applicable) boosting Czechia's confidence\", \"Tactical adjustments from both coaches as the game progresses\"], \"win_probability\": {\"home\": 0.5, \"draw\": 0.25, \"away\": 0.25}}\\n```",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.55,
+          "reasoning": "The psychological edge and recent momentum favor Czechia, but Mexico has shown resilience in high-pressure situations. Expect a competitive match where Czechia justifies their favoritism with a late goal, but Mexico will push hard for an equalizer.",
+          "key_factors": [
+            "Czechia's recent winning mentality and ability to perform under pressure",
+            "Away team's resilience in difficult matches, often grinding out results",
+            "Key player matchups that could swing the momentum",
+            "Home advantage (if applicable) boosting Czechia's confidence",
+            "Tactical adjustments from both coaches as the game progresses"
+          ],
+          "win_probability": {
+            "home": 0.5,
+            "draw": 0.25,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948425Z"
+      }
+    },
+    "wc2026-grp-c-5": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "```json\\n{\"predicted_score\": \"2-0\", \"confidence\": 0.8, \"reasoning\": \"Scotland shows superior recent form and squad depth compared to Brazil. Key players like [key player] are expected to make the difference. Tactical analysis suggests Scotland will control possession and create more scoring opportunities.\", \"key_factors\": [\"Scotland's superior FIFA ranking and recent tournament performance\", \"Key attacking players from Scotland in good form\", \"Brazil's defensive vulnerabilities observed in recent matches\", \"Tactical advantage: Scotland's preferred formation exploits Brazil's weakness\", \"Motivation: Scotland needs points to advance from the group\"], \"win_probability\": {\"home\": 0.65, \"draw\": 0.2, \"away\": 0.15}}\\n```",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.8,
+          "reasoning": "Scotland shows superior recent form and squad depth compared to Brazil. Key players like [key player] are expected to make the difference. Tactical analysis suggests Scotland will control possession and create more scoring opportunities.",
+          "key_factors": [
+            "Scotland's superior FIFA ranking and recent tournament performance",
+            "Key attacking players from Scotland in good form",
+            "Brazil's defensive vulnerabilities observed in recent matches",
+            "Tactical advantage: Scotland's preferred formation exploits Brazil's weakness",
+            "Motivation: Scotland needs points to advance from the group"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948433Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "```json\\n{\"predicted_score\": \"1-1\", \"confidence\": 0.55, \"reasoning\": \"Recent form indicates a closely matched contest between Scotland and Brazil. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.\", \"key_factors\": [\"Comparable recent results for both teams\", \"Similar defensive records in recent matches\", \"Midfield battle likely to be decisive\", \"Set-piece proficiency could provide edge\", \"Home advantage (if applicable) may play a role\"], \"win_probability\": {\"home\": 0.4, \"draw\": 0.3, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.55,
+          "reasoning": "Recent form indicates a closely matched contest between Scotland and Brazil. Both teams have shown similar levels of performance in their last few games, suggesting a draw is likely. However, individual brilliance could tip the balance.",
+          "key_factors": [
+            "Comparable recent results for both teams",
+            "Similar defensive records in recent matches",
+            "Midfield battle likely to be decisive",
+            "Set-piece proficiency could provide edge",
+            "Home advantage (if applicable) may play a role"
+          ],
+          "win_probability": {
+            "home": 0.4,
+            "draw": 0.3,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948438Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "```json\\n{\"predicted_score\": \"0-1\", \"confidence\": 0.4, \"reasoning\": \"Despite Scotland being the favorite on paper, Brazil possesses tactical nuances and motivation that could lead to an upset. Recent performances show Brazil has been resilient against stronger opponents, and a specific tactical adjustment could exploit Scotland's weakness.\", \"key_factors\": [\"Brazil's underrated tactical flexibility\", \"Recent performances showing Brazil can compete with higher-ranked teams\", \"Potential key player absence or form dip for Scotland\", \"Set-piece threat from Brazil as a route to goal\", \"Psychological factor: Brazil has nothing to lose\"], \"win_probability\": {\"home\": 0.25, \"draw\": 0.25, \"away\": 0.5}}\\n```",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.4,
+          "reasoning": "Despite Scotland being the favorite on paper, Brazil possesses tactical nuances and motivation that could lead to an upset. Recent performances show Brazil has been resilient against stronger opponents, and a specific tactical adjustment could exploit Scotland's weakness.",
+          "key_factors": [
+            "Brazil's underrated tactical flexibility",
+            "Recent performances showing Brazil can compete with higher-ranked teams",
+            "Potential key player absence or form dip for Scotland",
+            "Set-piece threat from Brazil as a route to goal",
+            "Psychological factor: Brazil has nothing to lose"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.25,
+            "away": 0.5
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948443Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "```json\\n{\"predicted_score\": \"3-1\", \"confidence\": 0.7, \"reasoning\": \"Both teams possess potent attacking capabilities, but Scotland's forward line is particularly formidable. Expect an open game with chances at both ends, but Scotland's attacking edge should prevail, leading to a high-scoring outcome.\", \"key_factors\": [\"Scotland's high goals-per-game average in recent matches\", \"Brazil's tendency to concede goals when pushing forward\", \"Key attackers from Scotland in prime scoring form\", \"Tactical setup favoring attacking transitions for Scotland\", \"Open game expected due to both teams' attacking philosophies\"], \"win_probability\": {\"home\": 0.6, \"draw\": 0.2, \"away\": 0.2}}\\n```",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.7,
+          "reasoning": "Both teams possess potent attacking capabilities, but Scotland's forward line is particularly formidable. Expect an open game with chances at both ends, but Scotland's attacking edge should prevail, leading to a high-scoring outcome.",
+          "key_factors": [
+            "Scotland's high goals-per-game average in recent matches",
+            "Brazil's tendency to concede goals when pushing forward",
+            "Key attackers from Scotland in prime scoring form",
+            "Tactical setup favoring attacking transitions for Scotland",
+            "Open game expected due to both teams' attacking philosophies"
+          ],
+          "win_probability": {
+            "home": 0.6,
+            "draw": 0.2,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948448Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "```json\\n{\"predicted_score\": \"0-0\", \"confidence\": 0.6, \"reasoning\": \"Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.\", \"key_factors\": [\"Strong defensive records for both teams in recent matches\", \"Tactical emphasis on organization and shape over expansive play\", \"Midfield congestion likely to limit clear-cut chances\", \"Set-piece defense organized and effective for both sides\", \"Low stakes or tactical caution leading to a cagey match\"], \"win_probability\": {\"home\": 0.3, \"draw\": 0.4, \"away\": 0.3}}\\n```",
+        "parsed": {
+          "predicted_score": "0-0",
+          "confidence": 0.6,
+          "reasoning": "Tactical discipline and defensive organization are expected to dominate this matchup. Both teams have shown resilience in defense recently, and the likelihood of a clean sheet is high. Expect a tight, low-scoring affair where few clear chances arise.",
+          "key_factors": [
+            "Strong defensive records for both teams in recent matches",
+            "Tactical emphasis on organization and shape over expansive play",
+            "Midfield congestion likely to limit clear-cut chances",
+            "Set-piece defense organized and effective for both sides",
+            "Low stakes or tactical caution leading to a cagey match"
+          ],
+          "win_probability": {
+            "home": 0.3,
+            "draw": 0.4,
+            "away": 0.3
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948453Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "```json\\n{\"predicted_score\": \"2-1\", \"confidence\": 0.55, \"reasoning\": \"The psychological edge and recent momentum favor Scotland, but Brazil has shown resilience in high-pressure situations. Expect a competitive match where Scotland justifies their favoritism with a late goal, but Brazil will push hard for an equalizer.\", \"key_factors\": [\"Scotland's recent winning mentality and ability to perform under pressure\", \"Away team's resilience in difficult matches, often grinding out results\", \"Key player matchups that could swing the momentum\", \"Home advantage (if applicable) boosting Scotland's confidence\", \"Tactical adjustments from both coaches as the game progresses\"], \"win_probability\": {\"home\": 0.5, \"draw\": 0.25, \"away\": 0.25}}\\n```",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.55,
+          "reasoning": "The psychological edge and recent momentum favor Scotland, but Brazil has shown resilience in high-pressure situations. Expect a competitive match where Scotland justifies their favoritism with a late goal, but Brazil will push hard for an equalizer.",
+          "key_factors": [
+            "Scotland's recent winning mentality and ability to perform under pressure",
+            "Away team's resilience in difficult matches, often grinding out results",
+            "Key player matchups that could swing the momentum",
+            "Home advantage (if applicable) boosting Scotland's confidence",
+            "Tactical adjustments from both coaches as the game progresses"
+          ],
+          "win_probability": {
+            "home": 0.5,
+            "draw": 0.25,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-19T17:02:21.948459Z"
       }
     }
   }
