@@ -159,44 +159,108 @@ td{font-size:.9rem}
 </style>
 """
 
-def page_head(title, desc="World Cup 2026 AI Predictions"):
+def page_head(title, desc="AI-powered World Cup 2026 predictions from 10 AI models — match forecasts, live scores, and AI match reviews", canonical="", schema_type="WebSite", schema_data="", image="https://wc2026.ehabkhedr.com/og-image.jpg"):
+    """Generate HTML head with complete SEO metadata."""
+    safe_title = title.replace('"', '&quot;')
+    safe_desc = desc.replace('"', '&quot;')[:160]
+    site_name = "WC2026 AI Predictions"
+    site_url = "https://wc2026.ehabkhedr.com"
+    
+    # Canonical URL
+    canonical_url = canonical if canonical else site_url
+    if canonical_url and not canonical_url.startswith("http"):
+        canonical_url = site_url + canonical_url
+    
+    # Default schema (WebSite)
+    if not schema_data:
+        from datetime import datetime, timezone
+        schema_data = f'''{{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{site_name}",
+      "url": "{site_url}",
+      "description": "{safe_desc}",
+      "author": {{"@type": "Organization", "name": "EKF Open AI Research", "url": "https://ehabkhedr.com"}},
+      "dateModified": "{datetime.now(timezone.utc).strftime('%Y-%m-%d')}"
+    }}'''
+    
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="{desc}">
-<meta property="og:title" content="{title}">
-<meta property="og:description" content="{desc}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://wc2026.ehabkhedr.com">
 <title>{title}</title>
+<meta name="description" content="{safe_desc}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="googlebot" content="index,follow">
+<meta name="author" content="EKF Open AI Research">
+<link rel="canonical" href="{canonical_url}">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{safe_title}">
+<meta property="og:description" content="{safe_desc}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{canonical_url}">
+<meta property="og:image" content="{image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="World Cup 2026 AI Predictions">
+<meta property="og:site_name" content="{site_name}">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{safe_title}">
+<meta name="twitter:description" content="{safe_desc}">
+<meta name="twitter:image" content="{image}">
+<meta name="twitter:site" content="@ehabkhedr">
+<meta name="twitter:creator" content="@ehabkhedr">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{schema_data}
+</script>
+
+<!-- Preconnect to origins -->
+<link rel="preconnect" href="https://wc2026-eu6.pages.dev">
+<link rel="dns-prefetch" href="https://wc2026-eu6.pages.dev">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+
 {css()}
 </head>
 <body>
 <div class="header"><div class="container">
 <a href="/" class="logo">⚽ WC2026 AI</a>
-<div class="nav">
+<nav class="nav" aria-label="Main navigation">
 <a href="/">Home</a>
 <a href="/matches/">Matches</a>
 <a href="/groups/">Groups</a>
 <a href="/predictions/">Predictions</a>
 <a href="/models/">Models</a>
 <a href="/reviews/">Reviews</a>
-</div>
+</nav>
 </div></div>
 """
 
 def page_footer():
-    return """
-<div class="footer"><div class="container">
-<div class="footer-links">
-<a href="https://redbubble.com/shop/pixelsilkstore" target="_blank">🛍️ Get Match Shirts</a>
-<a href="https://wc2026.ehabkhedr.com">📊 AI Predictions</a>
-<a href="https://ehabkhedr.com">🌐 Ehab Khedr</a>
-</div>
-<p>Powered by 10 AI Models · Built by EKF Open AI Research · © 2026</p>
-</div></div>
+    return """<footer class="footer"><div class="container">
+<nav class="footer-links" aria-label="Footer navigation">
+<a href="/">Home</a>
+<a href="/matches/">Matches</a>
+<a href="/groups/">Groups</a>
+<a href="/predictions/">Predictions</a>
+<a href="/models/">Models</a>
+<a href="/reviews/">Reviews</a>
+<a href="/sitemap.xml" target="_blank">Sitemap</a>
+<a href="/llms.txt" target="_blank">AI Agents</a>
+<a href="https://redbubble.com/shop/pixelsilkstore" target="_blank" rel="noopener">🛍️ Merch</a>
+<a href="https://ehabkhedr.com" target="_blank" rel="noopener">🌐 Ehab Khedr</a>
+</nav>
+<p>Powered by 10 AI Models · Built by <a href="https://ehabkhedr.com">EKF Open AI Research</a> · © 2026 · <a href="https://wc2026.ehabkhedr.com">wc2026.ehabkhedr.com</a></p>
+</div></footer>
 </body></html>
 """
 
@@ -570,6 +634,207 @@ def gen_review_page(m, review, matches_data, predictions_data):
     html += page_footer()
     return html
 
+# ═══════════════════════════════════════════
+# SEO GENERATORS
+# ═══════════════════════════════════════════
+
+def gen_sitemap(matches_data, reviews_data):
+    """Generate sitemap.xml with all pages."""
+    site_url = "https://wc2026.ehabkhedr.com"
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    
+    urls = []
+    # Home
+    urls.append((f"{site_url}/", "daily", "1.0"))
+    # Section indexes
+    urls.append((f"{site_url}/matches/", "daily", "0.9"))
+    urls.append((f"{site_url}/groups/", "daily", "0.8"))
+    urls.append((f"{site_url}/predictions/", "hourly", "0.9"))
+    urls.append((f"{site_url}/models/", "weekly", "0.7"))
+    urls.append((f"{site_url}/reviews/", "daily", "0.9"))
+    
+    # Individual match pages
+    for m in matches_data["matches"]:
+        priority = "0.8" if m["status"] == "live" else ("0.7" if m["status"] == "completed" else "0.6")
+        urls.append((f"{site_url}/matches/{m['id']}.html", "daily", priority))
+    
+    # Review pages
+    for mid in reviews_data.get("reviews", {}):
+        urls.append((f"{site_url}/reviews/{mid}.html", "weekly", "0.7"))
+    
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for url, freq, pri in urls:
+        xml += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>\n'
+    xml += '</urlset>\n'
+    return xml
+
+def gen_robots():
+    """Generate robots.txt."""
+    return """# WC2026 AI Predictions — robots.txt
+# Allow all crawlers, point to sitemap
+
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+# AI crawlers — explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemaps
+Sitemap: https://wc2026.ehabkhedr.com/sitemap.xml
+
+# Crawl-delay — be gentle
+Crawl-delay: 5
+"""
+
+def gen_llms_txt(matches_data, reviews_data):
+    """Generate llms.txt — AI-crawler readable site index in markdown."""
+    site_url = "https://wc2026.ehabkhedr.com"
+    lines = [
+        f"# WC2026 AI Predictions",
+        f"> Real-time World Cup 2026 predictions from 10 AI models — match forecasts, live scores, and AI-driven match reviews.",
+        f"",
+        f"## Site Structure",
+        f"- [Home]({site_url}/): Live scores, upcoming matches, recent results, AI models overview",
+        f"- [Matches]({site_url}/matches/): All 72 group stage matches with predictions",
+        f"- [Groups]({site_url}/groups/): Group standings for all 12 groups (A-L)",
+        f"- [Predictions]({site_url}/predictions/): Browse all AI predictions by match",
+        f"- [Models]({site_url}/models/): The 10 AI models making predictions (6 automated, 4 manual)",
+        f"- [Reviews]({site_url}/reviews/): In-depth AI match reviews with tactical analysis and prediction accuracy",
+        f"",
+        f"## Quick Links",
+    ]
+    
+    # Add individual match links
+    completed = [m for m in matches_data["matches"] if m["status"] == "completed"]
+    upcoming = [m for m in matches_data["matches"] if m["status"] in ("upcoming", "live")]
+    
+    lines.append("### Recent Results")
+    for m in completed[-10:]:
+        lines.append(f"- [{m['home_team']} {m['home_score']}-{m['away_score']} {m['away_team']}]({site_url}/matches/{m['id']}.html) — {m['date']} ({m.get('stadium','')})")
+    
+    lines.append("")
+    lines.append("### Upcoming Matches")
+    for m in upcoming[:10]:
+        lines.append(f"- [{m['home_team']} vs {m['away_team']}]({site_url}/matches/{m['id']}.html) — {m['date']} {m.get('time_et','')} ET ({m.get('stadium','')})")
+    
+    lines.append("")
+    lines.append("### Match Reviews")
+    for mid in list(reviews_data.get("reviews", {}).keys()):
+        lines.append(f"- [Review: {mid}]({site_url}/reviews/{mid}.html)")
+    
+    lines.append("")
+    lines.append("## For AI Agents")
+    lines.append(f"- Full content dump: [{site_url}/llms-full.txt]({site_url}/llms-full.txt)")
+    lines.append(f"- Sitemap: [{site_url}/sitemap.xml]({site_url}/sitemap.xml)")
+    lines.append(f"- Built by EKF Open AI Research · {matches_data['meta'].get('last_updated', '2026')}")
+    
+    return "\n".join(lines)
+
+def gen_llms_full(matches_data, groups_data, predictions_data, reviews_data):
+    """Generate llms-full.txt — complete site content for AI training."""
+    site_url = "https://wc2026.ehabkhedr.com"
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    
+    lines = [
+        f"# WC2026 AI Predictions — Full Content",
+        f"Generated: {today}",
+        f"URL: {site_url}",
+        f"",
+        f"## TOURNAMENT OVERVIEW",
+        f"72 matches · 48 teams · 10 AI models · Group Stage (A-L)",
+        f"",
+    ]
+    
+    # All matches with results
+    lines.append("## ALL MATCHES")
+    for m in matches_data["matches"]:
+        score = f"{m.get('home_score','?')}-{m.get('away_score','?')}" if m["status"] == "completed" else "vs"
+        lines.append(f"{m['id']}: {m['home_team']} {score} {m['away_team']} | {m['date']} | Group {m['group']} | {m['status']} | {m.get('stadium','')}, {m.get('city','')}")
+    
+    # Group standings
+    lines.append("")
+    lines.append("## GROUP STANDINGS")
+    groups = groups_data.get("groups", {})
+    for group_id in sorted(groups.keys()):
+        group = groups[group_id]
+        lines.append(f"\n### Group {group_id}")
+        standings = group.get("standings", group.get("teams", []))
+        for team in standings:
+            name = team.get("name", team.get("team", "?"))
+            lines.append(f"  {team.get('position', team.get('pos', '?'))}. {name} | P:{team.get('played',0)} | W:{team.get('won',0)} | D:{team.get('drawn',0)} | L:{team.get('lost',0)} | GF:{team.get('goals_for',0)} | GA:{team.get('goals_against',0)} | Pts:{team.get('points',0)}")
+    
+    # Models
+    lines.append("")
+    lines.append("## AI MODELS")
+    for model in predictions_data.get("models", []):
+        lines.append(f"- {model['display']} ({model['type']}) — Agent: {model['agent']}")
+    
+    # Reviews
+    lines.append("")
+    lines.append("## MATCH REVIEWS")
+    for mid, review in reviews_data.get("reviews", {}).items():
+        lines.append(f"\\n### {mid}: {review.get('headline', '')}")
+        lines.append(f"{review.get('summary', '')[:500]}")
+        lines.append(f"Rating: {review.get('rating', 'N/A')}")
+    
+    return "\n".join(lines)
+
+def gen_headers():
+    """Generate _headers file for Cloudflare Pages caching rules."""
+    return """# WC2026 AI — Cloudflare Pages Headers
+# Cache static assets aggressively, HTML moderately
+
+/*.html
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=3600
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Cache-Control: public, max-age=3600
+
+/llms-full.txt
+  Cache-Control: public, max-age=3600
+
+/*.json
+  Cache-Control: public, max-age=300
+
+/*.svg
+  Cache-Control: public, max-age=2592000, immutable
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+"""
+
 def main():
     print("Loading data...")
     matches_data, groups_data, predictions_data = load_data()
@@ -608,8 +873,24 @@ def main():
             review_count += 1
     print(f"  Generated {review_count} review pages")
     
+    # ── SEO Files ──
+    print("Generating sitemap.xml...")
+    write_html(os.path.join(OUTPUT_DIR, "sitemap.xml"), gen_sitemap(matches_data, reviews_data))
+    
+    print("Generating robots.txt...")
+    write_html(os.path.join(OUTPUT_DIR, "robots.txt"), gen_robots())
+    
+    print("Generating llms.txt...")
+    write_html(os.path.join(OUTPUT_DIR, "llms.txt"), gen_llms_txt(matches_data, reviews_data))
+    
+    print("Generating llms-full.txt...")
+    write_html(os.path.join(OUTPUT_DIR, "llms-full.txt"), gen_llms_full(matches_data, groups_data, predictions_data, reviews_data))
+    
+    print("Generating _headers...")
+    write_html(os.path.join(OUTPUT_DIR, "_headers"), gen_headers())
+    
     total_pages = 1 + 1 + len(matches_data["matches"]) + 1 + 1 + 1 + 1 + review_count
-    print(f"Done! Generated {total_pages} pages in {OUTPUT_DIR}")
+    print(f"Done! Generated {total_pages} HTML pages + 5 SEO files in {OUTPUT_DIR}")
 
 if __name__ == "__main__":
     main()
