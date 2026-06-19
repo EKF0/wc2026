@@ -924,10 +924,11 @@ def gen_review_schema(m, review):
       }}
     }}'''
 
-def compute_model_accuracy(matches_data, predictions_data):
+def compute_model_accuracy(matches_data, predictions_data, reviews_data):
     models_stats = {}
     models_list = predictions_data.get("models", [])
     predictions = predictions_data.get("predictions", {})
+    reviews = reviews_data.get("reviews", {})
     
     # Initialize
     for model in models_list:
@@ -945,6 +946,7 @@ def compute_model_accuracy(matches_data, predictions_data):
     
     match_map = {m["id"]: m for m in matches_data["matches"]}
     
+    # 1. Parse standard predictions from predictions.json
     for mid, match_preds in predictions.items():
         if mid.startswith("_"):
             continue
@@ -976,7 +978,65 @@ def compute_model_accuracy(matches_data, predictions_data):
                 
             try:
                 pred_h, pred_a = map(int, pred_score_str.split("-"))
-              # If pred_score is parsed incorrectly but we have values
+            except (ValueError, TypeError):
+                continue
+                
+            stats = models_stats[model_id]
+            stats["total_predicted"] += 1
+            
+            # Exact score check
+            if pred_h == act_h and pred_a == act_a:
+                stats["exact_scores"] += 1
+                
+            # Outcome check
+            pred_diff = pred_h - pred_a
+            if pred_diff > 0:
+                pred_outcome = "home"
+            elif pred_diff < 0:
+                pred_outcome = "away"
+            else:
+                pred_outcome = "draw"
+                
+            if pred_outcome == act_outcome:
+                stats["correct_outcome"] += 1
+                
+            # Errors
+            stats["sum_goal_diff_error"] += abs(pred_diff - act_diff)
+            stats["sum_goals_error"] += abs(pred_h - act_h) + abs(pred_a - act_a)
+            
+    # 2. Parse retrospective predictions from reviews.json
+    for mid, review in reviews.items():
+        match = match_map.get(mid)
+        if not match or match["status"] != "completed":
+            continue
+            
+        try:
+            act_h = int(match["home_score"])
+            act_a = int(match["away_score"])
+        except (TypeError, ValueError):
+            continue
+            
+        act_diff = act_h - act_a
+        if act_diff > 0:
+            act_outcome = "home"
+        elif act_diff < 0:
+            act_outcome = "away"
+        else:
+            act_outcome = "draw"
+            
+        retro = review.get("retrospective_predictions") or {}
+        retro_models = retro.get("models") or []
+        for rm in retro_models:
+            model_id = rm.get("model_id")
+            if not model_id or model_id not in models_stats:
+                continue
+                
+            pred_score_str = rm.get("predicted_score")
+            if not pred_score_str or "-" not in pred_score_str:
+                continue
+                
+            try:
+                pred_h, pred_a = map(int, pred_score_str.split("-"))
             except (ValueError, TypeError):
                 continue
                 
@@ -1542,7 +1602,7 @@ def main():
     reviews_data = load_reviews()
     
     print("Computing AI prediction models accuracy leaderboard...")
-    leaderboard = compute_model_accuracy(matches_data, predictions_data)
+    leaderboard = compute_model_accuracy(matches_data, predictions_data, reviews_data)
     
     print("Generating index.html...")
     write_html(os.path.join(OUTPUT_DIR, "index.html"), gen_index(matches_data, groups_data, predictions_data))
