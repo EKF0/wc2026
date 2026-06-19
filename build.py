@@ -349,7 +349,7 @@ def page_footer():
 <a href="/reviews">Reviews</a>
 <a href="/sitemap.xml" target="_blank">Sitemap</a>
 <a href="/llms.txt" target="_blank">AI Agents</a>
-<a href="https://redbubble.com/shop/pixelsilkstore?utm_source=wc2026site&utm_medium=footer" target="_blank" rel="noopener">🛍️ Merch</a>
+<a href="https://pixelsilk.store?utm_source=wc2026site&utm_medium=footer" target="_blank" rel="noopener">🛍️ Merch</a>
 <a href="https://ehabkhedr.com?utm_source=wc2026site&utm_medium=footer" target="_blank" rel="noopener">🌐 Ehab Khedr</a>
 </nav>
 <p>Powered by 10 AI Models · Built by <a href="https://ehabkhedr.com?utm_source=wc2026site&utm_medium=footer">EKF Open AI Research</a> · © 2026 · <a href="https://wc2026.ehabkhedr.com">wc2026.ehabkhedr.com</a></p>
@@ -533,7 +533,7 @@ def gen_match_page(m, predictions_data):
     html += f'''<div class="section" style="text-align:center;background:rgba(20,25,33,0.5);padding:30px;border-radius:12px;border:1px solid #1e2530;margin-top:20px">
     <h3 style="margin-bottom:8px">⚽ Support Your Team</h3>
     <p style="color:#a0a8b0;margin-bottom:20px;font-size:.95rem">Get premium {m["home_team"]} and {m["away_team"]} merchandise on Pixel Silk.</p>
-    <a href="https://redbubble.com/shop/pixelsilkstore?utm_source=wc2026site&utm_medium=match_{m["id"]}" class="btn btn-primary" target="_blank">🛍️ Shop World Cup Merch</a> 
+    <a href="https://pixelsilk.store?utm_source=wc2026site&utm_medium=match_{m["id"]}" class="btn btn-primary" target="_blank">🛍️ Shop World Cup Merch</a> 
     </div>'''
     
     html += '</div>'
