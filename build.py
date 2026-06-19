@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 BASE = os.path.dirname(os.path.abspath(__file__))
 PROJECT = os.path.dirname(BASE)
 DATA_DIR = os.path.join(BASE, "site-data")
-OUTPUT_DIR = os.path.join(PROJECT, "worldcup-site")
+OUTPUT_DIR = os.path.join(BASE, "worldcup-site")
 
 # Theme
 BG = "#0a0e14"
