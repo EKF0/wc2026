@@ -422,7 +422,13 @@ def gen_index(matches_data, groups_data, predictions_data):
     html = page_head("World Cup 2026 AI Predictions", "Real-time AI predictions from 10 models for every World Cup 2026 match", canonical="/", active_nav="home")
     html += '<div class="container">'
     html += '<div class="hero"><h1>World Cup 2026 AI Predictions</h1>'
-    html += f'<p>{len(matches)} matches · 48 teams · 10 AI models · Real-time predictions</p></div>'
+    html += f'<p>{len(matches)} matches · 48 teams · 10 AI models · Real-time predictions</p>'
+    html += '''
+    <div style="text-align:center;margin:30px 0 20px 0">
+        <img src="/og-image.jpg" alt="WC2026 AI Predictions Dashboard" style="max-width:100%;width:750px;border-radius:16px;border:1px solid rgba(0,212,170,0.3);box-shadow:0 15px 30px rgba(0,212,170,0.15);transition:transform 0.3s ease,box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.015)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.25)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 15px 30px rgba(0,212,170,0.15)'" />
+    </div>
+    '''
+    html += '</div>'
     
     if live_matches:
         html += '<div class="section"><h2>🔴 Live Now</h2><div class="grid">'
