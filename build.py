@@ -241,7 +241,7 @@ def gen_breadcrumb_schema(crumbs):
         "itemListElement": [{",".join(items)}]
     }}'''
 
-def page_head(title, desc="AI-powered World Cup 2026 predictions from 10 AI models — match forecasts, live scores, and AI match reviews", canonical="", active_nav="", schema_data="", image="https://wc2026.ehabkhedr.com/og-image.jpg"):
+def page_head(title, desc="AI-powered World Cup 2026 predictions from 10 AI models — match forecasts, live scores, and AI match reviews", canonical="", active_nav="", schema_data="", image="https://wc2026.ehabkhedr.com/og-image.jpg?v=a1b3fca7"):
     """Generate HTML head with complete SEO metadata."""
     safe_title = title.replace('"', '&quot;')
     safe_desc = desc.replace('"', '&quot;')[:160]
@@ -883,12 +883,12 @@ def gen_match_schema(m):
         {{
           "@type": "SportsTeam",
           "name": "{home_team}",
-          "logo": "https://wc2026.ehabkhedr.com/og-image.jpg"
+          "logo": "https://wc2026.ehabkhedr.com/og-image.jpg?v=a1b3fca7"
         }},
         {{
           "@type": "SportsTeam",
           "name": "{away_team}",
-          "logo": "https://wc2026.ehabkhedr.com/og-image.jpg"
+          "logo": "https://wc2026.ehabkhedr.com/og-image.jpg?v=a1b3fca7"
         }}
       ]{score_data}
     }}'''
