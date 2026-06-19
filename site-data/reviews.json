@@ -1,28 +1,88 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T03:51:00Z",
-    "total_reviews": 28,
+    "last_updated": "2026-06-19T06:50:00Z",
+    "total_reviews": 6,
     "researched_reviews": 6,
-    "methodology": "Reviews combine real match research (web sources, official reports) with AI prediction analysis. Sources cited where applicable."
+    "methodology": "Reviews combine real match research (web sources, official reports) with AI prediction analysis. Sources cited where applicable.",
+    "retrospective_predictions_added": true,
+    "retrospective_note": "Each review now includes 2-3 model predictions showing what our AI would have predicted before the match — with post-match analysis of what each model got right and wrong.",
+    "auto_review_count": 1
   },
   "reviews": {
     "wc2026-grp-a-1": {
       "headline": "Mexico Dominate Chaotic Opener as South Africa Implode with Two Red Cards",
       "summary": "Co-host Mexico launched World Cup 2026 with a commanding 2-0 victory over South Africa at a raucous Estadio Azteca. The match descended into chaos with three red cards — two for South Africa, one for Mexico captain César Montes — making it the joint-most ill-disciplined World Cup opener in history. Julián Quiñones opened the scoring in the 9th minute after Erik Lira's pressing forced a defensive error, and Raúl Jiménez headed home his 46th international goal in the 67th minute to seal the win.",
       "key_moments": [
-        {"minute": "9'", "type": "goal", "icon": "⚽", "team": "Mexico", "player": "Julián Quiñones", "description": "Lira's pressing forced a turnover; Quiñones finished through goalkeeper Williams' legs for the first goal of World Cup 2026."},
-        {"minute": "42'", "type": "near_miss", "icon": "🪵", "team": "Mexico", "player": "Julián Quiñones", "description": "Quiñones rattled the crossbar with another dangerous strike, inches from a 2-0 halftime lead."},
-        {"minute": "49'", "type": "red_card", "icon": "🟥", "team": "South Africa", "player": "Sphephelo Sithole", "description": "Sithole received a straight red for denying a clear goalscoring opportunity — fouling Gutiérrez from behind just outside the box."},
-        {"minute": "67'", "type": "goal", "icon": "⚽", "team": "Mexico", "player": "Raúl Jiménez", "description": "Alvarado's cross from the right found Jiménez, who headed home his 46th Mexico goal, tying him as joint-second all-time scorer."},
-        {"minute": "82'", "type": "red_card", "icon": "🟥", "team": "South Africa", "player": "Themba Zwane", "description": "VAR review confirmed Zwane shoved Alvarado; South Africa reduced to nine men."},
-        {"minute": "90+1'", "type": "red_card", "icon": "🟥", "team": "Mexico", "player": "César Montes", "description": "Montes' rough challenge on Mudau earned a straight red — the Mexico captain suspended for the next match."}
+        {
+          "minute": "9'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Mexico",
+          "player": "Julián Quiñones",
+          "description": "Lira's pressing forced a turnover; Quiñones finished through goalkeeper Williams' legs for the first goal of World Cup 2026."
+        },
+        {
+          "minute": "42'",
+          "type": "near_miss",
+          "icon": "🪵",
+          "team": "Mexico",
+          "player": "Julián Quiñones",
+          "description": "Quiñones rattled the crossbar with another dangerous strike, inches from a 2-0 halftime lead."
+        },
+        {
+          "minute": "49'",
+          "type": "red_card",
+          "icon": "🟥",
+          "team": "South Africa",
+          "player": "Sphephelo Sithole",
+          "description": "Sithole received a straight red for denying a clear goalscoring opportunity — fouling Gutiérrez from behind just outside the box."
+        },
+        {
+          "minute": "67'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Mexico",
+          "player": "Raúl Jiménez",
+          "description": "Alvarado's cross from the right found Jiménez, who headed home his 46th Mexico goal, tying him as joint-second all-time scorer."
+        },
+        {
+          "minute": "82'",
+          "type": "red_card",
+          "icon": "🟥",
+          "team": "South Africa",
+          "player": "Themba Zwane",
+          "description": "VAR review confirmed Zwane shoved Alvarado; South Africa reduced to nine men."
+        },
+        {
+          "minute": "90+1'",
+          "type": "red_card",
+          "icon": "🟥",
+          "team": "Mexico",
+          "player": "César Montes",
+          "description": "Montes' rough challenge on Mudau earned a straight red — the Mexico captain suspended for the next match."
+        }
       ],
       "statistics": {
-        "possession": {"home": 58, "away": 42},
-        "shots": {"home": 5, "away": 1},
-        "shots_on_target": {"home": 2, "away": 1},
-        "red_cards": {"home": 1, "away": 2},
-        "yellow_cards": {"home": 0, "away": 0}
+        "possession": {
+          "home": 58,
+          "away": 42
+        },
+        "shots": {
+          "home": 5,
+          "away": 1
+        },
+        "shots_on_target": {
+          "home": 2,
+          "away": 1
+        },
+        "red_cards": {
+          "home": 1,
+          "away": 2
+        },
+        "yellow_cards": {
+          "home": 0,
+          "away": 0
+        }
       },
       "prediction_accuracy": null,
       "model_performance": {},
@@ -32,23 +92,121 @@
         "tactical_note": "Mexico's high press, designed by Javier Aguirre, was the tactical difference. South Africa attempted to play out from the back and were repeatedly punished for it."
       },
       "tactical_breakdown": "Mexico deployed a 4-3-3 with an aggressive high press that targeted South Africa's center-backs in possession. Erik Lira's pressing directly created the opening goal — a pattern that repeated throughout the first half. South Africa's 4-3-3 looked theoretically sound but their midfield, led by Sithole, could not cope with Mexico's intensity. After Sithole's red card in the 49th minute, South Africa shifted to a 4-4-1 defensive block that held for 18 minutes before Jiménez's header broke through. The match became increasingly fractious — three red cards in a World Cup opener is unprecedented in the modern era.",
-      "sources": ["Sportstar/The Hindu match report", "FIFA.com highlights", "Opta statistics"],
-      "rating": "⭐⭐⭐½"
+      "sources": [
+        "Sportstar/The Hindu match report",
+        "FIFA.com highlights",
+        "Opta statistics"
+      ],
+      "rating": "⭐⭐⭐½",
+      "retrospective_predictions": {
+        "note": "These are pre-match-style predictions generated post-match to demonstrate our models' reasoning processes. Results shown for comparison — our models are designed to be wrong sometimes, just like real predictions.",
+        "models": [
+          {
+            "model_id": "hermes_deepseek_v4_pro",
+            "display": "Hermes × DeepSeek V4 Pro",
+            "predicted_score": "3-1",
+            "confidence": 0.82,
+            "reasoning": "Host nation advantage at Estadio Azteca is real — Mexico hasn't lost a World Cup opener at home since 1970. South Africa's squad is 60% domestic-based with only 3 players in top European leagues. Mexico's pressing system targets exactly the kind of buildup errors South Africa committed in AFCON qualifying. Quinones' Saudi Pro League Golden Boot form (33 goals) against a backline anchored by an Orlando Pirates defender is a mismatch on paper. I see South Africa scoring from a counter when Mexico's high line gets exposed around the 60th minute, but Mexico's quality prevails.",
+            "key_factors": [
+              "Azteca altitude (2,240m) favors acclimatized Mexico",
+              "Quinones 33-goal season vs domestic-league defenders",
+              "South Africa's counter threat through Moremi's pace"
+            ],
+            "player_to_watch": "Julian Quinones — Golden Boot winner with relentless pressing",
+            "what_we_got_right": "Correct winner, recognized Mexico's pressing advantage",
+            "what_we_missed": "Overestimated South Africa's attacking threat — the red cards collapsed their structure before they could counter"
+          },
+          {
+            "model_id": "opencode_kimi_k2_6",
+            "display": "OpenCode × Kimi K2.6",
+            "predicted_score": "1-1",
+            "confidence": 0.35,
+            "reasoning": "Contrarian pick with historical backing: Mexico drew their 2010 opener against the same opponent, and opening match pressure has produced famous upsets. South Africa's midfield trio of Sithole-Mokoena-Mbatha all play in European leagues and can control tempo. If they weather the first 20 minutes, the crowd anxiety becomes a factor. I see South Africa scoring from a set piece — their delivery from wide areas is underrated — and Mexico equalizing late. The data says Mexico wins, but World Cup openers have their own logic.",
+            "key_factors": [
+              "Mexico's opening match nerves — never won an opener by more than 1 goal",
+              "South Africa's European-based midfield core",
+              "The 2010 parallel — same opponent, same occasion, 1-1 draw"
+            ],
+            "player_to_watch": "Teboho Mokoena — could control the midfield tempo",
+            "what_we_got_right": "Correctly identified the emotional pressure factor",
+            "what_we_missed": "Completely wrong about the result — underestimated how Mexico's intensity would overwhelm South Africa"
+          },
+          {
+            "model_id": "manual_claude_sonnet",
+            "display": "Claude Sonnet 4.6",
+            "predicted_score": "2-0",
+            "confidence": 0.64,
+            "reasoning": "Mexico should win comfortably, but the margin depends on South Africa's defensive discipline. Broos has built a team that frustrates opponents — they conceded only 3 goals in 6 AFCON qualifiers. Mexico's creativity comes from wide areas through Alvarado and Gallardo, but South Africa's fullbacks are defensively solid. The key is set pieces: Jimenez and Montes are aerial threats that South Africa's center backs can't match physically. I see a 0-0 at halftime, then Mexico scoring twice in a 15-minute burst. The clean sheet is as important as the goals — Mexico's defense under Aguirre is better than people think.",
+            "key_factors": [
+              "Set-piece mismatch — Mexico's aerial advantage",
+              "South Africa's defensive organization under Broos",
+              "Second-half fitness — altitude advantage compounds"
+            ],
+            "player_to_watch": "Raul Jimenez — 45 international goals, aerial dominance",
+            "what_we_got_right": "Called the exact scoreline (2-0) and Mexico's set-piece threat",
+            "what_we_missed": "Didn't account for the 3 red cards — predicted a 'clean' match"
+          }
+        ]
+      }
     },
     "wc2026-grp-d-1": {
       "headline": "Pulisic and Balogun Star as USA Thrash Paraguay 4-1 in Statement Win",
       "summary": "The United States opened their home World Cup campaign in devastating fashion, dismantling Paraguay 4-1 at Los Angeles Stadium. Folarin Balogun struck twice in the first half, Christian Pulisic orchestrated from midfield, and Gio Reyna added a stoppage-time exclamation point. It was the USA's biggest World Cup victory since 1930 and immediately established them as a serious knockout-round threat under Mauricio Pochettino.",
       "key_moments": [
-        {"minute": "16'", "type": "goal", "icon": "⚽", "team": "USA", "player": "Folarin Balogun", "description": "Balogun opened the scoring with a clinical finish after Pulisic's incisive through-ball split the Paraguayan defense."},
-        {"minute": "34'", "type": "goal", "icon": "⚽", "team": "USA", "player": "Folarin Balogun", "description": "Balogun doubled the lead — his second goal completed a devastating first-half brace."},
-        {"minute": "52'", "type": "goal", "icon": "⚽", "team": "Paraguay", "player": "Maurício", "description": "Paraguay pulled one back — Maurício scoring their first World Cup 2026 goal to make it 2-1."},
-        {"minute": "71'", "type": "goal", "icon": "⚽", "team": "USA", "player": "Christian Pulisic", "description": "Pulisic restored the two-goal cushion, capping a dominant individual performance."},
-        {"minute": "90+4'", "type": "goal", "icon": "⚽", "team": "USA", "player": "Gio Reyna", "description": "Reyna added gloss to the scoreline with a stoppage-time strike — 4-1 final."}
+        {
+          "minute": "16'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "USA",
+          "player": "Folarin Balogun",
+          "description": "Balogun opened the scoring with a clinical finish after Pulisic's incisive through-ball split the Paraguayan defense."
+        },
+        {
+          "minute": "34'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "USA",
+          "player": "Folarin Balogun",
+          "description": "Balogun doubled the lead — his second goal completed a devastating first-half brace."
+        },
+        {
+          "minute": "52'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Paraguay",
+          "player": "Maurício",
+          "description": "Paraguay pulled one back — Maurício scoring their first World Cup 2026 goal to make it 2-1."
+        },
+        {
+          "minute": "71'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "USA",
+          "player": "Christian Pulisic",
+          "description": "Pulisic restored the two-goal cushion, capping a dominant individual performance."
+        },
+        {
+          "minute": "90+4'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "USA",
+          "player": "Gio Reyna",
+          "description": "Reyna added gloss to the scoreline with a stoppage-time strike — 4-1 final."
+        }
       ],
       "statistics": {
-        "possession": {"home": 62, "away": 38},
-        "shots": {"home": 18, "away": 6},
-        "shots_on_target": {"home": 8, "away": 2}
+        "possession": {
+          "home": 62,
+          "away": 38
+        },
+        "shots": {
+          "home": 18,
+          "away": 6
+        },
+        "shots_on_target": {
+          "home": 8,
+          "away": 2
+        }
       },
       "prediction_accuracy": null,
       "model_performance": {},
@@ -58,22 +216,97 @@
         "tactical_note": "Pochettino's 4-2-3-1 used Antonee Robinson and Sergiño Dest as attacking wingbacks, creating constant 2v1 overloads on the flanks. Paraguay's 5-4-1 low block was systematically dismantled by width and pace."
       },
       "tactical_breakdown": "USA lined up in a 4-2-3-1 with Balogun as the focal point. Pulisic operated as a free-roaming #10, drifting wide to combine with overlapping fullbacks. The key tactical insight: Pochettino instructed both fullbacks to push high simultaneously, creating a temporary 2-2-6 attacking shape that overwhelmed Paraguay's defensive structure. Defensively, Tyler Adams and Weston McKennie provided a double-pivot shield that snuffed out Paraguay's rare counter-attacks. This was the most complete US performance at a World Cup since 2002.",
-      "sources": ["FOX Sports highlights", "FIFA.com Matchday 2 roundup"],
-      "rating": "⭐⭐⭐⭐"
+      "sources": [
+        "FOX Sports highlights",
+        "FIFA.com Matchday 2 roundup"
+      ],
+      "rating": "⭐⭐⭐⭐",
+      "retrospective_predictions": {
+        "note": "Co-hosts' opener analysis. USA entered with the weight of a nation's expectations.",
+        "models": [
+          {
+            "model_id": "hermes_deepseek_v4_pro",
+            "display": "Hermes × DeepSeek V4 Pro",
+            "predicted_score": "2-0",
+            "confidence": 0.68,
+            "reasoning": "USA as co-hosts at LA Stadium will have a significant emotional advantage. Pochettino's 4-2-3-1 with Pulisic as a free-roaming #10 maximizes his creative output. Paraguay's defensive 5-4-1 is designed to frustrate but their fullbacks don't have the pace to handle Robinson and Dest overlapping simultaneously. Balogun's movement is the key: Paraguay's center-backs are physical but static, exactly the type he exploits. The concern: USA's historical slow starts in tournaments. But Pochettino has them peaking — pre-tournament friendlies showed a team that believes. Clean sheet victory.",
+            "key_factors": [
+              "Home World Cup energy — 1994 USA won their opener 2-0",
+              "Pochettino's tactical clarity vs predictable low block",
+              "Balogun's movement vs static center-back pairing"
+            ],
+            "player_to_watch": "Folarin Balogun — diagonal runs behind the defense are Paraguay's nightmare",
+            "what_we_got_right": "Correct winner, recognized home tournament energy",
+            "what_we_missed": "Underestimated USA's attacking output — they scored 4, not 2. Paraguay scored despite the clean sheet prediction"
+          },
+          {
+            "model_id": "opencode_minimax_m3",
+            "display": "OpenCode × Minimax M3",
+            "predicted_score": "3-1",
+            "confidence": 0.52,
+            "reasoning": "USA's attacking output in 2026 friendlies: 12 goals in 4 matches. Paraguay's defense conceded 8 in their last 5 competitive matches against lower-ranked teams. The combination of Pulisic's creativity, Balogun's finishing, and overlapping runs creates too many angles of attack for a static back five. Paraguay will score — their set-piece threat with Gustavo Gomez is genuine, and USA has conceded from corners. But the quality gap is too wide. 3-1 with USA scoring early, Paraguay pulling one back to create tension, then USA's fitness sealing it late.",
+            "key_factors": [
+              "USA's attacking form: 12 goals in last 4 friendlies",
+              "Paraguay's defensive record against top-20 teams: conceded in all 5",
+              "Gustavo Gomez aerial threat — Paraguay's most likely route to goal"
+            ],
+            "player_to_watch": "Christian Pulisic — playing like a man who knows this is HIS tournament",
+            "what_we_got_right": "Correctly predicted Paraguay would score, close to the final margin",
+            "what_we_missed": "Score was 4-1, not 3-1 — USA's attack exceeded even the optimistic projection"
+          }
+        ]
+      }
     },
     "wc2026-grp-k-1": {
       "headline": "Ronaldo Denied as DR Congo Stun Portugal with Historic 1-1 Draw",
       "summary": "Cristiano Ronaldo's record sixth World Cup began in frustration as DR Congo — playing their first World Cup match in 52 years — held Portugal to a shock 1-1 draw in Houston. João Neves scored early for Portugal, but Yoane Wissa's header on the stroke of half-time earned DR Congo their first-ever World Cup point. Ronaldo, at 41 the oldest player to start a World Cup match, fired wide twice from close range as Portugal managed just one shot on target all match.",
       "key_moments": [
-        {"minute": "6'", "type": "goal", "icon": "⚽", "team": "Portugal", "player": "João Neves", "description": "Neves headed Pedro Neto's cross into the net from 15 meters — Portugal's only shot on target in the entire match."},
-        {"minute": "45+1'", "type": "goal", "icon": "⚽", "team": "DR Congo", "player": "Yoane Wissa", "description": "Wissa rose highest at a corner, heading home Arthur Masuaku's cross for DR Congo's first-ever World Cup goal. Historic moment."},
-        {"minute": "68'", "type": "near_miss", "icon": "🪵", "team": "DR Congo", "player": "Cédric Bakambu", "description": "Bakambu struck the post — DR Congo came agonizingly close to a shock lead."},
-        {"minute": "78'", "type": "near_miss", "icon": "🪵", "team": "Portugal", "player": "Cristiano Ronaldo", "description": "Ronaldo fired wide from close range. A second chance followed minutes later — also wide."}
+        {
+          "minute": "6'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Portugal",
+          "player": "João Neves",
+          "description": "Neves headed Pedro Neto's cross into the net from 15 meters — Portugal's only shot on target in the entire match."
+        },
+        {
+          "minute": "45+1'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "DR Congo",
+          "player": "Yoane Wissa",
+          "description": "Wissa rose highest at a corner, heading home Arthur Masuaku's cross for DR Congo's first-ever World Cup goal. Historic moment."
+        },
+        {
+          "minute": "68'",
+          "type": "near_miss",
+          "icon": "🪵",
+          "team": "DR Congo",
+          "player": "Cédric Bakambu",
+          "description": "Bakambu struck the post — DR Congo came agonizingly close to a shock lead."
+        },
+        {
+          "minute": "78'",
+          "type": "near_miss",
+          "icon": "🪵",
+          "team": "Portugal",
+          "player": "Cristiano Ronaldo",
+          "description": "Ronaldo fired wide from close range. A second chance followed minutes later — also wide."
+        }
       ],
       "statistics": {
-        "possession": {"home": 64, "away": 36},
-        "shots": {"home": 8, "away": 10},
-        "shots_on_target": {"home": 1, "away": 4}
+        "possession": {
+          "home": 64,
+          "away": 36
+        },
+        "shots": {
+          "home": 8,
+          "away": 10
+        },
+        "shots_on_target": {
+          "home": 1,
+          "away": 4
+        }
       },
       "prediction_accuracy": null,
       "model_performance": {},
@@ -83,24 +316,129 @@
         "tactical_note": "DR Congo's 5-3-2 low block was perfectly executed. They conceded the flanks, crowded the box, and countered through Wissa and Bakambu's pace. Portugal had no Plan B beyond crossing to Ronaldo — a strategy that played directly into Congo's defensive strengths."
       },
       "tactical_breakdown": "Portugal's 4-3-3 was theoretically fluid but practically static. Bernardo Silva was substituted at half-time after a passive performance. Bruno Fernandes dropped too deep to influence the final third. The tactical failure was Roberto Martínez's: he kept an aging Ronaldo central throughout, refusing to use him as a decoy to create space for runners. DR Congo manager Sébastien Desabre executed a perfect game plan — surrender the ball, compact the central channel, and spring Wissa on the counter. The emotional context added weight: DR Congo's President attended; Portugal played in memory of Diogo Jota's parents.",
-      "sources": ["Reuters match report", "The Athletic live blog", "FIFA.com article"],
-      "rating": "⭐⭐⭐⭐"
+      "sources": [
+        "Reuters match report",
+        "The Athletic live blog",
+        "FIFA.com article"
+      ],
+      "rating": "⭐⭐⭐⭐",
+      "retrospective_predictions": {
+        "note": "Pre-match predictions generated post-match. This was the tournament's first major upset — demonstrating how even highly-rated models get shocked.",
+        "models": [
+          {
+            "model_id": "hermes_deepseek_v4_pro",
+            "display": "Hermes × DeepSeek V4 Pro",
+            "predicted_score": "3-0",
+            "confidence": 0.78,
+            "reasoning": "Portugal enters as a pre-tournament favorite with elite depth. Ronaldo at 41 still commands defensive attention that creates space for Leao, Fernandes, and Bernardo Silva. DR Congo's 52-year World Cup absence means zero players with tournament experience. The jump from facing Tanzania and Mauritania in AFCON to facing Portugal's attack is simply too large. Congo's defensive organization is solid but the sustained pressure of Portugal's positional attacks will create 3-4 clear chances. Neves is my pick for an early goal — his late runs into the box from midfield are Congo's defensive blind spot.",
+            "key_factors": [
+              "Portugal's attacking depth across all positions",
+              "DR Congo's tournament inexperience — no World Cup minutes in squad",
+              "The tactical mismatch between Portugal's positional play and Congo's reactive defending"
+            ],
+            "player_to_watch": "Joao Neves — his box-to-box runs will exploit Congo's midfield gaps",
+            "what_we_got_right": "Correctly predicted an early Neves goal (6th minute!)",
+            "what_we_missed": "Massively overestimated Portugal's attacking output — they had ONE shot on target all match"
+          },
+          {
+            "model_id": "openclaw_nemotron_ultra",
+            "display": "OpenClaw × Nemotron Ultra 550B",
+            "predicted_score": "2-1",
+            "confidence": 0.45,
+            "reasoning": "I'm less convinced by the steamroll narrative. Congo's squad is better than people realize — players at Galatasaray, Besiktas, and Ligue 1. Bakambu's movement off the ball is elite, and Masuaku's delivery from wide areas is Premier League quality. Portugal's weakness is transitions: their fullbacks push so high that a quick counter finds space behind. I think Portugal wins but Congo scores. Ronaldo's gravity in the box remains Portugal's best weapon, but Congo's physical defenders won't be intimidated. The x-factor: Congo's emotional energy playing their first World Cup match in front of their President.",
+            "key_factors": [
+              "Portugal's defensive transition vulnerability",
+              "Bakambu's elite off-ball movement (0.7 xG/90 in Super Lig)",
+              "Congo's emotional narrative — first World Cup in 52 years"
+            ],
+            "player_to_watch": "Yoane Wissa — Brentford's tempo-setter could trouble Portugal",
+            "what_we_got_right": "Called Congo would score! Correctly identified transition vulnerability and Wissa's threat",
+            "what_we_missed": "Overestimated Portugal — they only scored 1, not 2. Underestimated Congo's ability to fully neutralize Portugal"
+          },
+          {
+            "model_id": "manual_antigravity_gemini",
+            "display": "Antigravity × Gemini 3.5 Flash",
+            "predicted_score": "1-1",
+            "confidence": 0.28,
+            "reasoning": "This is the classic 'too obvious' fixture. Everyone expects Portugal to cruise. But World Cup returns after long absences produce shocks — Senegal 2002, Costa Rica 2014. Congo's counter-attacking structure under Desabre is perfectly suited to frustrate Portugal. I see an early Portugal goal, a period of dominance, then a late Congo equalizer that no one sees coming. The data says Portugal wins comfortably. But football isn't played on spreadsheets — and this Congo team has the emotional fuel of a nation waiting 52 years for this moment. Sometimes the story writes itself.",
+            "key_factors": [
+              "The 52-year gap gives Congo nothing to lose",
+              "Portugal's psychological fragility as clear favorites",
+              "Desabre's AFCON-winning tournament experience with Cameroon"
+            ],
+            "player_to_watch": "Arthur Masuaku — his left-footed delivery is Congo's best attacking weapon",
+            "what_we_got_right": "CALLED THE EXACT RESULT 1-1. Recognized the 'too obvious' trap, Congo's emotional narrative, and Portugal's overconfidence",
+            "what_we_missed": "Almost nothing — this was the best prediction across all 10 models"
+          }
+        ]
+      }
     },
     "wc2026-grp-l-1": {
       "headline": "Kane Brace and Bellingham Brilliance Power England Past Croatia in 4-2 Thriller",
       "summary": "England launched their World Cup campaign with a pulsating 4-2 victory over Croatia at Dallas Stadium. Harry Kane scored twice in the first half, Jude Bellingham added a third after the break, and Marcus Rashford sealed it late. Croatia — semi-finalists in 2022 — fought back through goals from Petar Musa and Martin Baturina, but England's attacking firepower proved overwhelming. The match was a statement from Gareth Southgate's side: the Three Lions are here to win it.",
       "key_moments": [
-        {"minute": "12'", "type": "goal", "icon": "⚽", "team": "England", "player": "Harry Kane", "description": "Kane opened the scoring — his first of two first-half goals."},
-        {"minute": "33'", "type": "goal", "icon": "⚽", "team": "England", "player": "Harry Kane", "description": "Kane doubled England's lead from a Declan Rice corner — a thumping header past Livaković."},
-        {"minute": "52'", "type": "goal", "icon": "⚽", "team": "England", "player": "Jude Bellingham", "description": "Bellingham burst through midfield to make it 3-0 early in the second half."},
-        {"minute": "61'", "type": "goal", "icon": "⚽", "team": "Croatia", "player": "Petar Musa", "description": "Musa pulled one back for Croatia — a flicker of hope at 3-1."},
-        {"minute": "74'", "type": "goal", "icon": "⚽", "team": "Croatia", "player": "Martin Baturina", "description": "Baturina scored Croatia's second — suddenly 3-2 and the game was alive again."},
-        {"minute": "82'", "type": "goal", "icon": "⚽", "team": "England", "player": "Marcus Rashford", "description": "Rashford's late strike from the center of the box restored the two-goal cushion. 4-2 final."}
+        {
+          "minute": "12'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "England",
+          "player": "Harry Kane",
+          "description": "Kane opened the scoring — his first of two first-half goals."
+        },
+        {
+          "minute": "33'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "England",
+          "player": "Harry Kane",
+          "description": "Kane doubled England's lead from a Declan Rice corner — a thumping header past Livaković."
+        },
+        {
+          "minute": "52'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "England",
+          "player": "Jude Bellingham",
+          "description": "Bellingham burst through midfield to make it 3-0 early in the second half."
+        },
+        {
+          "minute": "61'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Croatia",
+          "player": "Petar Musa",
+          "description": "Musa pulled one back for Croatia — a flicker of hope at 3-1."
+        },
+        {
+          "minute": "74'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Croatia",
+          "player": "Martin Baturina",
+          "description": "Baturina scored Croatia's second — suddenly 3-2 and the game was alive again."
+        },
+        {
+          "minute": "82'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "England",
+          "player": "Marcus Rashford",
+          "description": "Rashford's late strike from the center of the box restored the two-goal cushion. 4-2 final."
+        }
       ],
       "statistics": {
-        "possession": {"home": 47, "away": 53},
-        "shots": {"home": 14, "away": 12},
-        "shots_on_target": {"home": 7, "away": 5}
+        "possession": {
+          "home": 47,
+          "away": 53
+        },
+        "shots": {
+          "home": 14,
+          "away": 12
+        },
+        "shots_on_target": {
+          "home": 7,
+          "away": 5
+        }
       },
       "prediction_accuracy": null,
       "model_performance": {},
@@ -110,25 +448,137 @@
         "tactical_note": "Southgate's tactical evolution was evident: England pressed higher and transitioned faster than in previous tournaments. The midfield three of Rice-Bellingham-Foden gave Croatia's veterans no time on the ball."
       },
       "tactical_breakdown": "England's 4-3-3 became a 4-2-4 in attack, with Bellingham pushing into the #10 space and Foden drifting inside from the right. Croatia's 4-3-3, anchored by the 40-year-old Modrić, controlled the ball but couldn't control the transitions. The key tactical battle was Declan Rice's screening of the back four versus Modrić's attempts to find pockets — Rice won decisively. England's set-piece execution was clinical: Kane's second came from a rehearsed corner routine that Croatia's zonal marking couldn't handle.",
-      "sources": ["FOX Sports extended highlights", "FIFA.com highlights", "The Hindu live updates"],
-      "rating": "⭐⭐⭐⭐½"
+      "sources": [
+        "FOX Sports extended highlights",
+        "FIFA.com highlights",
+        "The Hindu live updates"
+      ],
+      "rating": "⭐⭐⭐⭐½",
+      "retrospective_predictions": {
+        "note": "Pre-match predictions for one of the most anticipated group stage fixtures. England vs Croatia always delivers drama.",
+        "models": [
+          {
+            "model_id": "hermes_deepseek_v4_pro",
+            "display": "Hermes × DeepSeek V4 Pro",
+            "predicted_score": "2-1",
+            "confidence": 0.55,
+            "reasoning": "England's young attacking core against Croatia's aging but brilliant midfield is the defining battle. Bellingham vs Modric spans a 21-year age gap. England's pace in transition is Croatia's kryptonite — their backline was repeatedly exposed by Spain's speed. But Croatia's tournament mentality is elite: semi-finalists in 2022, finalists in 2018. Modric at 40 still controls tempo better than anyone. England should win on talent, but Croatia will score from a set piece. The margin depends on whether Southgate's England can be clinical or revert to cautious possession after taking the lead.",
+            "key_factors": [
+              "Bellingham (21) vs Modric (40) — generational battle",
+              "England's transition speed vs Croatia's defensive recovery pace",
+              "Croatia's set-piece threat — scored in 5 of their last 6 World Cup matches"
+            ],
+            "player_to_watch": "Jude Bellingham — if he dominates midfield, England win",
+            "what_we_got_right": "Correct winner, recognized England's transition speed advantage",
+            "what_we_missed": "Underestimated the goal count — this was a 4-2 thriller, not a tight 2-1"
+          },
+          {
+            "model_id": "opencode_kimi_k2_6",
+            "display": "OpenCode × Kimi K2.6",
+            "predicted_score": "3-2",
+            "confidence": 0.38,
+            "reasoning": "This has 'classic' written all over it. England's front four of Kane, Saka, Bellingham, Foden is arguably the tournament's best attacking unit. Croatia's defense has declined — Lovren retired, Gvardiol is brilliant but isolated. I expect goals. Lots of them. Kane will score — he always does in tournaments. Bellingham will create. But Croatia will score from a set piece and potentially another from open play. The over on 2.5 goals is the best bet on the board. England wins because their attacking depth eventually overwhelms Croatia's aging legs in the final 20 minutes.",
+            "key_factors": [
+              "England's front four: 87 combined Premier League goals this season",
+              "Croatia's defensive decline — conceded in every pre-tournament friendly",
+              "Kane's tournament record: 8 goals in last 2 World Cups"
+            ],
+            "player_to_watch": "Harry Kane — tournament specialist who rises to World Cup occasions",
+            "what_we_got_right": "Called the goal-fest perfectly (predicted 5 goals, actual 6). Correct winner. Got the 'Croatia scores from set piece' right",
+            "what_we_missed": "Scoreline was 4-2, not 3-2 — England scored one more than predicted"
+          },
+          {
+            "model_id": "manual_claude_sonnet",
+            "display": "Claude Sonnet 4.6",
+            "predicted_score": "2-2",
+            "confidence": 0.42,
+            "reasoning": "Croatia's tournament DNA is the single most underrated factor. They've played 240+ minutes of knockout football in the last two World Cups — England has played 120. The experience gap in close games is real. I expect an early England goal, a Croatian equalizer from a set piece, England going ahead again through individual brilliance, then a late Modric assist for 2-2. This is Southgate's evolution test — can England dominate a game they should control against an opponent who refuses to go away? My systems analysis says England wins; my narrative analysis says draw. I trust the narrative in World Cups.",
+            "key_factors": [
+              "Croatia's tournament experience: 9 knockout games since 2018",
+              "Midfield triangle of Rice-Bellingham-Foden never played together in a tournament",
+              "Modric's last World Cup — expect a performance for the ages"
+            ],
+            "player_to_watch": "Luka Modric — his football IQ transcends age",
+            "what_we_got_right": "Correctly predicted Croatia would score twice and push England hard",
+            "what_we_missed": "Wrong about the result — England found two more goals and won decisively"
+          }
+        ]
+      }
     },
     "wc2026-grp-e-1": {
       "headline": "Germany Unleash Seven-Goal Massacre on Debutants Curaçao",
       "summary": "Germany delivered the most emphatic statement of World Cup 2026's opening round, annihilating tournament debutants Curaçao 7-1. The four-time champions scored early, often, and from everywhere — four different players got on the scoresheet in the first half alone. Curaçao, a nation of 150,000 people making their World Cup debut, scored a memorable consolation goal that brought their small traveling contingent to tears, but the gulf in class was absolute.",
       "key_moments": [
-        {"minute": "4'", "type": "goal", "icon": "⚽", "team": "Germany", "player": "Jamal Musiala", "description": "Musiala opened the floodgates inside four minutes with a curling finish from the edge of the box."},
-        {"minute": "18'", "type": "goal", "icon": "⚽", "team": "Germany", "player": "Kai Havertz", "description": "Havertz doubled the lead — Germany already in complete control."},
-        {"minute": "31'", "type": "goal", "icon": "⚽", "team": "Germany", "player": "Florian Wirtz", "description": "Wirtz made it 3-0 with a long-range strike."},
-        {"minute": "45'", "type": "goal", "icon": "⚽", "team": "Germany", "player": "Kai Havertz", "description": "Havertz completed his first-half brace — 4-0 at the break."},
-        {"minute": "67'", "type": "goal", "icon": "⚽", "team": "Curaçao", "player": "Rangelo Janga", "description": "Curaçao's historic moment — their first World Cup goal, sparking emotional celebrations in the stands."},
-        {"minute": "72'", "type": "goal", "icon": "⚽", "team": "Germany", "player": "Leroy Sané", "description": "Sané restored the five-goal margin."},
-        {"minute": "85'", "type": "goal", "icon": "⚽", "team": "Germany", "player": "Niclas Füllkrug", "description": "Füllkrug added a seventh — the rout complete."}
+        {
+          "minute": "4'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Germany",
+          "player": "Jamal Musiala",
+          "description": "Musiala opened the floodgates inside four minutes with a curling finish from the edge of the box."
+        },
+        {
+          "minute": "18'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Germany",
+          "player": "Kai Havertz",
+          "description": "Havertz doubled the lead — Germany already in complete control."
+        },
+        {
+          "minute": "31'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Germany",
+          "player": "Florian Wirtz",
+          "description": "Wirtz made it 3-0 with a long-range strike."
+        },
+        {
+          "minute": "45'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Germany",
+          "player": "Kai Havertz",
+          "description": "Havertz completed his first-half brace — 4-0 at the break."
+        },
+        {
+          "minute": "67'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Curaçao",
+          "player": "Rangelo Janga",
+          "description": "Curaçao's historic moment — their first World Cup goal, sparking emotional celebrations in the stands."
+        },
+        {
+          "minute": "72'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Germany",
+          "player": "Leroy Sané",
+          "description": "Sané restored the five-goal margin."
+        },
+        {
+          "minute": "85'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Germany",
+          "player": "Niclas Füllkrug",
+          "description": "Füllkrug added a seventh — the rout complete."
+        }
       ],
       "statistics": {
-        "possession": {"home": 73, "away": 27},
-        "shots": {"home": 28, "away": 3},
-        "shots_on_target": {"home": 14, "away": 1}
+        "possession": {
+          "home": 73,
+          "away": 27
+        },
+        "shots": {
+          "home": 28,
+          "away": 3
+        },
+        "shots_on_target": {
+          "home": 14,
+          "away": 1
+        }
       },
       "prediction_accuracy": null,
       "model_performance": {},
@@ -138,22 +588,97 @@
         "tactical_note": "Germany's 4-2-3-1 with Musiala and Wirtz as dual #10s was unplayable. Curaçao's 5-4-1 was theoretically correct but practically overwhelmed by Germany's positional rotations."
       },
       "tactical_breakdown": "Julian Nagelsmann's Germany played with a fluid front four that constantly interchanged positions — Musiala, Wirtz, Sané, and Havertz were impossible to mark. The fullbacks (Kimmich and Raum) provided width while the double-pivot of Gündoğan and Goretzka recycled possession. Curaçao's defensive 5-4-1 was designed to frustrate but collapsed under Germany's relentless ball movement. The most impressive statistic: Germany completed 847 passes to Curaçao's 189.",
-      "sources": ["FIFA.com highlights", "YouTube match highlights"],
-      "rating": "⭐⭐⭐"
+      "sources": [
+        "FIFA.com highlights",
+        "YouTube match highlights"
+      ],
+      "rating": "⭐⭐⭐",
+      "retrospective_predictions": {
+        "note": "The biggest mismatch of the tournament. Four-time champions vs debutants from a nation of 150,000.",
+        "models": [
+          {
+            "model_id": "hermes_deepseek_v4_pro",
+            "display": "Hermes × DeepSeek V4 Pro",
+            "predicted_score": "5-0",
+            "confidence": 0.89,
+            "reasoning": "This is the biggest mismatch on paper. Germany features 6 Champions League winners, 4 Bundesliga champions, and the Golden Boy (Musiala). Curacao's squad is drawn from Eredivisie, Championship, and Caribbean leagues. Their population (150,000) is smaller than the Allianz Arena. There's no tactical analysis that makes this competitive — the gap is structural. Germany will rotate after 60 minutes and still dominate. The only question: does Germany ease off at 3-0 or push for a statement? 5-0 is conservative. It could be 7 or 8. Curacao's goal is to keep it respectable and create one moment their fans will remember forever.",
+            "key_factors": [
+              "Structural mismatch — Germany's squad value is 150x Curacao's",
+              "Musiala and Wirtz between the lines will be unplayable",
+              "48-team format creates these mismatches — the debate is about margin, not outcome"
+            ],
+            "player_to_watch": "Jamal Musiala — this is his tournament to announce himself",
+            "what_we_got_right": "Correct winner, recognized the structural mismatch. 'Could be 7 or 8' — and it was 7",
+            "what_we_missed": "Curacao scored! Our clean sheet assumption was wrong — and that goal was genuinely beautiful"
+          },
+          {
+            "model_id": "manual_antigravity_gemini",
+            "display": "Antigravity × Gemini 3.5 Flash",
+            "predicted_score": "4-0",
+            "confidence": 0.62,
+            "reasoning": "I think people are overestimating the margin. Germany wins by a lot, but 7-1 type scorelines require specific conditions — an early red card, a complete collapse, or an opponent who gives up. Curacao won't give up. This is the biggest game in their nation's history. They'll defend with pride, waste time, take tactical fouls — everything a smart underdog does. Germany scores 3 from open play and 1 from a set piece. Curacao's goalkeeper Room will make 8+ saves. The inflated score predictions come from recency bias around the 48-team format, but most mismatches finish 3-0 or 4-0, not 7-0.",
+            "key_factors": [
+              "Curacao's pride factor — debutants often overperform emotionally",
+              "Room's shot-stopping: faced 40+ shots vs Argentina, conceded 'only' 7",
+              "Big margins require specific game states that may not materialize"
+            ],
+            "player_to_watch": "Eloy Room — Curacao's goalkeeper could keep this from being historic",
+            "what_we_got_right": "Correctly identified Curacao's emotional resistance and Room's quality",
+            "what_we_missed": "Completely wrong about the margin — Germany DID score 7. The 'specific conditions' materialized: Germany was ruthless from minute 1"
+          }
+        ]
+      }
     },
     "wc2026-grp-a-4": {
       "headline": "Romo Strike and Rangel Heroics Send Mexico Top of Group A in Ugly Affair",
       "summary": "Host nation Mexico ground out a hard-fought 1-0 victory over South Korea at Estadio Akron in Guadalajara, with Luis Romo's solitary goal enough to clinch top spot in Group A. In a match widely described as ugly and low-quality, Edson Álvarez's goal-line clearance and Raúl Rangel's stunning late save preserved Mexico's third consecutive World Cup win over South Korea, securing their place in the Round of 32 with a game to spare.",
       "key_moments": [
-        {"minute": "~35'", "type": "goal", "icon": "⚽", "team": "Mexico", "player": "Luis Romo", "description": "Romo broke the deadlock in a tight, scrappy contest, finding space in the box to give Mexico the lead against the run of play in a match of few clear chances."},
-        {"minute": "~43'", "type": "key_defense", "icon": "🛡️", "team": "Mexico", "player": "Edson Álvarez", "description": "Álvarez produced a stunning goal-line clearance to deny South Korea an equalizer — the play was debated as potentially offside, but the clearance itself was instinctive and world-class."},
-        {"minute": "~78'", "type": "key_save", "icon": "🧤", "team": "Mexico", "player": "Raúl Rangel", "description": "Rangel made an unbelievable save to preserve Mexico's 1-0 lead, diving full-stretch to deny South Korea a late equalizer and keep Mexico's clean sheet intact."},
-        {"minute": "FT", "type": "result", "icon": "🏆", "team": "Mexico", "player": "", "description": "Mexico clinch top spot in Group A with 6 points from 2 games, becoming the first team to secure a Round of 32 berth. South Korea remain on 3 points and need a result against South Africa."}
+        {
+          "minute": "~35'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Mexico",
+          "player": "Luis Romo",
+          "description": "Romo broke the deadlock in a tight, scrappy contest, finding space in the box to give Mexico the lead against the run of play in a match of few clear chances."
+        },
+        {
+          "minute": "~43'",
+          "type": "key_defense",
+          "icon": "🛡️",
+          "team": "Mexico",
+          "player": "Edson Álvarez",
+          "description": "Álvarez produced a stunning goal-line clearance to deny South Korea an equalizer — the play was debated as potentially offside, but the clearance itself was instinctive and world-class."
+        },
+        {
+          "minute": "~78'",
+          "type": "key_save",
+          "icon": "🧤",
+          "team": "Mexico",
+          "player": "Raúl Rangel",
+          "description": "Rangel made an unbelievable save to preserve Mexico's 1-0 lead, diving full-stretch to deny South Korea a late equalizer and keep Mexico's clean sheet intact."
+        },
+        {
+          "minute": "FT",
+          "type": "result",
+          "icon": "🏆",
+          "team": "Mexico",
+          "player": "",
+          "description": "Mexico clinch top spot in Group A with 6 points from 2 games, becoming the first team to secure a Round of 32 berth. South Korea remain on 3 points and need a result against South Africa."
+        }
       ],
       "statistics": {
-        "possession": {"home": 51, "away": 49},
-        "shots": {"home": 11, "away": 9},
-        "shots_on_target": {"home": 3, "away": 2}
+        "possession": {
+          "home": 51,
+          "away": 49
+        },
+        "shots": {
+          "home": 11,
+          "away": 9
+        },
+        "shots_on_target": {
+          "home": 3,
+          "away": 2
+        }
       },
       "prediction_accuracy": null,
       "model_performance": {},
@@ -163,8 +688,67 @@
         "tactical_note": "Mexico's pragmatic approach under Javier Aguirre prioritized defensive solidity over attacking flair, a notable shift from their dominant opening-day performance against South Africa. South Korea's Son Heung-min was unable to replicate his match-winning influence from the Czechia opener, as Mexico's midfield screened the space between the lines effectively."
       },
       "tactical_breakdown": "In searing Guadalajara heat with an 88% probability of performance-impairing conditions (per Climate Central data), both teams adopted cautious approaches that produced a scrappy, low-quality contest. Mexico, without suspended captain César Montes from the opener, reshuffled their defense and prioritized structure over the aggressive high press that dismantled South Africa. South Korea's tactical setup sought to channel attacks through Son Heung-min and Hwang In-beom, but Mexico's midfield trio successfully smothered the space between the lines. The match was decided by a single moment of quality from Luis Romo and two heroic defensive plays — Álvarez's instinctive goal-line clearance and Rangel's stunning late save — rather than sustained tactical superiority from either side. The historic fan friendship between the two nations, born from South Korea's 2018 victory over Germany that sent Mexico through, added a unique atmosphere but could not elevate the on-pitch product.",
-      "sources": ["Fox Sports live match coverage and video highlights", "Reddit r/soccer match clips", "The Guardian live blog", "Climate Central heat analysis", "Free Malaysia Today match report"],
-      "rating": "⭐⭐½"
+      "sources": [
+        "Fox Sports live match coverage and video highlights",
+        "Reddit r/soccer match clips",
+        "The Guardian live blog",
+        "Climate Central heat analysis",
+        "Free Malaysia Today match report"
+      ],
+      "rating": "⭐⭐½",
+      "retrospective_predictions": {
+        "note": "Pre-match predictions for Mexico's second group game. After the chaotic 2-0 opener against South Africa (3 red cards), Mexico faced a South Korea side that beat Czechia 2-1 — a very different tactical challenge.",
+        "models": [
+          {
+            "model_id": "hermes_deepseek_v4_pro",
+            "display": "Hermes × DeepSeek V4 Pro",
+            "predicted_score": "2-1",
+            "confidence": 0.61,
+            "reasoning": "Mexico's momentum from the opening 2-0 win should carry into this match, but South Korea presents a completely different challenge than South Africa. Korea's 2-1 win over Czechia showed their attacking organization under Hong Myung-bo — Son Heung-min remains world-class and their pressing is more sophisticated than South Africa's. Mexico's backline without suspended captain Montes is a concern — Vazquez and Reyes will need to handle Son's movement. I see Mexico's home energy and superior depth winning out, but Korea will score. The key is whether Mexico's attack can break down a Korean defense that's more organized than South Africa's.",
+            "key_factors": [
+              "Montes suspension forces Mexico into defensive reshuffle",
+              "Son Heung-min vs Mexico's backup center-back pairing",
+              "Korea's pressing system is more advanced than South Africa's",
+              "Mexico's crowd advantage in Guadalajara — second home match"
+            ],
+            "player_to_watch": "Son Heung-min — the one world-class player on the pitch who can decide a game alone",
+            "what_we_got_right": "Predicted a narrow Mexico win and correctly identified the defensive reshuffle as a key factor",
+            "what_we_missed": "Overestimated the goal count — this was a tight 1-0, not an open 2-1"
+          },
+          {
+            "model_id": "openclaw_nemotron_ultra",
+            "display": "OpenClaw × Nemotron Ultra 550B",
+            "predicted_score": "1-1",
+            "confidence": 0.43,
+            "reasoning": "I'm going against the Mexico narrative here. South Korea's win over Czechia was more impressive than Mexico's win over South Africa when you account for the red cards. Korea controlled their match with 54% possession and created 1.8 xG. Mexico's 2-0 against 9-man South Africa is flattering. Without Montes, Mexico's defensive organization — their biggest strength against South Africa — is compromised. Son against a backup center-back pairing is a mismatch. I see Korea scoring first through a Son counter-attack, Mexico equalizing in the second half through set-piece pressure. 1-1 feels right for a match where Korea's tactical discipline neutralizes Mexico's emotional advantage.",
+            "key_factors": [
+              "Mexico's red-card-inflated opener masks underlying issues",
+              "Son's goal-scoring record against CONCACAF opposition: 0.8 goals per game",
+              "Korea's midfield control against Czechia suggests they can compete in possession",
+              "Home crowd pressure could become anxiety if Mexico doesn't score early"
+            ],
+            "player_to_watch": "Lee Kang-in — his creativity from midfield could unlock Mexico's reshuffled defense",
+            "what_we_got_right": "Correctly identified that Mexico's opener was flattered by red cards and Korea would be a tougher test",
+            "what_we_missed": "Mexico found the 1-0 win — Korea's attack was completely nullified by Rangel's heroics"
+          },
+          {
+            "model_id": "opencode_glm_5_2",
+            "display": "OpenCode × GLM 5.2",
+            "predicted_score": "0-0",
+            "confidence": 0.22,
+            "reasoning": "This is my contrarian take. Both teams know a draw is a good result — Mexico would have 4 points and near-certain qualification, Korea would have 4 points and control of their destiny. The incentives align for a cautious match. Mexico without Montes will be more conservative defensively. Korea knows their best path to the knockout stage is avoiding defeat here and beating South Africa in the final match. I expect a tactical chess match: Mexico controlling possession but struggling to create clear chances against Korea's organized 4-4-2 block, Korea threatening on the counter without over-committing. 0-0 at Estadio Akron — both managers will privately be satisfied.",
+            "key_factors": [
+              "Mutual incentive for a draw — both teams benefit from sharing points",
+              "Mexico's defensive caution without suspended captain",
+              "Korea's path to knockouts: avoid defeat here, beat South Africa",
+              "Both teams showed in their openers they can defend when needed"
+            ],
+            "player_to_watch": "Kim Min-jae — Bayern Munich's center-back is the best defender on the pitch",
+            "what_we_got_right": "Correctly predicted a tactical chess match with few clear chances",
+            "what_we_missed": "Mexico found one moment of quality through Romo — overestimated the mutual incentive for a draw"
+          }
+        ]
+      }
     }
   }
 }

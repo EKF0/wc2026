@@ -515,6 +515,46 @@ def gen_review_page(m, review, matches_data, predictions_data):
         
         html += '</div></div>'
     
+    # Retrospective Predictions
+    retro = review.get("retrospective_predictions")
+    if retro and retro.get("models"):
+        html += '<div class="section"><h2>🔮 What Our Models Would Have Predicted</h2>'
+        html += f'<p style="color:#a0a8b0;margin-bottom:16px;font-size:.9rem">{retro.get("note", "")}</p>'
+        html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:16px">'
+        
+        for mp in retro["models"]:
+            conf = mp.get("confidence", 0.5)
+            conf_pct = int(conf * 100)
+            
+            html += f'<div class="card" style="border-left:3px solid #ff6b35">'
+            html += f'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'
+            html += f'<h4 style="color:#ff6b35;font-size:1rem">{mp["display"]}</h4>'
+            html += f'<span style="font-size:.75rem;color:#a0a8b0">{conf_pct}% confidence</span>'
+            html += '</div>'
+            html += f'<div style="font-size:2rem;font-weight:800;margin:8px 0;color:#fff;text-align:center">{mp["predicted_score"]}</div>'
+            html += f'<p style="color:#d0d0d0;line-height:1.7;font-size:.92rem;margin:10px 0">{mp["reasoning"]}</p>'
+            
+            if mp.get("key_factors"):
+                html += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">'
+                for kf in mp["key_factors"]:
+                    html += f'<span class="pred-factor">{kf}</span>'
+                html += '</div>'
+            
+            if mp.get("player_to_watch"):
+                html += f'<div style="margin:10px 0 4px;font-size:.85rem"><strong style="color:#00d4aa">⭐ {mp["player_to_watch"]}</strong></div>'
+            
+            if mp.get("what_we_got_right") or mp.get("what_we_missed"):
+                html += '<div style="margin-top:12px;padding-top:10px;border-top:1px solid #1e2530;font-size:.82rem">'
+                if mp.get("what_we_got_right"):
+                    html += f'<div style="margin:4px 0"><span style="color:#00d4aa">✅</span> {mp["what_we_got_right"]}</div>'
+                if mp.get("what_we_missed"):
+                    html += f'<div style="margin:4px 0"><span style="color:#ff6b35">❌</span> {mp["what_we_missed"]}</div>'
+                html += '</div>'
+            
+            html += '</div>'
+        
+        html += '</div></div>'
+    
     # Tactical Breakdown
     if review.get("tactical_breakdown"):
         html += f'<div class="section"><h2>⚽ Tactical Breakdown</h2><div class="card"><p style="color:#d0d0d0;line-height:1.8">{review["tactical_breakdown"]}</p></div></div>'
