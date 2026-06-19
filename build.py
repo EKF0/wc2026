@@ -51,6 +51,14 @@ def load_data():
         predictions = json.load(f)
     return matches, groups, predictions
 
+def load_reviews():
+    """Load reviews data if available."""
+    reviews_path = os.path.join(DATA_DIR, "reviews.json")
+    if os.path.exists(reviews_path):
+        with open(reviews_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"meta": {"total_reviews": 0}, "reviews": {}}
+
 def get_flag(team):
     return FLAGS.get(team, "🏳️")
 
@@ -174,6 +182,7 @@ def page_head(title, desc="World Cup 2026 AI Predictions"):
 <a href="/groups/">Groups</a>
 <a href="/predictions/">Predictions</a>
 <a href="/models/">Models</a>
+<a href="/reviews/">Reviews</a>
 </div>
 </div></div>
 """
@@ -390,9 +399,141 @@ def gen_models_index(predictions_data):
     html += page_footer()
     return html
 
+def gen_reviews_index(reviews_data, matches_data):
+    """Generate the reviews index page listing all reviewed matches."""
+    html = page_head("AI Match Reviews — World Cup 2026", "In-depth AI-powered analysis of every completed World Cup 2026 match")
+    html += '<div class="container"><div class="section">'
+    html += '<h2>🔍 AI Match Reviews</h2>'
+    html += '<p style="color:#a0a8b0;margin-bottom:20px">Deep analysis combining match research, tactical breakdown, and AI prediction accuracy for every completed match.</p>'
+    
+    # Map match IDs to matches
+    match_map = {m["id"]: m for m in matches_data["matches"]}
+    reviews = reviews_data.get("reviews", {})
+    
+    # Sort by date (most recent first)
+    reviewed_matches = []
+    for mid, review in reviews.items():
+        m = match_map.get(mid)
+        if m and m.get("status") == "completed":
+            reviewed_matches.append((m, review))
+    reviewed_matches.sort(key=lambda x: x[0].get("date", ""), reverse=True)
+    
+    # Stats bar
+    researched = sum(1 for _, r in reviewed_matches if r.get("sources"))
+    html += f'<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:24px">'
+    html += f'<div class="card" style="text-align:center;min-width:120px"><div style="font-size:2rem;color:#00d4aa;font-weight:800">{len(reviewed_matches)}</div><div style="color:#a0a8b0;font-size:.85rem">Matches Reviewed</div></div>'
+    html += f'<div class="card" style="text-align:center;min-width:120px"><div style="font-size:2rem;color:#ff6b35;font-weight:800">{researched}</div><div style="color:#a0a8b0;font-size:.85rem">Deep Research</div></div>'
+    html += '</div>'
+    
+    if not reviewed_matches:
+        html += '<div class="no-pred">No reviews yet. Check back after matches are completed!</div>'
+    else:
+        html += '<div class="grid">'
+        for m, review in reviewed_matches:
+            rating = review.get("rating", "")
+            headline = review.get("headline", f'{m["home_team"]} vs {m["away_team"]}')
+            html += f'''<a href="/reviews/{m["id"]}.html" class="card match-card" style="display:block;text-decoration:none;color:#fff">
+                <div style="font-size:.85rem;color:#a0a8b0">{m["date"]} · Group {m["group"]} · {m.get("stadium", "")}</div>
+                <div class="match-teams">
+                    <div class="team"><span class="team-flag">{get_flag(m["home_team"])}</span>{m["home_team"]}</div>
+                    <div class="score">{m["home_score"]} - {m["away_score"]}</div>
+                    <div class="team">{m["away_team"]}<span class="team-flag">{get_flag(m["away_team"])}</span></div>
+                </div>
+                <div style="font-weight:600;margin-top:6px;color:#fff">{headline}</div>
+                <div style="color:#ffaa00;margin-top:4px;font-size:.85rem">{rating}</div>
+            </a>'''
+        html += '</div>'
+    
+    html += '</div></div>'
+    html += page_footer()
+    return html
+
+def gen_review_page(m, review, matches_data, predictions_data):
+    """Generate an individual match review page."""
+    mid = m["id"]
+    headline = review.get("headline", f'{m["home_team"]} vs {m["away_team"]}')
+    
+    html = page_head(f'Review: {m["home_team"]} {m["home_score"]}-{m["away_score"]} {m["away_team"]} — WC2026 AI', review.get("summary", "")[:160])
+    
+    # Hero section
+    html += f'''<div class="container">
+    <div class="match-header">
+        <div style="color:#a0a8b0;font-size:.9rem">{m["date"]} · {m.get("stadium", "")}, {m.get("city", "")} · Group {m["group"]}</div>
+        <div class="teams"><span class="team-flag" style="font-size:3rem">{get_flag(m["home_team"])}</span> {m["home_team"]} <span class="score">{m["home_score"]} - {m["away_score"]}</span> {m["away_team"]} <span class="team-flag" style="font-size:3rem">{get_flag(m["away_team"])}</span></div>
+        <h1 style="font-size:1.5rem;max-width:700px;margin:12px auto;color:#fff">{headline}</h1>
+        {f'<div style="color:#ffaa00;font-size:1.2rem">Rating: {review.get("rating", "")}</div>' if review.get("rating") else ""}
+    </div>'''
+    
+    # Summary
+    if review.get("summary"):
+        html += f'<div class="section"><h2>📝 Match Summary</h2><div class="card"><p style="color:#d0d0d0;line-height:1.8;font-size:1.05rem">{review["summary"]}</p></div></div>'
+    
+    # Key Moments
+    if review.get("key_moments"):
+        html += '<div class="section"><h2>⏱️ Key Moments</h2><div class="card">'
+        for km in review["key_moments"]:
+            icon = km.get("icon", "")
+            player_str = ""
+            if km.get("player"):
+                player_str = f' — <span style="color:#ff6b35">{km["player"]}</span>'
+            team_str = ""
+            if km.get("team"):
+                team_str = f' <span style="color:#a0a8b0;font-size:.85rem">({km["team"]})</span>'
+            html += f'<div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #1e2530;align-items:flex-start">'
+            html += f'<div style="font-size:1.4rem;min-width:36px;text-align:center;color:#00d4aa;font-weight:700">{km["minute"]}</div>'
+            html += f'<div style="font-size:1.3rem;min-width:28px">{icon}</div>'
+            html += f'<div><strong>{km.get("type","").upper().replace("_"," ")}</strong>{player_str}{team_str}'
+            html += f'<div style="color:#a0a8b0;margin-top:4px;font-size:.92rem">{km["description"]}</div></div></div>'
+        html += '</div></div>'
+    
+    # Statistics
+    if review.get("statistics"):
+        stats = review["statistics"]
+        html += '<div class="section"><h2>📊 Match Statistics</h2><div class="card"><table>'
+        stat_labels = {"possession": "Possession %", "shots": "Shots", "shots_on_target": "Shots on Target", "red_cards": "Red Cards", "yellow_cards": "Yellow Cards"}
+        for key, label in stat_labels.items():
+            if key in stats:
+                h_val = stats[key].get("home", "?")
+                a_val = stats[key].get("away", "?")
+                html += f'<tr><td>{label}</td><td style="text-align:right">{h_val}</td><td style="text-align:center;color:#5a6068">vs</td><td>{a_val}</td></tr>'
+        html += '</table></div></div>'
+    
+    # AI Insights
+    if review.get("ai_insights"):
+        insights = review["ai_insights"]
+        html += '<div class="section"><h2>🤖 AI Analysis</h2>'
+        html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">'
+        
+        if insights.get("what_to_watch"):
+            html += f'<div class="card"><h3 style="color:#ff6b35;margin-bottom:10px">👀 What Caught Our Eye</h3><p style="color:#d0d0d0;line-height:1.7">{insights["what_to_watch"]}</p></div>'
+        
+        if insights.get("key_takeaways"):
+            html += f'<div class="card"><h3 style="color:#00d4aa;margin-bottom:10px">💡 Key Takeaways</h3><p style="color:#d0d0d0;line-height:1.7">{insights["key_takeaways"]}</p></div>'
+        
+        if insights.get("tactical_note"):
+            html += f'<div class="card"><h3 style="color:#ffaa00;margin-bottom:10px">🎯 Tactical Note</h3><p style="color:#d0d0d0;line-height:1.7">{insights["tactical_note"]}</p></div>'
+        
+        html += '</div></div>'
+    
+    # Tactical Breakdown
+    if review.get("tactical_breakdown"):
+        html += f'<div class="section"><h2>⚽ Tactical Breakdown</h2><div class="card"><p style="color:#d0d0d0;line-height:1.8">{review["tactical_breakdown"]}</p></div></div>'
+    
+    # Sources
+    if review.get("sources"):
+        html += '<div class="section"><h2>📚 Sources</h2><div class="card"><ul style="color:#a0a8b0;padding-left:20px">'
+        for src in review["sources"]:
+            html += f'<li style="margin:4px 0">{src}</li>'
+        html += '</ul></div></div>'
+    
+    html += '</div>'
+    html += page_footer()
+    return html
+
 def main():
     print("Loading data...")
     matches_data, groups_data, predictions_data = load_data()
+    reviews_data = load_reviews()
     
     print("Generating index.html...")
     write_html(os.path.join(OUTPUT_DIR, "index.html"), gen_index(matches_data, groups_data, predictions_data))
@@ -413,7 +554,21 @@ def main():
     print("Generating models/index.html...")
     write_html(os.path.join(OUTPUT_DIR, "models", "index.html"), gen_models_index(predictions_data))
     
-    total_pages = 1 + 1 + len(matches_data["matches"]) + 1 + 1 + 1
+    print("Generating reviews/index.html...")
+    write_html(os.path.join(OUTPUT_DIR, "reviews", "index.html"), gen_reviews_index(reviews_data, matches_data))
+    
+    print("Generating individual review pages...")
+    match_map = {m["id"]: m for m in matches_data["matches"]}
+    reviews = reviews_data.get("reviews", {})
+    review_count = 0
+    for mid, review in reviews.items():
+        m = match_map.get(mid)
+        if m and m.get("status") == "completed":
+            write_html(os.path.join(OUTPUT_DIR, "reviews", f'{mid}.html'), gen_review_page(m, review, matches_data, predictions_data))
+            review_count += 1
+    print(f"  Generated {review_count} review pages")
+    
+    total_pages = 1 + 1 + len(matches_data["matches"]) + 1 + 1 + 1 + 1 + review_count
     print(f"Done! Generated {total_pages} pages in {OUTPUT_DIR}")
 
 if __name__ == "__main__":
