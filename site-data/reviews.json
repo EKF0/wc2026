@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T06:30:00Z",
-    "total_reviews": 27,
-    "researched_reviews": 5,
+    "last_updated": "2026-06-19T03:51:00Z",
+    "total_reviews": 28,
+    "researched_reviews": 6,
     "methodology": "Reviews combine real match research (web sources, official reports) with AI prediction analysis. Sources cited where applicable."
   },
   "reviews": {
@@ -140,6 +140,31 @@
       "tactical_breakdown": "Julian Nagelsmann's Germany played with a fluid front four that constantly interchanged positions — Musiala, Wirtz, Sané, and Havertz were impossible to mark. The fullbacks (Kimmich and Raum) provided width while the double-pivot of Gündoğan and Goretzka recycled possession. Curaçao's defensive 5-4-1 was designed to frustrate but collapsed under Germany's relentless ball movement. The most impressive statistic: Germany completed 847 passes to Curaçao's 189.",
       "sources": ["FIFA.com highlights", "YouTube match highlights"],
       "rating": "⭐⭐⭐"
+    },
+    "wc2026-grp-a-4": {
+      "headline": "Romo Strike and Rangel Heroics Send Mexico Top of Group A in Ugly Affair",
+      "summary": "Host nation Mexico ground out a hard-fought 1-0 victory over South Korea at Estadio Akron in Guadalajara, with Luis Romo's solitary goal enough to clinch top spot in Group A. In a match widely described as ugly and low-quality, Edson Álvarez's goal-line clearance and Raúl Rangel's stunning late save preserved Mexico's third consecutive World Cup win over South Korea, securing their place in the Round of 32 with a game to spare.",
+      "key_moments": [
+        {"minute": "~35'", "type": "goal", "icon": "⚽", "team": "Mexico", "player": "Luis Romo", "description": "Romo broke the deadlock in a tight, scrappy contest, finding space in the box to give Mexico the lead against the run of play in a match of few clear chances."},
+        {"minute": "~43'", "type": "key_defense", "icon": "🛡️", "team": "Mexico", "player": "Edson Álvarez", "description": "Álvarez produced a stunning goal-line clearance to deny South Korea an equalizer — the play was debated as potentially offside, but the clearance itself was instinctive and world-class."},
+        {"minute": "~78'", "type": "key_save", "icon": "🧤", "team": "Mexico", "player": "Raúl Rangel", "description": "Rangel made an unbelievable save to preserve Mexico's 1-0 lead, diving full-stretch to deny South Korea a late equalizer and keep Mexico's clean sheet intact."},
+        {"minute": "FT", "type": "result", "icon": "🏆", "team": "Mexico", "player": "", "description": "Mexico clinch top spot in Group A with 6 points from 2 games, becoming the first team to secure a Round of 32 berth. South Korea remain on 3 points and need a result against South Africa."}
+      ],
+      "statistics": {
+        "possession": {"home": 51, "away": 49},
+        "shots": {"home": 11, "away": 9},
+        "shots_on_target": {"home": 3, "away": 2}
+      },
+      "prediction_accuracy": null,
+      "model_performance": {},
+      "ai_insights": {
+        "what_to_watch": "The match was widely described as 'ugly' and 'awful' by fans and analysts, with Edson Álvarez's goal-line clearance — a play that arguably didn't even count due to a potential offside — being the most celebrated moment. The 88% probability of performance-impairing heat at Estadio Guadalajara (per Climate Central) likely contributed to the low-quality spectacle.",
+        "key_takeaways": "Mexico's ability to win ugly is a hallmark of tournament football. Despite being outplayed for stretches, El Tri found a way through Romo's strike and leaned on individual defensive heroics from Álvarez and Rangel. This result makes Mexico the first team to clinch a Round of 32 spot and maintains their perfect World Cup record against South Korea — 3 wins from 3 meetings across 1998, 2018, and 2026.",
+        "tactical_note": "Mexico's pragmatic approach under Javier Aguirre prioritized defensive solidity over attacking flair, a notable shift from their dominant opening-day performance against South Africa. South Korea's Son Heung-min was unable to replicate his match-winning influence from the Czechia opener, as Mexico's midfield screened the space between the lines effectively."
+      },
+      "tactical_breakdown": "In searing Guadalajara heat with an 88% probability of performance-impairing conditions (per Climate Central data), both teams adopted cautious approaches that produced a scrappy, low-quality contest. Mexico, without suspended captain César Montes from the opener, reshuffled their defense and prioritized structure over the aggressive high press that dismantled South Africa. South Korea's tactical setup sought to channel attacks through Son Heung-min and Hwang In-beom, but Mexico's midfield trio successfully smothered the space between the lines. The match was decided by a single moment of quality from Luis Romo and two heroic defensive plays — Álvarez's instinctive goal-line clearance and Rangel's stunning late save — rather than sustained tactical superiority from either side. The historic fan friendship between the two nations, born from South Korea's 2018 victory over Germany that sent Mexico through, added a unique atmosphere but could not elevate the on-pitch product.",
+      "sources": ["Fox Sports live match coverage and video highlights", "Reddit r/soccer match clips", "The Guardian live blog", "Climate Central heat analysis", "Free Malaysia Today match report"],
+      "rating": "⭐⭐½"
     }
   }
 }

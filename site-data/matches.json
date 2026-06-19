@@ -1,11 +1,11 @@
 {
   "meta": {
     "tournament": "FIFA World Cup 2026",
-    "last_updated": "2026-06-19T03:37:13Z",
+    "last_updated": "2026-06-19T03:51:00Z",
     "total_matches": 72,
-    "completed": 27,
+    "completed": 28,
     "upcoming": 44,
-    "live": 1
+    "live": 0
   },
   "matches": [
     {
@@ -61,9 +61,9 @@
       "stage": "Group Stage",
       "home_team": "Mexico",
       "away_team": "South Korea",
-      "home_score": 0,
+      "home_score": 1,
       "away_score": 0,
-      "status": "live",
+      "status": "completed",
       "stadium": "Estadio Akron",
       "city": "Guadalajara",
       "country": "Mexico"
