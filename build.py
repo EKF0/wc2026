@@ -425,7 +425,7 @@ def gen_index(matches_data, groups_data, predictions_data):
     html += f'<p>{len(matches)} matches · 48 teams · 10 AI models · Real-time predictions</p>'
     html += '''
     <div style="text-align:center;margin:30px 0 20px 0">
-        <img src="/og-image.jpg" alt="WC2026 AI Predictions Dashboard" style="max-width:100%;width:750px;border-radius:16px;border:1px solid rgba(0,212,170,0.3);box-shadow:0 15px 30px rgba(0,212,170,0.15);transition:transform 0.3s ease,box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.015)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.25)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 15px 30px rgba(0,212,170,0.15)'" />
+        <img src="/hero-image.jpg" alt="WC2026 AI Predictions — Team Performance, AI Models, and Today's Matches" style="max-width:100%;width:900px;border-radius:16px;border:1px solid rgba(0,212,170,0.3);box-shadow:0 15px 30px rgba(0,212,170,0.15);transition:transform 0.3s ease,box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.015)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.25)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 15px 30px rgba(0,212,170,0.15)'" />
     </div>
     '''
     html += '</div>'
@@ -1577,13 +1577,13 @@ def gen_headers():
   Cache-Control: public, max-age=300
 
 /*.jpg
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400
 
 /*.png
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400
 
 /*.svg
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400
 
 /*
   X-Content-Type-Options: nosniff
@@ -1661,6 +1661,15 @@ def main():
         shutil.copyfile(src_og, dest_og)
     else:
         print("Warning: Source og-image.jpg not found!")
+
+    # Copy hero-image.jpg to output directory
+    src_hero = os.path.join(BASE, "hero-image.jpg")
+    dest_hero = os.path.join(OUTPUT_DIR, "hero-image.jpg")
+    if os.path.exists(src_hero):
+        print("Copying hero-image.jpg to output...")
+        shutil.copyfile(src_hero, dest_hero)
+    else:
+        print("Warning: Source hero-image.jpg not found!")
     
     # ── SEO Files ──
     print("Generating sitemap.xml...")
