@@ -354,13 +354,28 @@ def gen_match_page(m, predictions_data):
     match_preds = predictions_data.get("predictions", {}).get(m["id"], {})
     models_list = predictions_data.get("models", [])
     
-    if match_preds and match_preds.get("models"):
+    # Build model lookup
+    model_lookup = {mod["id"]: mod for mod in models_list}
+    
+    # Check if we have predictions for this match
+    has_predictions = bool(match_preds) and any(not k.startswith("_") for k in match_preds)
+    
+    if has_predictions:
         html += '<div class="section"><h2>🤖 AI Predictions</h2>'
         html += '<div class="pred-grid">'
         for model in models_list:
-            pred = match_preds.get("models", {}).get(model["id"])
-            if pred:
-                html += pred_card(model, pred)
+            pred_raw = match_preds.get(model["id"])
+            if pred_raw:
+                # Extract prediction from parsed sub-object (handle null)
+                parsed = pred_raw.get("parsed") or {}
+                pred_display = {
+                    "predicted_score": parsed.get("predicted_score", "N/A"),
+                    "confidence": parsed.get("confidence", 0.5),
+                    "reasoning": parsed.get("reasoning", ""),
+                    "key_factors": parsed.get("key_factors", []),
+                    "win_probability": parsed.get("win_probability", {"home": 0.33, "draw": 0.34, "away": 0.33})
+                }
+                html += pred_card(model, pred_display)
         html += '</div></div>'
     else:
         html += '<div class="section"><h2>🤖 AI Predictions</h2>'
@@ -378,8 +393,16 @@ def gen_match_page(m, predictions_data):
     return html
 
 def pred_card(model, pred):
-    conf = pred.get("confidence", "medium")
-    conf_class = f"confidence-{conf}"
+    conf_val = pred.get("confidence", 0.5)
+    if isinstance(conf_val, (int, float)):
+        conf_pct = int(conf_val * 100)
+        if conf_val > 0.7: conf_label = "high"
+        elif conf_val > 0.4: conf_label = "medium"
+        else: conf_label = "low"
+    else:
+        conf_label = conf_val
+        conf_pct = conf_val
+    conf_class = f"confidence-{conf_label}"
     factors = "".join(f'<span class="pred-factor">{f}</span>' for f in pred.get("key_factors", []))
     prob = pred.get("win_probability", {})
     h_prob = prob.get("home", 0) * 100
@@ -389,7 +412,7 @@ def pred_card(model, pred):
     return f'''<div class="pred-card">
 <span class="model-badge {badge}">{model["type"].upper()}</span>
 <h4>{model["display"]}</h4>
-<div class="pred-score">{pred.get("predicted_score", "N/A")} <span class="{conf_class}" style="font-size:.8rem">({conf} confidence)</span></div>
+<div class="pred-score">{pred.get("predicted_score", "N/A")} <span class="{conf_class}" style="font-size:.8rem">({conf_pct}% confidence)</span></div>
 <div class="prob-bar"><div class="prob-fill prob-home" style="width:{h_prob}%"></div></div>
 <div class="prob-bar"><div class="prob-fill prob-draw" style="width:{d_prob}%"></div></div>
 <div class="prob-bar"><div class="prob-fill prob-away" style="width:{a_prob}%"></div></div>
@@ -439,15 +462,50 @@ def gen_groups_index(groups_data):
     return html
 
 def gen_predictions_index(predictions_data, matches_data):
-    html = page_head("Prediction Tracker — World Cup 2026", "AI prediction accuracy tracker for World Cup 2026")
-    html += '<div class="container"><div class="section"><h2>AI Prediction Tracker</h2>'
-    html += '<div class="no-pred"><p>Prediction accuracy tracking will be available after the first matches with predictions are completed.</p>'
-    html += '<p style="margin-top:8px">Each model\'s accuracy will be tracked in real-time as matches are played.</p></div>'
+    html = page_head("AI Predictions — World Cup 2026", "AI predictions from 10 models for every World Cup 2026 match")
+    html += '<div class="container"><div class="section"><h2>🤖 AI Predictions</h2>'
     
-    html += '<div class="section"><h2>Models</h2><div class="grid">'
-    for model in predictions_data.get("models", []):
+    predictions = predictions_data.get("predictions", {})
+    match_map = {m["id"]: m for m in matches_data["matches"]}
+    models_list = predictions_data.get("models", [])
+    
+    # Find matches with predictions
+    matches_with_preds = []
+    for mid in predictions:
+        if mid.startswith("_"): continue
+        m = match_map.get(mid)
+        if m:
+            pred_count = len([k for k in predictions[mid] if not k.startswith("_")])
+            matches_with_preds.append((m, pred_count))
+    
+    # Sort by date
+    matches_with_preds.sort(key=lambda x: x[0].get("date", ""))
+    
+    if matches_with_preds:
+        html += f'<p style="color:#a0a8b0;margin-bottom:20px">{len(matches_with_preds)} matches with predictions · {sum(pc for _, pc in matches_with_preds)} total predictions from {len(models_list)} AI models</p>'
+        html += '<div class="grid">'
+        for m, pred_count in matches_with_preds:
+            score = f'{m.get("home_score","?")}-{m.get("away_score","?")}' if m["status"] == "completed" else "vs"
+            html += f'''<a href="/matches/{m["id"]}.html" class="card match-card" style="display:block;text-decoration:none;color:#fff">
+                <div style="font-size:.85rem;color:#a0a8b0">{m["date"]} · {m.get("time_et","")} ET · Group {m["group"]}</div>
+                <div class="match-teams">
+                    <div class="team"><span class="team-flag">{get_flag(m["home_team"])}</span>{m["home_team"]}</div>
+                    <div class="score">{score}</div>
+                    <div class="team">{m["away_team"]}<span class="team-flag">{get_flag(m["away_team"])}</span></div>
+                </div>
+                <div style="color:#00d4aa;font-size:.85rem;margin-top:6px">{pred_count} model predictions available</div>
+            </a>'''
+        html += '</div>'
+    else:
+        html += '<div class="no-pred"><p>No predictions generated yet.</p><p style="margin-top:8px">Predictions will appear here as our AI models analyze upcoming matches. Check back soon!</p></div>'
+    
+    # Models summary
+    html += '<div class="section"><h2>🔬 Prediction Models</h2><div class="grid">'
+    for model in models_list:
         badge = "model-automated" if model["type"] == "automated" else "model-manual"
-        html += f'<div class="card"><span class="model-badge {badge}">{model["type"].upper()}</span><h3>{model["display"]}</h3><p style="color:#a0a8b0;font-size:.85rem;margin-top:6px">Agent: {model["agent"]}</p><div style="margin-top:8px;font-size:.85rem;color:#5a6068">Predictions: 0 · Accuracy: N/A</div></div>'
+        # Count predictions from this model
+        model_count = sum(1 for mid in predictions if not mid.startswith("_") and model["id"] in predictions[mid])
+        html += f'<div class="card"><span class="model-badge {badge}">{model["type"].upper()}</span><h3>{model["display"]}</h3><p style="color:#a0a8b0;font-size:.85rem;margin-top:6px">Agent: {model["agent"]}</p><div style="margin-top:8px;font-size:.85rem;color:#00d4aa">Predictions: {model_count}</div></div>'
     html += '</div></div></div>'
     html += page_footer()
     return html
