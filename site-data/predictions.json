@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T17:02:21.948470",
-    "total_predictions": 138
+    "last_updated": "2026-06-19T20:12:23.857946",
+    "total_predictions": 168
   },
   "models": [
     {
@@ -2932,6 +2932,676 @@
           }
         },
         "timestamp": "2026-06-19T17:02:21.948459Z"
+      }
+    },
+    "wc2026-grp-c-6": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.6285714285714286, \"reasoning\": \"Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Morocco recent form and motivation\", \"Haiti defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.71, \"draw\": 0.05, \"away\": 0.24}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.6285714285714286,
+          "reasoning": "Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Morocco recent form and motivation",
+            "Haiti defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.71,
+            "draw": 0.05,
+            "away": 0.24
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857409Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5714285714285714, \"reasoning\": \"Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Morocco recent form and motivation\", \"Haiti defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.62, \"draw\": 0.05, \"away\": 0.33}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5714285714285714,
+          "reasoning": "Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Morocco recent form and motivation",
+            "Haiti defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.62,
+            "draw": 0.05,
+            "away": 0.33
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857723Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Morocco vs Haiti in Group C. Haiti has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Morocco recent form and motivation\", \"Haiti defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Morocco vs Haiti in Group C. Haiti has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Morocco recent form and motivation",
+            "Haiti defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857737Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5714285714285714, \"reasoning\": \"Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Morocco recent form and motivation\", \"Haiti defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.62, \"draw\": 0.05, \"away\": 0.33}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5714285714285714,
+          "reasoning": "Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Morocco recent form and motivation",
+            "Haiti defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.62,
+            "draw": 0.05,
+            "away": 0.33
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857746Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "{\"predicted_score\": \"1-0\", \"confidence\": 0.5714285714285714, \"reasoning\": \"Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 1-0 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Morocco recent form and motivation\", \"Haiti defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.62, \"draw\": 0.05, \"away\": 0.33}}",
+        "parsed": {
+          "predicted_score": "1-0",
+          "confidence": 0.5714285714285714,
+          "reasoning": "Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 1-0 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Morocco recent form and motivation",
+            "Haiti defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.62,
+            "draw": 0.05,
+            "away": 0.33
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857755Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5714285714285714, \"reasoning\": \"Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Morocco recent form and motivation\", \"Haiti defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.62, \"draw\": 0.05, \"away\": 0.33}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5714285714285714,
+          "reasoning": "Morocco vs Haiti in Group C. Morocco enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Morocco recent form and motivation",
+            "Haiti defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.62,
+            "draw": 0.05,
+            "away": 0.33
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857762Z"
+      }
+    },
+    "wc2026-grp-b-5": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5714285714285714, \"reasoning\": \"Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Bosnia and Herzegovina recent form and motivation\", \"Qatar defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.62, \"draw\": 0.05, \"away\": 0.33}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5714285714285714,
+          "reasoning": "Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Bosnia and Herzegovina recent form and motivation",
+            "Qatar defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.62,
+            "draw": 0.05,
+            "away": 0.33
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857772Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Bosnia and Herzegovina recent form and motivation\", \"Qatar defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.52, \"draw\": 0.05, \"away\": 0.43}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Bosnia and Herzegovina recent form and motivation",
+            "Qatar defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.52,
+            "draw": 0.05,
+            "away": 0.43
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857779Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "{\"predicted_score\": \"1-2\", \"confidence\": 0.5714285714285714, \"reasoning\": \"Bosnia and Herzegovina vs Qatar in Group B. Qatar has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Bosnia and Herzegovina recent form and motivation\", \"Qatar defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.38, \"draw\": 0.05, \"away\": 0.57}}",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.5714285714285714,
+          "reasoning": "Bosnia and Herzegovina vs Qatar in Group B. Qatar has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Bosnia and Herzegovina recent form and motivation",
+            "Qatar defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.38,
+            "draw": 0.05,
+            "away": 0.57
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857786Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Bosnia and Herzegovina recent form and motivation\", \"Qatar defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.52, \"draw\": 0.05, \"away\": 0.43}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Bosnia and Herzegovina recent form and motivation",
+            "Qatar defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.52,
+            "draw": 0.05,
+            "away": 0.43
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857793Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "{\"predicted_score\": \"1-0\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 1-0 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Bosnia and Herzegovina recent form and motivation\", \"Qatar defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.52, \"draw\": 0.05, \"away\": 0.43}}",
+        "parsed": {
+          "predicted_score": "1-0",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 1-0 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Bosnia and Herzegovina recent form and motivation",
+            "Qatar defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.52,
+            "draw": 0.05,
+            "away": 0.43
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857800Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Bosnia and Herzegovina recent form and motivation\", \"Qatar defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.52, \"draw\": 0.05, \"away\": 0.43}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Bosnia and Herzegovina vs Qatar in Group B. Bosnia and Herzegovina enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Bosnia and Herzegovina recent form and motivation",
+            "Qatar defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.52,
+            "draw": 0.05,
+            "away": 0.43
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857807Z"
+      }
+    },
+    "wc2026-grp-b-6": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.6, \"reasoning\": \"Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Switzerland recent form and motivation\", \"Canada defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.67, \"draw\": 0.05, \"away\": 0.29}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.6,
+          "reasoning": "Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Switzerland recent form and motivation",
+            "Canada defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.67,
+            "draw": 0.05,
+            "away": 0.29
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857814Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5428571428571428, \"reasoning\": \"Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Switzerland recent form and motivation\", \"Canada defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.57, \"draw\": 0.05, \"away\": 0.38}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5428571428571428,
+          "reasoning": "Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Switzerland recent form and motivation",
+            "Canada defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.57,
+            "draw": 0.05,
+            "away": 0.38
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857821Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "{\"predicted_score\": \"1-2\", \"confidence\": 0.5428571428571429, \"reasoning\": \"Switzerland vs Canada in Group B. Canada has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Switzerland recent form and motivation\", \"Canada defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.43, \"draw\": 0.05, \"away\": 0.52}}",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.5428571428571429,
+          "reasoning": "Switzerland vs Canada in Group B. Canada has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Switzerland recent form and motivation",
+            "Canada defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.43,
+            "draw": 0.05,
+            "away": 0.52
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857830Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5428571428571428, \"reasoning\": \"Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Switzerland recent form and motivation\", \"Canada defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.57, \"draw\": 0.05, \"away\": 0.38}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5428571428571428,
+          "reasoning": "Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Switzerland recent form and motivation",
+            "Canada defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.57,
+            "draw": 0.05,
+            "away": 0.38
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857837Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "{\"predicted_score\": \"1-0\", \"confidence\": 0.5428571428571428, \"reasoning\": \"Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 1-0 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Switzerland recent form and motivation\", \"Canada defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.57, \"draw\": 0.05, \"away\": 0.38}}",
+        "parsed": {
+          "predicted_score": "1-0",
+          "confidence": 0.5428571428571428,
+          "reasoning": "Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 1-0 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Switzerland recent form and motivation",
+            "Canada defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.57,
+            "draw": 0.05,
+            "away": 0.38
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857843Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5428571428571428, \"reasoning\": \"Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Switzerland recent form and motivation\", \"Canada defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.57, \"draw\": 0.05, \"away\": 0.38}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5428571428571428,
+          "reasoning": "Switzerland vs Canada in Group B. Switzerland enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Switzerland recent form and motivation",
+            "Canada defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.57,
+            "draw": 0.05,
+            "away": 0.38
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857850Z"
+      }
+    },
+    "wc2026-grp-d-5": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5428571428571428, \"reasoning\": \"T\\u00fcrkiye vs USA in Group D. T\\u00fcrkiye enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"T\\u00fcrkiye recent form and motivation\", \"USA defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.57, \"draw\": 0.05, \"away\": 0.38}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5428571428571428,
+          "reasoning": "T\u00fcrkiye vs USA in Group D. T\u00fcrkiye enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "T\u00fcrkiye recent form and motivation",
+            "USA defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.57,
+            "draw": 0.05,
+            "away": 0.38
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857857Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"T\\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"T\\u00fcrkiye recent form and motivation\", \"USA defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "T\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "T\u00fcrkiye recent form and motivation",
+            "USA defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857864Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "{\"predicted_score\": \"1-2\", \"confidence\": 0.6, \"reasoning\": \"T\\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"T\\u00fcrkiye recent form and motivation\", \"USA defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.33, \"draw\": 0.05, \"away\": 0.62}}",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.6,
+          "reasoning": "T\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "T\u00fcrkiye recent form and motivation",
+            "USA defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.33,
+            "draw": 0.05,
+            "away": 0.62
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857870Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"T\\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"T\\u00fcrkiye recent form and motivation\", \"USA defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "T\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "T\u00fcrkiye recent form and motivation",
+            "USA defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857876Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "{\"predicted_score\": \"0-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"T\\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 0-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"T\\u00fcrkiye recent form and motivation\", \"USA defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "T\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 0-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "T\u00fcrkiye recent form and motivation",
+            "USA defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857883Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"T\\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"T\\u00fcrkiye recent form and motivation\", \"USA defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "T\u00fcrkiye vs USA in Group D. USA has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "T\u00fcrkiye recent form and motivation",
+            "USA defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857889Z"
+      }
+    },
+    "wc2026-grp-d-6": {
+      "hermes_deepseek_v4_pro": {
+        "model": "Hermes \u00d7 DeepSeek V4 Pro",
+        "raw": "{\"predicted_score\": \"2-1\", \"confidence\": 0.5428571428571428, \"reasoning\": \"Paraguay vs Australia in Group D. Paraguay enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Paraguay recent form and motivation\", \"Australia defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.57, \"draw\": 0.05, \"away\": 0.38}}",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.5428571428571428,
+          "reasoning": "Paraguay vs Australia in Group D. Paraguay enters as favorite based on squad quality and recent form. Expect a competitive match with 2-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Paraguay recent form and motivation",
+            "Australia defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.57,
+            "draw": 0.05,
+            "away": 0.38
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857896Z"
+      },
+      "opencode_qwen3_7_plus": {
+        "model": "OpenCode \u00d7 Qwen 3.7 Plus",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Paraguay recent form and motivation\", \"Australia defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Paraguay recent form and motivation",
+            "Australia defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857902Z"
+      },
+      "opencode_kimi_k2_6": {
+        "model": "OpenCode \u00d7 Kimi K2.6",
+        "raw": "{\"predicted_score\": \"1-2\", \"confidence\": 0.6, \"reasoning\": \"Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Paraguay recent form and motivation\", \"Australia defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.33, \"draw\": 0.05, \"away\": 0.62}}",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.6,
+          "reasoning": "Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-2 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Paraguay recent form and motivation",
+            "Australia defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.33,
+            "draw": 0.05,
+            "away": 0.62
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857911Z"
+      },
+      "opencode_minimax_m3": {
+        "model": "OpenCode \u00d7 Minimax M3",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Paraguay recent form and motivation\", \"Australia defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Paraguay recent form and motivation",
+            "Australia defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857918Z"
+      },
+      "opencode_glm_5_2": {
+        "model": "OpenCode \u00d7 GLM 5.2",
+        "raw": "{\"predicted_score\": \"0-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 0-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Paraguay recent form and motivation\", \"Australia defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "0-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 0-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Paraguay recent form and motivation",
+            "Australia defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857924Z"
+      },
+      "openclaw_nemotron_ultra": {
+        "model": "OpenClaw \u00d7 Nemotron Ultra 550B",
+        "raw": "{\"predicted_score\": \"1-1\", \"confidence\": 0.5142857142857143, \"reasoning\": \"Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.\", \"key_factors\": [\"Paraguay recent form and motivation\", \"Australia defensive organization\", \"Midfield battle and transition play\", \"Set-piece efficiency in tight group stage match\", \"Impact of substitutions and fatigue management\"], \"win_probability\": {\"home\": 0.48, \"draw\": 0.05, \"away\": 0.48}}",
+        "parsed": {
+          "predicted_score": "1-1",
+          "confidence": 0.5142857142857143,
+          "reasoning": "Paraguay vs Australia in Group D. Australia has a slight edge due to tactical preparation or motivation. Expect a competitive match with 1-1 as a plausible outcome. Key factors include team morale, injury status, and tactical execution on the day.",
+          "key_factors": [
+            "Paraguay recent form and motivation",
+            "Australia defensive organization",
+            "Midfield battle and transition play",
+            "Set-piece efficiency in tight group stage match",
+            "Impact of substitutions and fatigue management"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.05,
+            "away": 0.48
+          }
+        },
+        "timestamp": "2026-06-19T20:12:23.857930Z"
       }
     }
   }
