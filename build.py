@@ -241,7 +241,7 @@ def gen_breadcrumb_schema(crumbs):
         "itemListElement": [{",".join(items)}]
     }}'''
 
-def page_head(title, desc="AI-powered World Cup 2026 predictions from 10 AI models — match forecasts, live scores, and AI match reviews", canonical="", active_nav="", schema_data="", image="https://wc2026.ehabkhedr.com/og-image.jpg?v=c5d6e7f8"):
+def page_head(title, desc="AI-powered World Cup 2026 predictions from 10 AI models — match forecasts, live scores, and AI match reviews", canonical="", active_nav="", schema_data="", image="https://wc2026.ehabkhedr.com/wc2026-og.jpg"):
     """Generate HTML head with complete SEO metadata."""
     safe_title = title.replace('"', '&quot;')
     safe_desc = desc.replace('"', '&quot;')[:160]
@@ -883,12 +883,12 @@ def gen_match_schema(m):
         {{
           "@type": "SportsTeam",
           "name": "{home_team}",
-          "logo": "https://wc2026.ehabkhedr.com/og-image.jpg?v=c5d6e7f8"
+          "logo": "https://wc2026.ehabkhedr.com/wc2026-og.jpg"
         }},
         {{
           "@type": "SportsTeam",
           "name": "{away_team}",
-          "logo": "https://wc2026.ehabkhedr.com/og-image.jpg?v=c5d6e7f8"
+          "logo": "https://wc2026.ehabkhedr.com/wc2026-og.jpg"
         }}
       ]{score_data}
     }}'''
@@ -1653,14 +1653,14 @@ def main():
     print("Generating tomorrow's match previews...")
     write_html(os.path.join(OUTPUT_DIR, "tomorrow.html"), gen_tomorrow_page(matches_data))
     
-    # Copy default og-image.jpg to output directory
-    src_og = os.path.join(BASE, "og-image.jpg")
-    dest_og = os.path.join(OUTPUT_DIR, "og-image.jpg")
+    # Copy default wc2026-og.jpg to output directory
+    src_og = os.path.join(BASE, "wc2026-og.jpg")
+    dest_og = os.path.join(OUTPUT_DIR, "wc2026-og.jpg")
     if os.path.exists(src_og):
-        print("Copying og-image.jpg to output...")
+        print("Copying wc2026-og.jpg to output...")
         shutil.copyfile(src_og, dest_og)
     else:
-        print("Warning: Source og-image.jpg not found!")
+        print("Warning: Source wc2026-og.jpg not found!")
 
     # Copy hero-image.jpg to output directory
     src_hero = os.path.join(BASE, "hero-image.jpg")
