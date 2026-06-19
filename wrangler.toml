@@ -1,6 +1,6 @@
 name = "wc2026-ai-predictions"
 compatibility_date = "2026-06-18"
 pages_build_output_dir = "../worldcup-site"
-
-[build]
-command = "python3 build.py"
+# Build settings are configured in the Cloudflare Pages dashboard:
+#   Build command: python3 build.py
+#   Build output directory: ../worldcup-site
