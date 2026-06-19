@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 # Paths
 BASE = os.path.dirname(os.path.abspath(__file__))
 PROJECT = os.path.dirname(BASE)
-DATA_DIR = os.path.join(PROJECT, "site-data")
+DATA_DIR = os.path.join(BASE, "site-data")
 OUTPUT_DIR = os.path.join(PROJECT, "worldcup-site")
 
 # Theme

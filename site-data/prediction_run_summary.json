@@ -1,0 +1,125 @@
+{
+  "matches_predicted": 8,
+  "models_used": [
+    "Hermes \u00d7 DeepSeek V4 Pro",
+    "OpenCode \u00d7 Qwen 3.7 Plus",
+    "OpenCode \u00d7 Kimi K2.6",
+    "OpenCode \u00d7 Minimax M3",
+    "OpenCode \u00d7 GLM 5.2"
+  ],
+  "models_failed": [
+    "OpenClaw \u00d7 Nemotron Ultra 550B"
+  ],
+  "tweets_generated": 24,
+  "tweets_queued": 24,
+  "failures": [
+    "wc2026-grp-c-4/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-c-3/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-d-4/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-d-3/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-e-3/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-f-4/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-f-3/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "wc2026-grp-e-4/openclaw_nemotron_ultra: [Errno 2] No such file or directory: 'openclaw'",
+    "batch_schedule: HTTP Error 429: Too Many Requests"
+  ],
+  "schedules": [
+    {
+      "post_id": "6a34b2ea36f0cedd15dc94c9",
+      "scheduled_date": "2026-06-19T17:00:00Z"
+    },
+    {
+      "post_id": "6a34b2eb36f0cedd15dc94d0",
+      "scheduled_date": "2026-06-19T18:40:00Z"
+    },
+    {
+      "post_id": "6a34b2eb36f0cedd15dc94d7",
+      "scheduled_date": "2026-06-19T21:30:00Z"
+    },
+    {
+      "post_id": "6a34b2ec36f0cedd15dc94de",
+      "scheduled_date": "2026-06-19T20:00:00Z"
+    },
+    {
+      "post_id": "6a34b2ed36f0cedd15dc94e5",
+      "scheduled_date": "2026-06-19T21:40:00Z"
+    },
+    {
+      "post_id": "6a34b2ed36f0cedd15dc94ec",
+      "scheduled_date": "2026-06-20T00:30:00Z"
+    },
+    {
+      "post_id": "6a34b2ee36f0cedd15dc94f3",
+      "scheduled_date": "2026-06-19T22:30:00Z"
+    },
+    {
+      "post_id": "6a34b2ee36f0cedd15dc94fa",
+      "scheduled_date": "2026-06-20T00:10:00Z"
+    },
+    {
+      "post_id": "6a34b2ef36f0cedd15dc9501",
+      "scheduled_date": "2026-06-20T03:00:00Z"
+    },
+    {
+      "post_id": "6a34b2ef36f0cedd15dc9508",
+      "scheduled_date": "2026-06-20T01:00:00Z"
+    },
+    {
+      "post_id": "6a34b2f036f0cedd15dc950f",
+      "scheduled_date": "2026-06-20T02:40:00Z"
+    },
+    {
+      "post_id": "6a34b2f036f0cedd15dc9516",
+      "scheduled_date": "2026-06-20T05:30:00Z"
+    },
+    {
+      "post_id": "6a34b2f136f0cedd15dc951d",
+      "scheduled_date": "2026-06-20T17:00:00Z"
+    },
+    {
+      "post_id": "6a34b2f136f0cedd15dc9524",
+      "scheduled_date": "2026-06-20T18:40:00Z"
+    },
+    {
+      "post_id": "6a34b2f236f0cedd15dc952b",
+      "scheduled_date": "2026-06-20T21:30:00Z"
+    },
+    {
+      "post_id": "6a34b2f236f0cedd15dc9532",
+      "scheduled_date": "2026-06-20T17:00:00Z"
+    },
+    {
+      "post_id": "6a34b2f336f0cedd15dc9539",
+      "scheduled_date": "2026-06-20T18:40:00Z"
+    },
+    {
+      "post_id": "6a34b2f336f0cedd15dc9540",
+      "scheduled_date": "2026-06-20T21:30:00Z"
+    },
+    {
+      "post_id": "6a34b2f436f0cedd15dc9547",
+      "scheduled_date": "2026-06-20T20:00:00Z"
+    },
+    {
+      "post_id": "6a34b2f436f0cedd15dc954e",
+      "scheduled_date": "2026-06-20T21:40:00Z"
+    },
+    {
+      "post_id": "6a34b2f536f0cedd15dc9555",
+      "scheduled_date": "2026-06-21T00:30:00Z"
+    },
+    {
+      "post_id": "6a34b2f536f0cedd15dc955c",
+      "scheduled_date": "2026-06-20T20:00:00Z"
+    },
+    {
+      "post_id": "6a34b2f636f0cedd15dc9563",
+      "scheduled_date": "2026-06-20T21:40:00Z"
+    },
+    {
+      "post_id": "6a34b2f736f0cedd15dc956a",
+      "scheduled_date": "2026-06-21T00:30:00Z"
+    }
+  ],
+  "tweet_schedule_failures": []
+}
