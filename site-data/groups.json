@@ -7,7 +7,7 @@
       "Mexico"
     ],
     "dates": "June 11 - July 19, 2026",
-    "last_updated": "2026-06-19T03:37:13Z"
+    "last_updated": "2026-06-20T05:54:31.361225+00:00Z"
   },
   "groups": {
     "A": {
@@ -20,24 +20,24 @@
       "standings": [
         {
           "team": "Mexico",
-          "MP": 1,
-          "W": 1,
+          "MP": 2,
+          "W": 2,
           "D": 0,
           "L": 0,
-          "GF": 2,
+          "GF": 3,
           "GA": 0,
-          "GD": 2,
-          "Pts": 3
+          "GD": 3,
+          "Pts": 6
         },
         {
           "team": "South Korea",
-          "MP": 1,
+          "MP": 2,
           "W": 1,
           "D": 0,
-          "L": 0,
+          "L": 1,
           "GF": 2,
-          "GA": 1,
-          "GD": 1,
+          "GA": 2,
+          "GD": 0,
           "Pts": 3
         },
         {
@@ -127,47 +127,47 @@
       ],
       "standings": [
         {
-          "team": "Scotland",
-          "MP": 1,
-          "W": 1,
-          "D": 0,
-          "L": 0,
-          "GF": 1,
-          "GA": 0,
-          "GD": 1,
-          "Pts": 3
-        },
-        {
           "team": "Brazil",
-          "MP": 1,
-          "W": 0,
+          "MP": 2,
+          "W": 1,
           "D": 1,
           "L": 0,
-          "GF": 1,
+          "GF": 4,
           "GA": 1,
-          "GD": 0,
-          "Pts": 1
+          "GD": 3,
+          "Pts": 4
         },
         {
           "team": "Morocco",
-          "MP": 1,
-          "W": 0,
+          "MP": 2,
+          "W": 1,
           "D": 1,
           "L": 0,
+          "GF": 2,
+          "GA": 1,
+          "GD": 1,
+          "Pts": 4
+        },
+        {
+          "team": "Scotland",
+          "MP": 2,
+          "W": 1,
+          "D": 0,
+          "L": 1,
           "GF": 1,
           "GA": 1,
           "GD": 0,
-          "Pts": 1
+          "Pts": 3
         },
         {
           "team": "Haiti",
-          "MP": 1,
+          "MP": 2,
           "W": 0,
           "D": 0,
-          "L": 1,
+          "L": 2,
           "GF": 0,
-          "GA": 1,
-          "GD": -1,
+          "GA": 4,
+          "GD": -4,
           "Pts": 0
         }
       ]
@@ -182,45 +182,45 @@
       "standings": [
         {
           "team": "USA",
-          "MP": 1,
-          "W": 1,
+          "MP": 2,
+          "W": 2,
           "D": 0,
           "L": 0,
-          "GF": 4,
+          "GF": 6,
           "GA": 1,
-          "GD": 3,
-          "Pts": 3
+          "GD": 5,
+          "Pts": 6
         },
         {
           "team": "Australia",
-          "MP": 1,
+          "MP": 2,
           "W": 1,
           "D": 0,
-          "L": 0,
+          "L": 1,
           "GF": 2,
-          "GA": 0,
-          "GD": 2,
+          "GA": 2,
+          "GD": 0,
+          "Pts": 3
+        },
+        {
+          "team": "Paraguay",
+          "MP": 2,
+          "W": 1,
+          "D": 0,
+          "L": 1,
+          "GF": 2,
+          "GA": 4,
+          "GD": -2,
           "Pts": 3
         },
         {
           "team": "Türkiye",
-          "MP": 1,
+          "MP": 2,
           "W": 0,
           "D": 0,
-          "L": 1,
+          "L": 2,
           "GF": 0,
-          "GA": 2,
-          "GD": -2,
-          "Pts": 0
-        },
-        {
-          "team": "Paraguay",
-          "MP": 1,
-          "W": 0,
-          "D": 0,
-          "L": 1,
-          "GF": 1,
-          "GA": 4,
+          "GA": 3,
           "GD": -3,
           "Pts": 0
         }
@@ -300,7 +300,7 @@
           "Pts": 3
         },
         {
-          "team": "Japan",
+          "team": "Netherlands",
           "MP": 1,
           "W": 0,
           "D": 1,
@@ -311,7 +311,7 @@
           "Pts": 1
         },
         {
-          "team": "Netherlands",
+          "team": "Japan",
           "MP": 1,
           "W": 0,
           "D": 1,
@@ -419,7 +419,7 @@
           "Pts": 1
         },
         {
-          "team": "Cape Verde",
+          "team": "Spain",
           "MP": 1,
           "W": 0,
           "D": 1,
@@ -430,7 +430,7 @@
           "Pts": 1
         },
         {
-          "team": "Spain",
+          "team": "Cape Verde",
           "MP": 1,
           "W": 0,
           "D": 1,
@@ -570,7 +570,7 @@
           "Pts": 3
         },
         {
-          "team": "DR Congo",
+          "team": "Portugal",
           "MP": 1,
           "W": 0,
           "D": 1,
@@ -581,7 +581,7 @@
           "Pts": 1
         },
         {
-          "team": "Portugal",
+          "team": "DR Congo",
           "MP": 1,
           "W": 0,
           "D": 1,

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-19T06:50:00Z",
-    "total_reviews": 6,
+    "last_updated": "2026-06-20T06:26:32.111338+00:00Z",
+    "total_reviews": 10,
     "researched_reviews": 6,
     "methodology": "Reviews combine real match research (web sources, official reports) with AI prediction analysis. Sources cited where applicable.",
     "retrospective_predictions_added": true,
@@ -748,6 +748,378 @@
             "what_we_missed": "Mexico found one moment of quality through Romo — overestimated the mutual incentive for a draw"
           }
         ]
+      }
+    },
+    "wc2026-grp-c-3": {
+      "headline": "Scotland vs Morocco finishes 0-1",
+      "summary": "In a key Group C match, Scotland faced Morocco at Gillette Stadium in Foxborough. The match concluded with a score of 0-1.",
+      "key_moments": [
+        {
+          "minute": "2'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Morocco",
+          "player": "Ismael Saibari",
+          "description": "Ismael Saibari (Morocco) - Goal at 2'"
+        },
+        {
+          "minute": "23'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Morocco",
+          "player": "Issa Diop",
+          "description": "Issa Diop (Morocco) - Yellow Card at 23'"
+        },
+        {
+          "minute": "65'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Scotland",
+          "player": "Andy Robertson",
+          "description": "Andy Robertson (Scotland) - Yellow Card at 65'"
+        }
+      ],
+      "statistics": {
+        "possession": {
+          "home": 41,
+          "away": 58
+        },
+        "shots": {
+          "home": 6,
+          "away": 12
+        },
+        "shots_on_target": {
+          "home": 0,
+          "away": 2
+        },
+        "red_cards": {
+          "home": 0,
+          "away": 0
+        },
+        "yellow_cards": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "prediction_accuracy": "Fallback review created.",
+      "model_performance": {
+        "analysis": "N/A"
+      },
+      "ai_insights": {
+        "what_to_watch": "Both teams are focusing on their next group stage fixtures.",
+        "key_takeaways": "standings updated.",
+        "tactical_note": "tactics adjusted."
+      },
+      "tactical_breakdown": "The match between Scotland and Morocco was highly contested, ending in a 0-1 result.",
+      "sources": [
+        "ESPN Scoreboard"
+      ],
+      "rating": "⭐⭐⭐",
+      "retrospective_predictions": {
+        "models": []
+      }
+    },
+    "wc2026-grp-c-4": {
+      "headline": "Brazil vs Haiti finishes 3-0",
+      "summary": "In a key Group C match, Brazil faced Haiti at Lincoln Financial Field in Philadelphia. The match concluded with a score of 3-0.",
+      "key_moments": [
+        {
+          "minute": "4'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Haiti",
+          "player": "Carlens Arcus",
+          "description": "Carlens Arcus (Haiti) - Yellow Card at 4'"
+        },
+        {
+          "minute": "23'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Brazil",
+          "player": "Matheus Cunha",
+          "description": "Matheus Cunha (Brazil) - Goal at 23'"
+        },
+        {
+          "minute": "36'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Brazil",
+          "player": "Matheus Cunha",
+          "description": "Matheus Cunha (Brazil) - Goal at 36'"
+        },
+        {
+          "minute": "45'+3'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Brazil",
+          "player": "Vinícius Júnior",
+          "description": "Vinícius Júnior (Brazil) - Goal at 45'+3'"
+        },
+        {
+          "minute": "45'+4'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Haiti",
+          "player": "Frantzdy Pierrot",
+          "description": "Frantzdy Pierrot (Haiti) - Yellow Card at 45'+4'"
+        },
+        {
+          "minute": "65'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Brazil",
+          "player": "Douglas Santos",
+          "description": "Douglas Santos (Brazil) - Yellow Card at 65'"
+        },
+        {
+          "minute": "72'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Haiti",
+          "player": "Danley Jean Jacques",
+          "description": "Danley Jean Jacques (Haiti) - Yellow Card at 72'"
+        }
+      ],
+      "statistics": {
+        "possession": {
+          "home": 56,
+          "away": 43
+        },
+        "shots": {
+          "home": 8,
+          "away": 7
+        },
+        "shots_on_target": {
+          "home": 5,
+          "away": 3
+        },
+        "red_cards": {
+          "home": 0,
+          "away": 0
+        },
+        "yellow_cards": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "prediction_accuracy": "Fallback review created.",
+      "model_performance": {
+        "analysis": "N/A"
+      },
+      "ai_insights": {
+        "what_to_watch": "Both teams are focusing on their next group stage fixtures.",
+        "key_takeaways": "standings updated.",
+        "tactical_note": "tactics adjusted."
+      },
+      "tactical_breakdown": "The match between Brazil and Haiti was highly contested, ending in a 3-0 result.",
+      "sources": [
+        "ESPN Scoreboard"
+      ],
+      "rating": "⭐⭐⭐",
+      "retrospective_predictions": {
+        "models": []
+      }
+    },
+    "wc2026-grp-d-3": {
+      "headline": "USA vs Australia finishes 2-0",
+      "summary": "In a key Group D match, USA faced Australia at Lumen Field in Seattle. The match concluded with a score of 2-0.",
+      "key_moments": [
+        {
+          "minute": "11'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "USA",
+          "player": "Cameron Burgess",
+          "description": "Cameron Burgess (USA) - Own Goal at 11'"
+        },
+        {
+          "minute": "16'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Australia",
+          "player": "Jordan Bos",
+          "description": "Jordan Bos (Australia) - Yellow Card at 16'"
+        },
+        {
+          "minute": "32'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Australia",
+          "player": "Alessandro Circati",
+          "description": "Alessandro Circati (Australia) - Yellow Card at 32'"
+        },
+        {
+          "minute": "43'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "USA",
+          "player": "Alex Freeman",
+          "description": "Alex Freeman (USA) - Goal - Header at 43'"
+        },
+        {
+          "minute": "56'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "USA",
+          "player": "Antonee Robinson",
+          "description": "Antonee Robinson (USA) - Yellow Card at 56'"
+        },
+        {
+          "minute": "88'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Australia",
+          "player": "Harry Souttar",
+          "description": "Harry Souttar (Australia) - Yellow Card at 88'"
+        },
+        {
+          "minute": "89'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "USA",
+          "player": "Folarin Balogun",
+          "description": "Folarin Balogun (USA) - Yellow Card at 89'"
+        },
+        {
+          "minute": "89'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Australia",
+          "player": "Jacob Italiano",
+          "description": "Jacob Italiano (Australia) - Yellow Card at 89'"
+        },
+        {
+          "minute": "90'+3'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "USA",
+          "player": "Chris Richards",
+          "description": "Chris Richards (USA) - Yellow Card at 90'+3'"
+        }
+      ],
+      "statistics": {
+        "possession": {
+          "home": 61,
+          "away": 38
+        },
+        "shots": {
+          "home": 10,
+          "away": 5
+        },
+        "shots_on_target": {
+          "home": 2,
+          "away": 2
+        },
+        "red_cards": {
+          "home": 0,
+          "away": 0
+        },
+        "yellow_cards": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "prediction_accuracy": "Fallback review created.",
+      "model_performance": {
+        "analysis": "N/A"
+      },
+      "ai_insights": {
+        "what_to_watch": "Both teams are focusing on their next group stage fixtures.",
+        "key_takeaways": "standings updated.",
+        "tactical_note": "tactics adjusted."
+      },
+      "tactical_breakdown": "The match between USA and Australia was highly contested, ending in a 2-0 result.",
+      "sources": [
+        "ESPN Scoreboard"
+      ],
+      "rating": "⭐⭐⭐",
+      "retrospective_predictions": {
+        "models": []
+      }
+    },
+    "wc2026-grp-d-4": {
+      "headline": "Türkiye vs Paraguay finishes 0-1",
+      "summary": "In a key Group D match, Türkiye faced Paraguay at Levi's Stadium in Santa Clara. The match concluded with a score of 0-1.",
+      "key_moments": [
+        {
+          "minute": "2'",
+          "type": "goal",
+          "icon": "⚽",
+          "team": "Paraguay",
+          "player": "Matías Galarza",
+          "description": "Matías Galarza (Paraguay) - Goal at 2'"
+        },
+        {
+          "minute": "4'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Paraguay",
+          "player": "Matías Galarza",
+          "description": "Matías Galarza (Paraguay) - Yellow Card at 4'"
+        },
+        {
+          "minute": "45'+3'",
+          "type": "red_card",
+          "icon": "🟥",
+          "team": "Paraguay",
+          "player": "Miguel Almirón",
+          "description": "Miguel Almirón (Paraguay) - Red Card at 45'+3'"
+        },
+        {
+          "minute": "63'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Türkiye",
+          "player": "Player",
+          "description": "Player (Türkiye) - Yellow Card at 63'"
+        },
+        {
+          "minute": "71'",
+          "type": "yellow_card",
+          "icon": "🟨",
+          "team": "Türkiye",
+          "player": "Eren Elmali",
+          "description": "Eren Elmali (Türkiye) - Yellow Card at 71'"
+        }
+      ],
+      "statistics": {
+        "possession": {
+          "home": 78,
+          "away": 21
+        },
+        "shots": {
+          "home": 32,
+          "away": 7
+        },
+        "shots_on_target": {
+          "home": 5,
+          "away": 2
+        },
+        "red_cards": {
+          "home": 0,
+          "away": 0
+        },
+        "yellow_cards": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "prediction_accuracy": "Fallback review created.",
+      "model_performance": {
+        "analysis": "N/A"
+      },
+      "ai_insights": {
+        "what_to_watch": "Both teams are focusing on their next group stage fixtures.",
+        "key_takeaways": "standings updated.",
+        "tactical_note": "tactics adjusted."
+      },
+      "tactical_breakdown": "The match between Türkiye and Paraguay was highly contested, ending in a 0-1 result.",
+      "sources": [
+        "ESPN Scoreboard"
+      ],
+      "rating": "⭐⭐⭐",
+      "retrospective_predictions": {
+        "models": []
       }
     }
   }
