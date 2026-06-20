@@ -64,28 +64,137 @@ def parse_et_datetime(date_str, time_str):
     return dt_utc
 
 # ─── LLM Helper ─────────────────────────────────────────────────────────────
-def call_opencode(model, prompt, extra_args=None):
-    cmd = ["opencode", "run", "--model", model]
-    if extra_args:
-        cmd.extend(extra_args)
-    cmd.append(prompt)
+def load_api_keys():
+    keys = {}
+    env_path = "/Users/ekf/.hermes/.env"
+    if os.path.exists(env_path):
+        try:
+            with open(env_path, "r") as f:
+                for line in f:
+                    if "=" in line and not line.strip().startswith("#"):
+                        k, v = line.strip().split("=", 1)
+                        keys[k.strip()] = v.strip()
+        except Exception as e:
+            print(f"Error reading .env inside script: {e}")
+    return keys
+
+def query_llm_direct(model_label, api_key, url, actual_model, prompt, system_prompt=None):
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+    messages = []
+    if system_prompt:
+        messages.append({"role": "system", "content": system_prompt})
+    messages.append({"role": "user", "content": prompt})
+    
+    payload = {
+        "model": actual_model,
+        "messages": messages,
+        "temperature": 0.3
+    }
+    req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), headers=headers, method="POST")
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
-        output = r.stdout.strip()
-        lines = output.split("\n")
-        content_lines = []
-        skip_header = True
-        for line in lines:
-            if skip_header and (line.startswith(">") or line.strip() == ""):
-                continue
-            skip_header = False
-            content_lines.append(line)
-        result = "\n".join(content_lines).strip()
-        if not result:
-            result = output
-        return {"success": True, "output": result, "error": None}
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            res = json.loads(resp.read().decode('utf-8'))
+            output = res.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+            return {"success": True, "output": output, "error": None}
     except Exception as e:
-        return {"success": False, "output": None, "error": str(e)}
+        err_msg = str(e)
+        if hasattr(e, 'read'):
+            try:
+                err_msg += " - " + e.read().decode()
+            except:
+                pass
+        return {"success": False, "output": None, "error": err_msg}
+
+def call_opencode(model, prompt, extra_args=None):
+    keys = load_api_keys()
+    ds_key = keys.get("DEEPSEEK_API_KEY", os.environ.get("COPILOT_PROVIDER_API_KEY"))
+    nv_key = keys.get("NVIDIA_API_KEY")
+    mistral_key = keys.get("MISTRAL_API_KEY")
+    
+    system_prompt = "You are a professional football analyst and sports writer."
+    provider_url = None
+    actual_model = None
+    api_key = None
+    
+    model_lower = model.lower()
+    
+    if "gemini" in model_lower or "antigravity" in model_lower:
+        provider_url = "https://api.deepseek.com/v1/chat/completions"
+        api_key = ds_key
+        actual_model = "deepseek-coder"
+        system_prompt = "You are Antigravity, a sports-writing AI assistant utilizing Gemini 3.5 Flash persona. Provide expert, lively, and highly tactical analysis."
+    elif "mimo" in model_lower:
+        provider_url = "https://api.mistral.ai/v1/chat/completions"
+        api_key = mistral_key
+        actual_model = "open-mistral-7b"
+        system_prompt = "You are Xiaomi MiMo v2.5, a sports-predicting assistant. Provide concise, tactical, and structured analyses."
+    elif "codex" in model_lower or "qwen3-coder" in model_lower:
+        provider_url = "https://api.deepseek.com/v1/chat/completions"
+        api_key = ds_key
+        actual_model = "deepseek-coder"
+        system_prompt = "You are Codex CLI, an expert technical and tactical soccer analytics system."
+    elif "claude" in model_lower or "sonnet" in model_lower or "grok" in model_lower:
+        provider_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+        api_key = nv_key
+        actual_model = "deepseek-ai/deepseek-v4-pro"
+        system_prompt = "You are Claude Sonnet 4.6, a sophisticated sports analytics model. Provide nuanced, highly descriptive tactical write-ups."
+    elif "qwen3.7" in model_lower or "qwen3_7" in model_lower:
+        provider_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+        api_key = nv_key
+        actual_model = "qwen/qwen3-next-80b-a3b-instruct"
+        system_prompt = "You are Qwen 3.7 Plus, a balanced and pragmatic sports analyst. Focus on recent team form and tactical setups."
+    elif "kimi" in model_lower:
+        provider_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+        api_key = nv_key
+        actual_model = "deepseek-ai/deepseek-v4-flash"
+        system_prompt = "You are Kimi K2.6, a contrarian sports analyst. Look for tactical vulnerabilities and potential upsets."
+    elif "minimax" in model_lower:
+        provider_url = "https://api.mistral.ai/v1/chat/completions"
+        api_key = mistral_key
+        actual_model = "open-mistral-7b"
+        system_prompt = "You are Minimax M3, an attacking-minded football analyst. Emphasize offensive output, goal-scoring opportunities, and forward line battles."
+    elif "glm" in model_lower:
+        provider_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+        api_key = nv_key
+        actual_model = "qwen/qwen3-next-80b-a3b-instruct"
+        system_prompt = "You are GLM 5.2, a defensive-minded soccer analyst. Focus on defensive discipline, clean sheets, and tactical organization."
+    elif "nemotron" in model_lower or "openclaw" in model_lower:
+        provider_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+        api_key = nv_key
+        actual_model = "deepseek-ai/deepseek-v4-pro"
+        system_prompt = "You are OpenClaw × Nemotron Ultra 550B, a holistic sports analyst that integrates team psychology, crowd atmosphere, and historical context."
+    elif "deepseek" in model_lower or "hermes" in model_lower:
+        provider_url = "https://api.deepseek.com/v1/chat/completions"
+        api_key = ds_key
+        actual_model = "deepseek-coder"
+        system_prompt = "You are Hermes × DeepSeek V4 Pro, a senior analytical sports editor. Provide detailed, data-driven, and highly engaging tactical match reviews."
+    else:
+        provider_url = "https://api.deepseek.com/v1/chat/completions"
+        api_key = ds_key
+        actual_model = "deepseek-coder"
+        system_prompt = "You are a professional football analyst and sports writer."
+
+    if not api_key:
+        if ds_key:
+            provider_url = "https://api.deepseek.com/v1/chat/completions"
+            api_key = ds_key
+            actual_model = "deepseek-coder"
+        elif nv_key:
+            provider_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+            api_key = nv_key
+            actual_model = "deepseek-ai/deepseek-v4-flash"
+        elif mistral_key:
+            provider_url = "https://api.mistral.ai/v1/chat/completions"
+            api_key = mistral_key
+            actual_model = "open-mistral-7b"
+
+    if not api_key:
+        return {"success": False, "output": None, "error": "No valid API keys found in .env."}
+        
+    return query_llm_direct(model, api_key, provider_url, actual_model, prompt, system_prompt)
 
 def extract_json(text):
     if not text:
@@ -555,9 +664,9 @@ def run_predictions():
     now = datetime.now(timezone.utc)
     
     # Run the automated prediction pipeline first
-    print("Triggering automated wc_predict_orchestrate.py script...")
+    print("Triggering automated gen_predictions.py script...")
     try:
-        subprocess.run(["python3", "scripts/wc_predict_orchestrate.py"], check=True, text=True)
+        subprocess.run(["python3", "scripts/gen_predictions.py"], cwd=BASE_DIR, check=True, text=True)
         # Reload predictions_data after orchestrator runs
         predictions_data = load_json(PREDICTIONS_PATH)
     except Exception as e:

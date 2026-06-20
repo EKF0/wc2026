@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-20T06:26:32.127690+00:00Z",
-    "total_predictions": 154
+    "last_updated": "2026-06-20T12:46:51.033991+00:00Z",
+    "total_predictions": 186
   },
   "models": [
     {
@@ -596,6 +596,86 @@
         "parsed": null,
         "error": "GatewayClientRequestError: FailoverError: 402 \"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get ",
         "timestamp": "2026-06-19T03:11:15.657910+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Germany's superior technical quality and pressing game should overwhelm Ivory Coast's defense, but the Elephants' pace on the counter and set-piece threat will keep it close. Expect a tight first half before Germany's depth and tactical adjustments decide it.\",\n  \"key_factors\": [\"Germany's midfield control and quick transitions\", \"Ivory Coast's counter-attacking speed and aerial prowess\", \"NRG Stadium's artificial turf favoring t",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.7,
+          "reasoning": "Germany's superior technical quality and pressing game should overwhelm Ivory Coast's defense, but the Elephants' pace on the counter and set-piece threat will keep it close. Expect a tight first half before Germany's depth and tactical adjustments decide it.",
+          "key_factors": [
+            "Germany's midfield control and quick transitions",
+            "Ivory Coast's counter-attacking speed and aerial prowess",
+            "NRG Stadium's artificial turf favoring technical sides"
+          ],
+          "win_probability": {
+            "home": 0.55,
+            "draw": 0.25,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "{\n  \"predicted_score\": \"3-0\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Germany's superior organization, depth, and high-pressing system should overwhelm Ivory Coast's talented but often disjointed defense. The Elephants may struggle to break down a disciplined German backline, while Germany's fluid attack exploits set pieces and transitions.\",\n  \"key_factors\": [\"Germany's tactical discipline and pressing\", \"Ivory Coast's defensive lapses under pressure\", \"Germany's set-piece efficiency\"],\n  \"win_pro",
+        "parsed": {
+          "predicted_score": "3-0",
+          "confidence": 0.7,
+          "reasoning": "Germany's superior organization, depth, and high-pressing system should overwhelm Ivory Coast's talented but often disjointed defense. The Elephants may struggle to break down a disciplined German backline, while Germany's fluid attack exploits set pieces and transitions.",
+          "key_factors": [
+            "Germany's tactical discipline and pressing",
+            "Ivory Coast's defensive lapses under pressure",
+            "Germany's set-piece efficiency"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"2-0\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Germany's superior tactical organization and depth in midfield should control possession against Ivory Coast's athletic but less structured defense. The Ivory Coast may struggle to break down Germany's high press, while Germany's efficient counter-attacks and set-piece execution could yield two goals.\",\n  \"key_factors\": [\"Germany's midfield dominance and pressing system\", \"Ivory Coast's defensive lapses against structured attacks",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.7,
+          "reasoning": "Germany's superior tactical organization and depth in midfield should control possession against Ivory Coast's athletic but less structured defense. The Ivory Coast may struggle to break down Germany's high press, while Germany's efficient counter-attacks and set-piece execution could yield two goals.",
+          "key_factors": [
+            "Germany's midfield dominance and pressing system",
+            "Ivory Coast's defensive lapses against structured attacks",
+            "NRG Stadium's turf favoring Germany's quick passing game"
+          ],
+          "win_probability": {
+            "home": 0.55,
+            "draw": 0.25,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"3-1\",\n  \"confidence\": 0.78,\n  \"reasoning\": \"Germany's structured 4-2-3-1 system should overwhelm Ivory Coast's transitional defense through sustained possession and vertical runs from Musiala and Wirtz. Ivory Coast's pace on the counter through Adingra poses a threat, but Germany's high press and aerial dominance on set pieces will likely produce a multi-goal margin in humid Houston conditions.\",\n  \"key_factors\": [\"Germany's midfield control and chance creation through Wi",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.78,
+          "reasoning": "Germany's structured 4-2-3-1 system should overwhelm Ivory Coast's transitional defense through sustained possession and vertical runs from Musiala and Wirtz. Ivory Coast's pace on the counter through Adingra poses a threat, but Germany's high press and aerial dominance on set pieces will likely produce a multi-goal margin in humid Houston conditions.",
+          "key_factors": [
+            "Germany's midfield control and chance creation through Wirtz/Musiala",
+            "Ivory Coast's vulnerability against organized pressing systems",
+            "NRG Stadium's closed roof creating fast surface favoring technical play"
+          ],
+          "win_probability": {
+            "home": 0.68,
+            "draw": 0.19,
+            "away": 0.13
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-f-4": {
@@ -698,6 +778,86 @@
         "parsed": null,
         "error": "GatewayClientRequestError: FailoverError: 402 \"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get ",
         "timestamp": "2026-06-19T03:11:15.657910+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.6,\n  \"reasoning\": \"Japan's high-press and quick transitions will trouble Tunisia's deep block, but Tunisia's set-piece threat and counter-attacking pace could snatch a goal. Expect Japan to edge a tight, physical contest in Monterrey's altitude.\",\n  \"key_factors\": [\"Japan's pressing intensity and midfield control\", \"Tunisia's defensive organization and set-piece efficiency\", \"Altitude at Estadio BBVA affecting stamina and ball speed\"],\n  \"win_proba",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.6,
+          "reasoning": "Japan's high-press and quick transitions will trouble Tunisia's deep block, but Tunisia's set-piece threat and counter-attacking pace could snatch a goal. Expect Japan to edge a tight, physical contest in Monterrey's altitude.",
+          "key_factors": [
+            "Japan's pressing intensity and midfield control",
+            "Tunisia's defensive organization and set-piece efficiency",
+            "Altitude at Estadio BBVA affecting stamina and ball speed"
+          ],
+          "win_probability": {
+            "home": 0.45,
+            "draw": 0.3,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.6,\n  \"reasoning\": \"Japan's high-press and quick transitions exploit Tunisia's defensive disorganization, but Tunisia's aerial threat from set pieces keeps it close. Japan's superior technical quality and depth edge a narrow win in a high-tempo match.\",\n  \"key_factors\": [\"Japan's pressing and counter-attacking speed\", \"Tunisia's set-piece vulnerability\", \"Estadio BBVA's altitude favoring Japan's fitness\"],\n  \"win_probability\": {\n    \"home\": 0.45,\n  ",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.6,
+          "reasoning": "Japan's high-press and quick transitions exploit Tunisia's defensive disorganization, but Tunisia's aerial threat from set pieces keeps it close. Japan's superior technical quality and depth edge a narrow win in a high-tempo match.",
+          "key_factors": [
+            "Japan's pressing and counter-attacking speed",
+            "Tunisia's set-piece vulnerability",
+            "Estadio BBVA's altitude favoring Japan's fitness"
+          ],
+          "win_probability": {
+            "home": 0.45,
+            "draw": 0.28,
+            "away": 0.27
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.6,\n  \"reasoning\": \"Japan's high-press and quick transitions exploit Tunisia's defensive disorganization, but Tunisia's aerial threat from set pieces keeps it close. Japan's superior technical quality and depth edge a narrow win in a high-tempo match.\",\n  \"key_factors\": [\"Japan's pressing and transition speed\", \"Tunisia's set-piece vulnerability\", \"Estadio BBVA's altitude affecting stamina\"],\n  \"win_probability\": {\n    \"home\": 0.45,\n    \"draw\": 0.28",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.6,
+          "reasoning": "Japan's high-press and quick transitions exploit Tunisia's defensive disorganization, but Tunisia's aerial threat from set pieces keeps it close. Japan's superior technical quality and depth edge a narrow win in a high-tempo match.",
+          "key_factors": [
+            "Japan's pressing and transition speed",
+            "Tunisia's set-piece vulnerability",
+            "Estadio BBVA's altitude affecting stamina"
+          ],
+          "win_probability": {
+            "home": 0.45,
+            "draw": 0.28,
+            "away": 0.27
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"2-0\",\n  \"confidence\": 0.78,\n  \"reasoning\": \"Japan's structured positional play and high press should overwhelm Tunisia's disjointed defensive block, especially in transition. Tunisia lacks the midfield creativity to bypass Japan's compact 4-3-3, and the altitude in Monterrey favors Japan's superior fitness and tempo control. Expect a controlled win with goals from set pieces and a late counter.\",\n  \"key_factors\": [\"Japan's high press and transition speed\", \"Tunisia's lack",
+        "parsed": {
+          "predicted_score": "2-0",
+          "confidence": 0.78,
+          "reasoning": "Japan's structured positional play and high press should overwhelm Tunisia's disjointed defensive block, especially in transition. Tunisia lacks the midfield creativity to bypass Japan's compact 4-3-3, and the altitude in Monterrey favors Japan's superior fitness and tempo control. Expect a controlled win with goals from set pieces and a late counter.",
+          "key_factors": [
+            "Japan's high press and transition speed",
+            "Tunisia's lack of creative midfield link-up",
+            "Altitude and conditioning advantage for Japan"
+          ],
+          "win_probability": {
+            "home": 0.72,
+            "draw": 0.19,
+            "away": 0.09
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-f-3": {
@@ -819,6 +979,86 @@
         "parsed": null,
         "error": "GatewayClientRequestError: FailoverError: 402 \"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get ",
         "timestamp": "2026-06-19T03:11:15.657910+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.65,\n  \"reasoning\": \"Netherlands' fluid 4-3-3 attack, led by Depay and Gakpo, should exploit Sweden's high defensive line, but Sweden's set-piece threat and compact midfield can grab a goal. Expect a tight match where Dutch quality edges out a narrow win.\",\n  \"key_factors\": [\"Netherlands' pressing and wide play\", \"Sweden's aerial strength on corners\", \"AT&T Stadium's artificial turf affecting ball speed\"],\n  \"win_probability\": {\n    \"home\": 0.48,\n  ",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.65,
+          "reasoning": "Netherlands' fluid 4-3-3 attack, led by Depay and Gakpo, should exploit Sweden's high defensive line, but Sweden's set-piece threat and compact midfield can grab a goal. Expect a tight match where Dutch quality edges out a narrow win.",
+          "key_factors": [
+            "Netherlands' pressing and wide play",
+            "Sweden's aerial strength on corners",
+            "AT&T Stadium's artificial turf affecting ball speed"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.28,
+            "away": 0.24
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "```json\n{\n  \"predicted_score\": \"1-2\",\n  \"confidence\": 0.65,\n  \"reasoning\": \"Sweden’s disciplined defensive structure (4-3-3) will neutralize Netherlands’ pressing, while their counter-attacking transitions—exploiting De Ligt’s pace and Lindelöf’s aerial dominance—will create scoring chances. The Netherlands’ midfield (De Ligt, Depay) may struggle against Sweden’s compact backline, limiting possession-based attacks. AT&T Stadium’s wind conditions could favor the away team’s set-piece delivery.\",\n",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.65,
+          "reasoning": "Sweden’s disciplined defensive structure (4-3-3) will neutralize Netherlands’ pressing, while their counter-attacking transitions—exploiting De Ligt’s pace and Lindelöf’s aerial dominance—will create scoring chances. The Netherlands’ midfield (De Ligt, Depay) may struggle against Sweden’s compact backline, limiting possession-based attacks. AT&T Stadium’s wind conditions could favor the away team’s set-piece delivery.",
+          "key_factors": [
+            "Sweden’s defensive organization vs. Netherlands’ midfield control",
+            "Set-piece dominance (Sweden’s free-kick threat)",
+            "Neutral venue impact on home-team confidence"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.3,
+            "away": 0.45
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.65,\n  \"reasoning\": \"Netherlands' fluid attacking system, led by Memphis Depay and Cody Gakpo, should exploit Sweden's high defensive line, but Sweden's set-piece threat from Alexander Isak and physical midfield can trouble the Dutch backline. The match is likely to be tight, with the Netherlands' superior technical quality and home-field advantage at AT&T Stadium proving decisive in a narrow win.\",\n  \"key_factors\": [\"Netherlands' creative midfield ",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.65,
+          "reasoning": "Netherlands' fluid attacking system, led by Memphis Depay and Cody Gakpo, should exploit Sweden's high defensive line, but Sweden's set-piece threat from Alexander Isak and physical midfield can trouble the Dutch backline. The match is likely to be tight, with the Netherlands' superior technical quality and home-field advantage at AT&T Stadium proving decisive in a narrow win.",
+          "key_factors": [
+            "Netherlands' creative midfield and wing play",
+            "Sweden's aerial and set-piece efficiency",
+            "AT&T Stadium's large pitch favoring Dutch possession style"
+          ],
+          "win_probability": {
+            "home": 0.48,
+            "draw": 0.27,
+            "away": 0.25
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Netherlands' fluid 4-3-3 should exploit Sweden's high defensive line through Gakpo's diagonal runs and Simons' late arrivals into the box. Sweden will threaten on set pieces and Isak's pace in transition, but the Dutch midfield control under Koopmeiners will ultimately dictate tempo in Arlington's wide-open conditions.\",\n  \"key_factors\": [\n    \"Dutch midfield dominance through Koopmeiners and Gravenberch\",\n    \"Sweden's vulnerabi",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.7,
+          "reasoning": "Netherlands' fluid 4-3-3 should exploit Sweden's high defensive line through Gakpo's diagonal runs and Simons' late arrivals into the box. Sweden will threaten on set pieces and Isak's pace in transition, but the Dutch midfield control under Koopmeiners will ultimately dictate tempo in Arlington's wide-open conditions.",
+          "key_factors": [
+            "Dutch midfield dominance through Koopmeiners and Gravenberch",
+            "Sweden's vulnerability defending quick combinations in half-spaces",
+            "AT&T Stadium's pitch dimensions favoring Netherlands' wide overloads"
+          ],
+          "win_probability": {
+            "home": 0.55,
+            "draw": 0.25,
+            "away": 0.2
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-e-4": {
@@ -922,6 +1162,86 @@
         "parsed": null,
         "error": "GatewayClientRequestError: FailoverError: 402 \"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get ",
         "timestamp": "2026-06-19T03:11:15.657910+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"0-2\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Ecuador's high-pressing system and superior technical quality should overwhelm Curaçao's defense, especially in the Miami heat. Curaçao will sit deep and look to counter, but lack the finishing quality to trouble Ecuador's organized backline.\",\n  \"key_factors\": [\"Ecuador's pressing intensity and midfield control\", \"Curaçao's defensive discipline but limited attacking threat\", \"Heat and humidity favoring Ecuador's deeper squad dep",
+        "parsed": {
+          "predicted_score": "0-2",
+          "confidence": 0.7,
+          "reasoning": "Ecuador's high-pressing system and superior technical quality should overwhelm Curaçao's defense, especially in the Miami heat. Curaçao will sit deep and look to counter, but lack the finishing quality to trouble Ecuador's organized backline.",
+          "key_factors": [
+            "Ecuador's pressing intensity and midfield control",
+            "Curaçao's defensive discipline but limited attacking threat",
+            "Heat and humidity favoring Ecuador's deeper squad depth"
+          ],
+          "win_probability": {
+            "home": 0.15,
+            "draw": 0.25,
+            "away": 0.6
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "```json\n{\n  \"predicted_score\": \"1-2\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Ecuador’s disciplined defensive structure (4-2-3-1) will neutralize Curaçao’s attacking flair, but their midfield dynamism (e.g., Paredes, Arboleda) will exploit gaps in Curaçao’s congested press. Home advantage (Hard Rock Stadium) and Ecuador’s recent CONCACAF form (3 wins in last 5) tilt the balance slightly toward a narrow away win.\",\n  \"key_factors\": [\n    \"Ecuador’s midfield control vs. Curaçao’s counter-attacking re",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.7,
+          "reasoning": "Ecuador’s disciplined defensive structure (4-2-3-1) will neutralize Curaçao’s attacking flair, but their midfield dynamism (e.g., Paredes, Arboleda) will exploit gaps in Curaçao’s congested press. Home advantage (Hard Rock Stadium) and Ecuador’s recent CONCACAF form (3 wins in last 5) tilt the balance slightly toward a narrow away win.",
+          "key_factors": [
+            "Ecuador’s midfield control vs. Curaçao’s counter-attacking reliance",
+            "Hard Rock Stadium’s neutral but high-energy atmosphere favoring the away team",
+            "Curaçao’s set-piece threat (e.g., Babel, Woud) vs. Ecuador’s defensive organization"
+          ],
+          "win_probability": {
+            "home": 0.25,
+            "draw": 0.15,
+            "away": 0.6
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"0-3\",\n  \"confidence\": 0.8,\n  \"reasoning\": \"Ecuador's superior technical quality and cohesive pressing system should overwhelm Curaçao's defense, especially in a neutral venue. Curaçao lacks the individual talent to consistently threaten Ecuador's organized backline, leading to a comfortable away win.\",\n  \"key_factors\": [\"Ecuador's high pressing and transition speed\", \"Curaçao's defensive vulnerabilities against South American sides\", \"Ecuador's depth in attack with player",
+        "parsed": {
+          "predicted_score": "0-3",
+          "confidence": 0.8,
+          "reasoning": "Ecuador's superior technical quality and cohesive pressing system should overwhelm Curaçao's defense, especially in a neutral venue. Curaçao lacks the individual talent to consistently threaten Ecuador's organized backline, leading to a comfortable away win.",
+          "key_factors": [
+            "Ecuador's high pressing and transition speed",
+            "Curaçao's defensive vulnerabilities against South American sides",
+            "Ecuador's depth in attack with players like Enner Valencia"
+          ],
+          "win_probability": {
+            "home": 0.08,
+            "draw": 0.17,
+            "away": 0.75
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"0-3\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"Ecuador's high-pressing 4-3-3 system should overwhelm Curaçao's defensive block, with Enner Valencia's movement between the lines exploiting the significant gulf in individual quality. Curaçao will likely sit deep in a 5-4-1 but lack the midfield athleticism to prevent Ecuador's wing-backs from creating overloads, leading to a comfortable multi-goal margin.\",\n  \"key_factors\": [\"Massive FIFA ranking disparity (Ecuador top 30 vs C",
+        "parsed": {
+          "predicted_score": "0-3",
+          "confidence": 0.82,
+          "reasoning": "Ecuador's high-pressing 4-3-3 system should overwhelm Curaçao's defensive block, with Enner Valencia's movement between the lines exploiting the significant gulf in individual quality. Curaçao will likely sit deep in a 5-4-1 but lack the midfield athleticism to prevent Ecuador's wing-backs from creating overloads, leading to a comfortable multi-goal margin.",
+          "key_factors": [
+            "Massive FIFA ranking disparity (Ecuador top 30 vs Curaçao outside top 80)",
+            "Ecuador's altitude-adapted fitness translating to oppressive pressing in Miami humidity",
+            "Curaçao's limited attacking outlets against a well-drilled Ecuadorian backline"
+          ],
+          "win_probability": {
+            "home": 0.04,
+            "draw": 0.14,
+            "away": 0.82
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-g-3": {
@@ -1056,6 +1376,86 @@
           }
         },
         "timestamp": "2026-06-19T04:21:04.354702+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"3-1\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Belgium's technical superiority and depth in attack, led by De Bruyne and Lukaku, should overwhelm Iran's compact defense. Iran's counter-attacking threat, especially through Taremi, can grab a consolation goal, but Belgium's midfield control and set-piece efficiency will secure a comfortable win.\",\n  \"key_factors\": [\"Belgium's creative midfield dominance\", \"Iran's disciplined low block but limited transition speed\", \"Belgium's a",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.7,
+          "reasoning": "Belgium's technical superiority and depth in attack, led by De Bruyne and Lukaku, should overwhelm Iran's compact defense. Iran's counter-attacking threat, especially through Taremi, can grab a consolation goal, but Belgium's midfield control and set-piece efficiency will secure a comfortable win.",
+          "key_factors": [
+            "Belgium's creative midfield dominance",
+            "Iran's disciplined low block but limited transition speed",
+            "Belgium's aerial advantage on set pieces"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.2,
+            "away": 0.15
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "```json\n{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Belgium’s disciplined defensive structure (high pressing, compact midfield) will neutralize Iran’s physicality, while their counter-attacking transitions (e.g., De Bruyne’s creativity) will exploit gaps in Iran’s backline. Iran’s home-like conditions (SoFi’s familiarity) and tactical flexibility (adjusting to Belgium’s pace) could spark late flair, but Belgium’s experience in high-pressure knockout stages (2018, 2022) til",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.7,
+          "reasoning": "Belgium’s disciplined defensive structure (high pressing, compact midfield) will neutralize Iran’s physicality, while their counter-attacking transitions (e.g., De Bruyne’s creativity) will exploit gaps in Iran’s backline. Iran’s home-like conditions (SoFi’s familiarity) and tactical flexibility (adjusting to Belgium’s pace) could spark late flair, but Belgium’s experience in high-pressure knockout stages (2018, 2022) tilts the balance.",
+          "key_factors": [
+            "Belgium’s midfield dominance (Trossard vs. Iran’s defensive overload)",
+            "Iran’s set-piece threat (Ghoochannejhad’s header potential)",
+            "SoFi Stadium’s altitude (slightly reduced passing accuracy for Iran)"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.25,
+            "away": 0.1
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"3-0\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"Belgium's technical superiority and depth in attack, led by De Bruyne and Lukaku, will overwhelm Iran's defensively rigid but less creative side. Iran's lack of pace at the back and limited transition threat make it unlikely they can breach Belgium's organized defense.\",\n  \"key_factors\": [\"Belgium's elite midfield control and set-piece threat\", \"Iran's defensive discipline but low offensive output\", \"SoFi Stadium's large pitch f",
+        "parsed": {
+          "predicted_score": "3-0",
+          "confidence": 0.85,
+          "reasoning": "Belgium's technical superiority and depth in attack, led by De Bruyne and Lukaku, will overwhelm Iran's defensively rigid but less creative side. Iran's lack of pace at the back and limited transition threat make it unlikely they can breach Belgium's organized defense.",
+          "key_factors": [
+            "Belgium's elite midfield control and set-piece threat",
+            "Iran's defensive discipline but low offensive output",
+            "SoFi Stadium's large pitch favors Belgium's passing style"
+          ],
+          "win_probability": {
+            "home": 0.78,
+            "draw": 0.15,
+            "away": 0.07
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"3-1\",\n  \"confidence\": 0.78,\n  \"reasoning\": \"Belgium's golden generation may be aging, but their technical superiority and tournament experience should overwhelm Iran's compact defensive block. De Bruyne's incisive passing will unlock the Iranian backline in transition, while Lukaku's physical presence in the box proves decisive on set pieces. Iran will likely grab a consolation goal through a counter-attack or long-range effort, but Belgium's quality in the final third wi",
+        "parsed": {
+          "predicted_score": "3-1",
+          "confidence": 0.78,
+          "reasoning": "Belgium's golden generation may be aging, but their technical superiority and tournament experience should overwhelm Iran's compact defensive block. De Bruyne's incisive passing will unlock the Iranian backline in transition, while Lukaku's physical presence in the box proves decisive on set pieces. Iran will likely grab a consolation goal through a counter-attack or long-range effort, but Belgium's quality in the final third will be the difference.",
+          "key_factors": [
+            "Belgium's superior individual talent and creative midfield",
+            "Iran's defensive organization vs. Belgium's ability to break low blocks",
+            "Set-piece threat from Belgium's aerial dominance"
+          ],
+          "win_probability": {
+            "home": 0.72,
+            "draw": 0.18,
+            "away": 0.1
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-h-3": {
@@ -1190,6 +1590,86 @@
           }
         },
         "timestamp": "2026-06-19T04:21:04.354702+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"3-0\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"Spain's technical superiority and high press will overwhelm Saudi Arabia's deep block, with La Roja controlling possession and creating overloads in wide areas. Saudi Arabia lacks the transitional speed to exploit Spain's high line, making a clean sheet likely.\",\n  \"key_factors\": [\"Spain's midfield dominance and possession control\", \"Saudi Arabia's defensive fragility against quick combinations\", \"Mercedes-Benz Stadium's fast su",
+        "parsed": {
+          "predicted_score": "3-0",
+          "confidence": 0.85,
+          "reasoning": "Spain's technical superiority and high press will overwhelm Saudi Arabia's deep block, with La Roja controlling possession and creating overloads in wide areas. Saudi Arabia lacks the transitional speed to exploit Spain's high line, making a clean sheet likely.",
+          "key_factors": [
+            "Spain's midfield dominance and possession control",
+            "Saudi Arabia's defensive fragility against quick combinations",
+            "Mercedes-Benz Stadium's fast surface aiding Spain's passing rhythm"
+          ],
+          "win_probability": {
+            "home": 0.78,
+            "draw": 0.15,
+            "away": 0.07
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "{\n  \"predicted_score\": \"3-0\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"Spain's technical superiority and possession-based style will overwhelm Saudi Arabia's defensive setup. Saudi Arabia lacks the quality to counter Spain's pressing and creative midfield, leading to a comfortable win for Spain.\",\n  \"key_factors\": [\"Spain's dominant midfield control\", \"Saudi Arabia's defensive vulnerabilities against high-pressing teams\", \"Spain's depth in attacking talent\"],\n  \"win_probability\": {\n    \"home\": 0.82",
+        "parsed": {
+          "predicted_score": "3-0",
+          "confidence": 0.85,
+          "reasoning": "Spain's technical superiority and possession-based style will overwhelm Saudi Arabia's defensive setup. Saudi Arabia lacks the quality to counter Spain's pressing and creative midfield, leading to a comfortable win for Spain.",
+          "key_factors": [
+            "Spain's dominant midfield control",
+            "Saudi Arabia's defensive vulnerabilities against high-pressing teams",
+            "Spain's depth in attacking talent"
+          ],
+          "win_probability": {
+            "home": 0.82,
+            "draw": 0.13,
+            "away": 0.05
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"3-0\",\n  \"confidence\": 0.85,\n  \"reasoning\": \"Spain's superior technical ability and possession-based style will overwhelm Saudi Arabia's defensive structure. Saudi Arabia lacks the pace and organization to counter Spain's fluid attack, leading to a comfortable win for the European side.\",\n  \"key_factors\": [\"Spain's dominant midfield control and pressing\", \"Saudi Arabia's defensive vulnerabilities against quick passing\", \"Spain's depth and experience in tournament play\"],\n ",
+        "parsed": {
+          "predicted_score": "3-0",
+          "confidence": 0.85,
+          "reasoning": "Spain's superior technical ability and possession-based style will overwhelm Saudi Arabia's defensive structure. Saudi Arabia lacks the pace and organization to counter Spain's fluid attack, leading to a comfortable win for the European side.",
+          "key_factors": [
+            "Spain's dominant midfield control and pressing",
+            "Saudi Arabia's defensive vulnerabilities against quick passing",
+            "Spain's depth and experience in tournament play"
+          ],
+          "win_probability": {
+            "home": 0.75,
+            "draw": 0.18,
+            "away": 0.07
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"3-0\",\n  \"confidence\": 0.87,\n  \"reasoning\": \"Spain's possession-dominant tiki-taka system will systematically dismantle Saudi Arabia's low block, with Pedri and Gavi's progressive carries through the half-spaces creating overloads that force defensive rotations the Saudi backline lacks the technical discipline to sustain. The Mercedes-Benz Stadium's fast artificial surface further amplifies Spain's quick combination play while Saudi Arabia's counter-attacking threat is neu",
+        "parsed": {
+          "predicted_score": "3-0",
+          "confidence": 0.87,
+          "reasoning": "Spain's possession-dominant tiki-taka system will systematically dismantle Saudi Arabia's low block, with Pedri and Gavi's progressive carries through the half-spaces creating overloads that force defensive rotations the Saudi backline lacks the technical discipline to sustain. The Mercedes-Benz Stadium's fast artificial surface further amplifies Spain's quick combination play while Saudi Arabia's counter-attacking threat is neutralized by Rodri's elite screening and Spain's aggressive high-line rest-defense.",
+          "key_factors": [
+            "Spain's midfield control and positional rotations",
+            "Saudi Arabia's inability to sustain defensive compactness beyond 60 minutes",
+            "Mercedes-Benz Stadium surface speed favoring technical combination play"
+          ],
+          "win_probability": {
+            "home": 0.82,
+            "draw": 0.13,
+            "away": 0.05
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-g-4": {
@@ -1324,6 +1804,86 @@
           }
         },
         "timestamp": "2026-06-19T04:21:04.354702+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.65,\n  \"reasoning\": \"Egypt's structured defense and counter-attacking speed, led by Mohamed Salah, should exploit New Zealand's high defensive line, but the All Whites' physicality and set-piece threat will keep it close. Expect a tight match where Egypt's individual quality edges a narrow win.\",\n  \"key_factors\": [\"Egypt's counter-attacking speed\", \"New Zealand's aerial threat on set pieces\", \"Mercedes-Benz Stadium's artificial turf affecting ball c",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.65,
+          "reasoning": "Egypt's structured defense and counter-attacking speed, led by Mohamed Salah, should exploit New Zealand's high defensive line, but the All Whites' physicality and set-piece threat will keep it close. Expect a tight match where Egypt's individual quality edges a narrow win.",
+          "key_factors": [
+            "Egypt's counter-attacking speed",
+            "New Zealand's aerial threat on set pieces",
+            "Mercedes-Benz Stadium's artificial turf affecting ball control"
+          ],
+          "win_probability": {
+            "home": 0.52,
+            "draw": 0.26,
+            "away": 0.22
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "```json\n{\n  \"predicted_score\": \"1-2\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"New Zealand’s disciplined defensive structure (4-2-3-1) will neutralize Egypt’s counterattacking threat, while Egypt’s set-piece dominance (10+ corners per game) could create late opportunities. However, Kiwi midfield control (e.g., Taylor, Wood) will dictate tempo, limiting Egypt’s attacking fluidity.\",\n  \"key_factors\": [\n    \"New Zealand’s defensive organization vs. Egypt’s set-piece execution\",\n    \"Midfield battle: Ki",
+        "parsed": {
+          "predicted_score": "1-2",
+          "confidence": 0.7,
+          "reasoning": "New Zealand’s disciplined defensive structure (4-2-3-1) will neutralize Egypt’s counterattacking threat, while Egypt’s set-piece dominance (10+ corners per game) could create late opportunities. However, Kiwi midfield control (e.g., Taylor, Wood) will dictate tempo, limiting Egypt’s attacking fluidity.",
+          "key_factors": [
+            "New Zealand’s defensive organization vs. Egypt’s set-piece execution",
+            "Midfield battle: Kiwi possession (60%+ in recent games) vs. Egyptian pressing triggers",
+            "Home advantage (Atlanta crowd) boosting Egypt’s morale but not tactical edge"
+          ],
+          "win_probability": {
+            "home": 0.35,
+            "draw": 0.25,
+            "away": 0.4
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.65,\n  \"reasoning\": \"Egypt's compact defensive structure and counter-attacking speed through Salah will exploit New Zealand's high defensive line, but the All Whites' physicality and set-piece threat could keep it close. New Zealand lacks the individual quality to contain Egypt's transitions, especially in a high-stakes group opener.\",\n  \"key_factors\": [\"Egypt's counter-attacking efficiency\", \"New Zealand's aerial and set-piece strength\", \"Salah's i",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.65,
+          "reasoning": "Egypt's compact defensive structure and counter-attacking speed through Salah will exploit New Zealand's high defensive line, but the All Whites' physicality and set-piece threat could keep it close. New Zealand lacks the individual quality to contain Egypt's transitions, especially in a high-stakes group opener.",
+          "key_factors": [
+            "Egypt's counter-attacking efficiency",
+            "New Zealand's aerial and set-piece strength",
+            "Salah's individual brilliance in decisive moments"
+          ],
+          "win_probability": {
+            "home": 0.5,
+            "draw": 0.28,
+            "away": 0.22
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"2-1\",\n  \"confidence\": 0.78,\n  \"reasoning\": \"Egypt's structured 4-3-3 under Rui Vitória, anchored by Salah's cutting inside from the right, should systematically break down New Zealand's back three, while the All Whites' reliance on Chris Wood's aerial threat will be largely neutralized by Hegazy's dominance in the box. A late New Zealand consolation from a set-piece is plausible, but Egypt's midfield control through Elneny will dictate tempo and create superior chances.\",",
+        "parsed": {
+          "predicted_score": "2-1",
+          "confidence": 0.78,
+          "reasoning": "Egypt's structured 4-3-3 under Rui Vitória, anchored by Salah's cutting inside from the right, should systematically break down New Zealand's back three, while the All Whites' reliance on Chris Wood's aerial threat will be largely neutralized by Hegazy's dominance in the box. A late New Zealand consolation from a set-piece is plausible, but Egypt's midfield control through Elneny will dictate tempo and create superior chances.",
+          "key_factors": [
+            "Mohamed Salah's individual brilliance against a slow Kiwi backline",
+            "Egypt's compact defensive block limiting Wood's service",
+            "Atlanta's humid summer conditions favoring Egypt's possession-based game management"
+          ],
+          "win_probability": {
+            "home": 0.65,
+            "draw": 0.22,
+            "away": 0.13
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-h-4": {
@@ -1458,6 +2018,86 @@
           }
         },
         "timestamp": "2026-06-19T04:21:04.354702+00:00"
+      },
+      "manual_antigravity_gemini": {
+        "model": "Antigravity × Gemini 3.5 Flash",
+        "raw": "{\n  \"predicted_score\": \"0-3\",\n  \"confidence\": 0.75,\n  \"reasoning\": \"Uruguay's superior midfield control and set-piece threat will overwhelm Cape Verde's compact defense, while the South Americans' pressing game forces errors from the islanders' backline. Cape Verde's lack of elite-level finishing against a disciplined Uruguayan block limits their scoring chances.\",\n  \"key_factors\": [\"Uruguay's midfield dominance and pressing\", \"Cape Verde's defensive discipline but lack of counter-attacking spee",
+        "parsed": {
+          "predicted_score": "0-3",
+          "confidence": 0.75,
+          "reasoning": "Uruguay's superior midfield control and set-piece threat will overwhelm Cape Verde's compact defense, while the South Americans' pressing game forces errors from the islanders' backline. Cape Verde's lack of elite-level finishing against a disciplined Uruguayan block limits their scoring chances.",
+          "key_factors": [
+            "Uruguay's midfield dominance and pressing",
+            "Cape Verde's defensive discipline but lack of counter-attacking speed",
+            "Set-piece vulnerability for Cape Verde against taller Uruguayans"
+          ],
+          "win_probability": {
+            "home": 0.08,
+            "draw": 0.17,
+            "away": 0.75
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_mimo_v2_5": {
+        "model": "Xiaomi MiMo v2.5",
+        "raw": "{\n  \"predicted_score\": \"0-2\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Uruguay's defensive solidity and midfield control should stifle Cape Verde's counter-attacking threat, while their clinical finishing from Darwin Núñez and Federico Valverde will exploit gaps in Cape Verde's backline. Cape Verde may struggle to break down Uruguay's organized block, leading to a clean sheet for La Celeste.\",\n  \"key_factors\": [\"Uruguay's superior individual quality and depth\", \"Cape Verde's lack of experience again",
+        "parsed": {
+          "predicted_score": "0-2",
+          "confidence": 0.7,
+          "reasoning": "Uruguay's defensive solidity and midfield control should stifle Cape Verde's counter-attacking threat, while their clinical finishing from Darwin Núñez and Federico Valverde will exploit gaps in Cape Verde's backline. Cape Verde may struggle to break down Uruguay's organized block, leading to a clean sheet for La Celeste.",
+          "key_factors": [
+            "Uruguay's superior individual quality and depth",
+            "Cape Verde's lack of experience against top-tier South American defenses",
+            "Hard Rock Stadium's large pitch favoring Uruguay's possession-based approach"
+          ],
+          "win_probability": {
+            "home": 0.12,
+            "draw": 0.22,
+            "away": 0.66
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_codex": {
+        "model": "Codex CLI",
+        "raw": "{\n  \"predicted_score\": \"0-2\",\n  \"confidence\": 0.7,\n  \"reasoning\": \"Uruguay's defensive solidity and midfield control should stifle Cape Verde's counter-attacking threat, while their clinical finishing from Darwin Núñez and Federico Valverde will exploit gaps in Cape Verde's back line. Cape Verde may struggle to break down Uruguay's organized block, limiting their scoring chances.\",\n  \"key_factors\": [\"Uruguay's superior midfield and defensive structure\", \"Cape Verde's reliance on set pieces and t",
+        "parsed": {
+          "predicted_score": "0-2",
+          "confidence": 0.7,
+          "reasoning": "Uruguay's defensive solidity and midfield control should stifle Cape Verde's counter-attacking threat, while their clinical finishing from Darwin Núñez and Federico Valverde will exploit gaps in Cape Verde's back line. Cape Verde may struggle to break down Uruguay's organized block, limiting their scoring chances.",
+          "key_factors": [
+            "Uruguay's superior midfield and defensive structure",
+            "Cape Verde's reliance on set pieces and transitions",
+            "Uruguay's experience in high-pressure group stage matches"
+          ],
+          "win_probability": {
+            "home": 0.15,
+            "draw": 0.25,
+            "away": 0.6
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
+      },
+      "manual_claude_sonnet": {
+        "model": "Claude Sonnet 4.6",
+        "raw": "{\n  \"predicted_score\": \"0-3\",\n  \"confidence\": 0.82,\n  \"reasoning\": \"Uruguay's superior midfield organization under Bielsa's high-pressing system will overwhelm Cape Verde's buildup, forcing turnovers in dangerous areas. The South Americans' physicality on set pieces and Darwin Núñez's off-ball movement against a compact but aerially vulnerable Cape Verde backline should produce multiple goals, while Cape Verde's counterattacking threat gets neutralized by Uruguay's disciplined double pivot.\",\n  ",
+        "parsed": {
+          "predicted_score": "0-3",
+          "confidence": 0.82,
+          "reasoning": "Uruguay's superior midfield organization under Bielsa's high-pressing system will overwhelm Cape Verde's buildup, forcing turnovers in dangerous areas. The South Americans' physicality on set pieces and Darwin Núñez's off-ball movement against a compact but aerially vulnerable Cape Verde backline should produce multiple goals, while Cape Verde's counterattacking threat gets neutralized by Uruguay's disciplined double pivot.",
+          "key_factors": [
+            "Uruguay's high press disrupting Cape Verde's progression through the thirds",
+            "Aerial mismatch on set pieces favoring Giménez and Araújo",
+            "Cape Verde's lack of World Cup experience against elite CONMEBOL opposition"
+          ],
+          "win_probability": {
+            "home": 0.08,
+            "draw": 0.14,
+            "away": 0.78
+          }
+        },
+        "timestamp": "2026-06-20T12:46:51.033991+00:00Z"
       }
     },
     "wc2026-grp-i-3": {
